@@ -1,9 +1,12 @@
 lockfileVersion: '6.0'
 
-devDependencies:
-  turbo:
-    specifier: ^1.9.3
-    version: 1.9.3
+importers:
+
+  .:
+    devDependencies:
+      turbo:
+        specifier: latest
+        version: 1.9.3
 
 packages:
 
