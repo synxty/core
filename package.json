@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "@synxty/core",
+  "description": "Synxty's monorepo",
+  "packageManager": "pnpm@7.15.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synxty/core.git"
+  }
+}
