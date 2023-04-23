@@ -8,10 +8,13 @@
     "url": "https://github.com/synxty/core.git"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "turbo": "latest"
   },
   "scripts": {
     "build": "turbo run build",
+    "ci:publish": "changeset publish",
+    "ci:version": "changeset version",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test"
