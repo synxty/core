@@ -1,0 +1,9 @@
+{
+  "name": "@synxty/assets-manager",
+  "description": "Manage Synxty assets like icons, logos and banners with Pandora's Assets Manager.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts"
+}
