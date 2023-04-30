@@ -37,3 +37,5 @@ jobs:
         with:
           version: pnpm ci:version
           publish: pnpm ci:publish
+          commit: 'Release: Version Packages'
+          title: 'Release: Version Packages'
