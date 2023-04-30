@@ -83,8 +83,10 @@ describe('> Save SVG to PNG file', () => {
     });
     expect(statSync('./test-github-profile-dark.png')).toBeDefined();
   });
+
   afterAll(() => {
     unlinkSync(`${__dirname}/test-github-profile-dark.png`);
     unlinkSync('./test-github-profile-dark.png');
   });
+  
 });

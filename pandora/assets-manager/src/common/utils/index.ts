@@ -3,7 +3,7 @@ import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
 import { PlatformIconProps, Platforms, Themes, platformsIconsConfig, themesConfig } from '@synxty/platforms-assets-config';
 
-interface PNGSettings {
+export interface PNGSettings {
   outputName: string;
   platform: Platforms;
   theme: Themes;
