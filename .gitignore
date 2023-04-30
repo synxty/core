@@ -12,6 +12,7 @@ node_modules
 
 # debug
 npm-debug.log*
+.pnpm-debug.log*
 
 # local env files
 .env
@@ -19,3 +20,10 @@ npm-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# build
+lib
+dist
+
+# tests
+coverage

@@ -1,0 +1,30 @@
+{
+  "name": "@synxty/assets-manager",
+  "description": "Manage Synxty assets like icons, logos and banners with Pandora's Assets Manager.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "@synxty/brand-assets": "^0.0.5",
+    "@types/node": "^18.16.0",
+    "@vitest/coverage-c8": "^0.30.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
+  },
+  "dependencies": {
+    "@synxty/platforms-assets-config": "^0.0.5",
+    "@xmldom/xmldom": "^0.8.7",
+    "sharp": "^0.32.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest --run --no-threads",
+    "test:watch": "vitest --no-threads",
+    "test:coverage": "vitest --run --coverage --no-threads ",
+    "lint": "tsc"
+  }
+}
