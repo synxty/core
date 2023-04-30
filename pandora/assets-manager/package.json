@@ -15,9 +15,9 @@
   },
   "scripts": {
     "build": "tsup",
-    "test": "vitest --run",
+    "test": "vitest --run --no-threads",
     "test:watch": "vitest --no-threads",
-    "test:coverage": "vitest --coverage",
+    "test:coverage": "vitest --coverage --no-threads ",
     "lint": "tsc"
   },
   "dependencies": {
