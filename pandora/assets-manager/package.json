@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest --run",
-    "test:watch": "vitest",
+    "test:watch": "vitest --no-threads",
     "test:coverage": "vitest --coverage",
     "lint": "tsc"
   },
