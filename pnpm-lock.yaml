@@ -23,6 +23,9 @@ importers:
         specifier: ^0.32.0
         version: 0.32.0
     devDependencies:
+      '@synxty/brand-assets':
+        specifier: workspace:^
+        version: link:../../sirius/brand-assets
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
