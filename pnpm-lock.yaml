@@ -42,6 +42,12 @@ importers:
         specifier: ^0.30.1
         version: 0.30.1
 
+  sirius/brand-assets:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
+
 packages:
 
   /@babel/code-frame@7.21.4:
