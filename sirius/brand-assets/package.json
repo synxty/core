@@ -1,7 +1,7 @@
 {
   "name": "@synxty/brand-assets",
   "description": "Synxty assets repository with configurations for relevant platforms.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/icons/index.js",
   "module": "lib/icons/index.mjs",
