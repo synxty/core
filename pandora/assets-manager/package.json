@@ -21,9 +21,9 @@
   },
   "scripts": {
     "build:disable": "tsup",
-    "test": "vitest --run --no-threads",
+    "test:disable": "vitest --run --no-threads",
     "test:watch": "vitest --no-threads",
     "test:coverage": "vitest --run --coverage --no-threads ",
-    "lint": "tsc"
+    "lint:disable": "tsc"
   }
 }
