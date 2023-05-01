@@ -7,6 +7,15 @@
   "module": "lib/icons/index.mjs",
   "types": "lib/icons/index.d.ts",
   "devDependencies": {
+    "@figma-export/cli": "^4.5.0",
+    "@figma-export/output-components-as-es6": "^4.5.0",
+    "@figma-export/transform-svg-with-svgo": "^4.5.0",
+    "@figma-export/types": "^4.5.0",
+    "@figma-export/utils": "^4.0.0",
+    "@types/node": "^18.16.0",
+    "rimraf": "^5.0.0",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
     "typescript": "^5.0.4"
   }
 }
