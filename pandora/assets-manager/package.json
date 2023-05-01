@@ -21,7 +21,7 @@
     "sharp": "^0.32.0"
   },
   "scripts": {
-    "build": "tsup",
+    "build:disable": "tsup",
     "test": "vitest --run --no-threads",
     "test:watch": "vitest --no-threads",
     "test:coverage": "vitest --run --coverage --no-threads ",
