@@ -1,5 +1,5 @@
 packages:
-  - "pandora/*"
-  - "callisto/*"
-  - "eden/*"
-  - "sirius/*"
+  - 'callisto/*'
+  - 'eden/*'
+  - 'pandora/*'
+  - 'sirius/*'
