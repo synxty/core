@@ -1,3 +1,5 @@
+rm -rf lib
+
 echo '> Importing icons from Figma...'
 pnpm tsx -r dotenv/config ./node_modules/@figma-export/cli/dist/run.js use-config src/importIconsFromFigma
 
@@ -8,4 +10,4 @@ echo '> Building...'
 pnpm tsup
 
 echo '> Clean up'
-rm -rf icons
+rm -rf src/icons

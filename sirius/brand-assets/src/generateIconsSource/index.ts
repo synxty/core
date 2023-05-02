@@ -2,7 +2,7 @@ import { readdir, readFileSync, createWriteStream } from 'node:fs';
 
 function generateIconsSource() {
   const SOURCE_FILE_NAME = 'index.ts';
-  const SOURCE_DIRECTORY = 'icons';
+  const SOURCE_DIRECTORY = 'src/icons';
 
   readdir(SOURCE_DIRECTORY, (error, files) => {
     if (error) throw error;

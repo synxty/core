@@ -27,7 +27,7 @@ const componentOptions: ComponentsCommandOptions = {
   ],
   outputters: [
     outputComponentsAsEs6({
-      output: 'icons',
+      output: 'src/icons',
       getVariableName: (options: ComponentOutputterParamOption) => pascalCase(options.componentName.trim()),
     })
   ],

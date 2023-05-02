@@ -1,10 +1,10 @@
 import { defineConfig}  from 'tsup';
 
 export default defineConfig({
-  entry: ['icons/index.ts'],
-  outDir: 'lib/icons',
+  entry: ['src/icons/index.ts', 'src/config/index.ts'],
+  outDir: 'lib',
   sourcemap: true,
   minify: true,
   format: ['esm', 'cjs'],
-  dts: true
+  dts: true,
 });
