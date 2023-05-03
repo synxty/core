@@ -4,10 +4,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
-  "main": "lib/icons/index.cjs",
-  "module": "lib/icons/index.js",
-  "types": "lib/icons/index.d.ts",
   "exports": {
+    ".": {
+      "types": "./lib/icons/index.d.ts",
+      "default": "./lib/icons/index.js",
+      "import": "./lib/icons/index.js",
+      "node": "./lib/icons/index.cjs",
+      "require": "./lib/icons/index.cjs"
+    },
     "./icons": {
       "types": "./lib/icons/index.d.ts",
       "default": "./lib/icons/index.js",
