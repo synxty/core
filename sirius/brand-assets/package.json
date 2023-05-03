@@ -3,9 +3,29 @@
   "description": "Synxty assets repository with configurations for relevant platforms.",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "lib/icons/index.js",
-  "module": "lib/icons/index.mjs",
-  "types": "lib/icons/index.d.ts",
+  "type": "module",
+  "exports": {
+    "./icons": {
+      "types": "./lib/icons/index.d.ts",
+      "default": "./lib/icons/index.cjs",
+      "import": "./lib/icons/index.js",
+      "node": "./lib/icons/index.cjs",
+      "require": "./lib/icons/index.cjs"
+    },
+    "./config": {
+      "types": "./lib/config/index.d.ts",
+      "default": "./lib/config/index.cjs",
+      "import": "./lib/config/index.js",
+      "node": "./lib/config/index.cjs",
+      "require": "./lib/config/index.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "icons": ["./lib/icons/index.d.ts"],
+      "config": ["./lib/config/index.d.ts"]
+    }
+  },
   "devDependencies": {
     "@figma-export/cli": "^4.5.0",
     "@figma-export/output-components-as-es6": "^4.5.0",
