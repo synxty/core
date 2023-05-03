@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "main": "lib/icons/index.cjs",
+  "module": "lib/icons/index.js",
+  "types": "lib/icons/index.d.ts",
   "exports": {
     "./icons": {
       "types": "./lib/icons/index.d.ts",
