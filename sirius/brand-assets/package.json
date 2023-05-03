@@ -7,14 +7,14 @@
   "exports": {
     "./icons": {
       "types": "./lib/icons/index.d.ts",
-      "default": "./lib/icons/index.cjs",
+      "default": "./lib/icons/index.js",
       "import": "./lib/icons/index.js",
       "node": "./lib/icons/index.cjs",
       "require": "./lib/icons/index.cjs"
     },
     "./config": {
       "types": "./lib/config/index.d.ts",
-      "default": "./lib/config/index.cjs",
+      "default": "./lib/config/index.js",
       "import": "./lib/config/index.js",
       "node": "./lib/config/index.cjs",
       "require": "./lib/config/index.cjs"
