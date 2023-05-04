@@ -1,2 +1,2 @@
-export * from './apps';
-export * from './themes';
+export type * from './apps';
+export type * from './themes';
