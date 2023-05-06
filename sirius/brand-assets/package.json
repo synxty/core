@@ -4,33 +4,26 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "types": "./lib/generate-assets/index.d.ts",
   "exports": {
     ".": {
-      "types": "./lib/icons/index.d.ts",
-      "default": "./lib/icons/index.js",
-      "import": "./lib/icons/index.js",
-      "node": "./lib/icons/index.cjs",
-      "require": "./lib/icons/index.cjs"
+      "types": "./lib/generate-assets/index.d.ts",
+      "default": "./lib/generate-assets/index.js",
+      "import": "./lib/generate-assets/index.js",
+      "node": "./lib/generate-assets/index.cjs",
+      "require": "./lib/generate-assets/index.cjs"
     },
-    "./icons": {
-      "types": "./lib/icons/index.d.ts",
-      "default": "./lib/icons/index.js",
-      "import": "./lib/icons/index.js",
-      "node": "./lib/icons/index.cjs",
-      "require": "./lib/icons/index.cjs"
-    },
-    "./config": {
-      "types": "./lib/config/index.d.ts",
-      "default": "./lib/config/index.js",
-      "import": "./lib/config/index.js",
-      "node": "./lib/config/index.cjs",
-      "require": "./lib/config/index.cjs"
+    "./apps-specs": {
+      "types": "./lib/apps-specs/index.d.ts",
+      "default": "./lib/apps-specs/index.js",
+      "import": "./lib/apps-specs/index.js",
+      "node": "./lib/apps-specs/index.cjs",
+      "require": "./lib/apps-specs/index.cjs"
     }
   },
   "typesVersions": {
     "*": {
-      "icons": ["./lib/icons/index.d.ts"],
-      "config": ["./lib/config/index.d.ts"]
+      "apps-specs": ["./lib/apps-specs/index.d.ts"]
     }
   },
   "devDependencies": {
