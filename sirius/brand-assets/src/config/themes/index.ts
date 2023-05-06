@@ -1,4 +1,4 @@
-import { SupportedThemes, ThemeConfig, Themes } from '../types';
+import { SupportedThemes, ThemeConfig } from '../types';
 import { themes } from './themes';
 
 export { supportedThemes } from './supportedThemes';

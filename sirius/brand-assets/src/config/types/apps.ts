@@ -1,14 +1,14 @@
-import { supportedApps } from '../apps/supportedApps';
+import { supportedApps } from '../constants';
 
 export type SupportedApps = typeof supportedApps[keyof typeof supportedApps];
 
-export type AppIconConfig = {
+export type ProfileIconSpecs = {
   size: number;
   radius?: number;
 };
 
-export type AppsIdentity = {
+export type AppSpecs = {
   [key in SupportedApps]: {
-    icon: AppIconConfig,
+    icon: ProfileIconSpecs,
   }
 };
