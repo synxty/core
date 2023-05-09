@@ -1,12 +1,12 @@
 import { readFileSync } from 'fs';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
-import { PlatformIconProps, Platforms, Themes, platformsIconsConfig, themesConfig } from '@synxty/platforms-assets-config';
+import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
 
 export interface PNGSettings {
   outputName: string;
-  platform: Platforms;
-  theme: Themes;
+  app: SupportedApps;
+  theme: SupportedThemes;
 };
 
 export function createIconDocumentFromPath(path: string): Document {
@@ -29,18 +29,17 @@ export function createSVGElement(iconDocument: Document): SVGSVGElement {
 
 export function createBackground(
   iconDocument: Document,
-  platform: Platforms,
-  theme: Themes
+  app: SupportedApps,
+  theme: SupportedThemes
 ): HTMLElement {
-  const size = getSize(platform);
-  const radius = getRadius(platform);
-  const backgroundColor = getBackgroundColor(theme);
+  const { size, radius } = getProfileIconSpecs(app);
+  const { backgroundColor } = getThemeConfig(theme);
 
   const background = iconDocument.createElement('rect');
   background.setAttribute('fill', backgroundColor);
   background.setAttribute('width', size.toString());
   background.setAttribute('height', size.toString());
-  background.setAttribute('rx', radius);
+  background.setAttribute('rx', radius ? radius.toString() : '0%');
   return background;
 };
 
@@ -58,25 +57,10 @@ export async function saveSVGToPNGFile(
   settings: PNGSettings,
   outDir: string = '.',
 ): Promise<void> {
-  const { outputName, platform, theme } = settings;
-  const outputFilePath = `${outDir}/${outputName}-${platform}-${theme}.png`;
+  const { outputName, app, theme } = settings;
+  const outputFilePath = `${outDir}/${outputName}-${app}-${theme}.png`;
 
   const imageBuffer = Buffer.from(new XMLSerializer().serializeToString(svg))
   const image = sharp(imageBuffer);
   await image.toFile(outputFilePath);
-};
-
-function getSize(platform: Platforms): number {
-  const size = platformsIconsConfig[platform].size;
-  return size;
-};
-
-function getRadius(platform: Platforms): string {
-  const iconProps: PlatformIconProps = platformsIconsConfig[platform];
-  return iconProps.radius || '0%';
-};
-
-function getBackgroundColor(theme: Themes): string {
-  const backgroundColor = themesConfig[theme].backgroundColor;
-  return backgroundColor;
 };

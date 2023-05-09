@@ -1,9 +1,7 @@
 import { afterAll, describe, expect, it } from 'vitest';
 import { convertIconFileToPNG } from '.';
 import { statSync, unlinkSync } from 'fs';
-
-const SAMPLE_ICON_PATH = 'samples/SynxtyIcon.svg';
-const TEST_RESULT_PATH = `${__dirname}/test-github-profile-dark.png`;
+import { SAMPLE_ICON_PATH, TEST_RESULT_APP_NAME, TEST_RESULT_FILE_NAME } from '../../constants';
 
 describe('> Convert icon file to PNG', () => {
   it('should convert a SVG icon to a PNG image for the given platform with the given theme', async () => {
@@ -11,16 +9,16 @@ describe('> Convert icon file to PNG', () => {
       SAMPLE_ICON_PATH,
       {
         outputName: 'test',
-        platform: 'github-profile',
+        app: TEST_RESULT_APP_NAME,
         theme: 'dark'
       },
       __dirname
     );
-    expect(statSync(TEST_RESULT_PATH)).toBeDefined();
+    expect(statSync(`${__dirname}/${TEST_RESULT_FILE_NAME}`)).toBeDefined();
   });
 
   afterAll(() => {
-    unlinkSync(TEST_RESULT_PATH);
+    unlinkSync(`${__dirname}/${TEST_RESULT_FILE_NAME}`);
   });
   
 });

@@ -13,9 +13,9 @@ importers:
 
   pandora/assets-manager:
     dependencies:
-      '@synxty/platforms-assets-config':
-        specifier: ^0.0.5
-        version: 0.0.5
+      '@synxty/brand-assets':
+        specifier: workspace:^
+        version: link:../../sirius/brand-assets
       '@xmldom/xmldom':
         specifier: ^0.8.7
         version: 0.8.7
@@ -23,9 +23,6 @@ importers:
         specifier: ^0.32.0
         version: 0.32.0
     devDependencies:
-      '@synxty/brand-assets':
-        specifier: workspace:^
-        version: link:../../sirius/brand-assets
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
@@ -653,10 +650,6 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
     dev: true
-
-  /@synxty/platforms-assets-config@0.0.5:
-    resolution: {integrity: sha512-EGrILNYfJ75C2a1cuYNDvfmMjL7R3Nx7nTJATZLoUlNri7ZTuSUkj31I3R2dGg68N+wiLJnHWaeY0RERgXOTXg==, tarball: https://npm.pkg.github.com/download/@synxty/platforms-assets-config/0.0.5/447c3e2ac8aeb140e9ab08c9da1e13127b72c2f3}
-    dev: false
 
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}

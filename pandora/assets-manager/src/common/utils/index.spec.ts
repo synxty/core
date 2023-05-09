@@ -3,8 +3,7 @@ import { DOMParser } from '@xmldom/xmldom';
 import { SynxtyIcon } from '@synxty/brand-assets';
 import { addBackgroundToSVG, createBackground, createIconDocumentFromPath, createIconDocumentFromString, createSVGElement, saveSVGToPNGFile } from '.';
 import { statSync, unlinkSync } from 'fs';
-
-const SAMPLE_ICON_PATH = 'samples/SynxtyIcon.svg';
+import { SAMPLE_ICON_PATH, TEST_RESULT_APP_NAME, TEST_RESULT_FILE_NAME } from '../../constants';
 
 describe('> Create an icon document from path', () => {
   it('should create a document given a valid path', () => {
@@ -44,7 +43,7 @@ describe('> Create an SVG element', () => {
 describe('> Create background', () => {
   it('should create a background', () => {
     const doc = createIconDocumentFromPath(SAMPLE_ICON_PATH);
-    const background = createBackground(doc, 'github-profile', 'dark');
+    const background = createBackground(doc, TEST_RESULT_APP_NAME, 'dark');
     expect(background.toString().startsWith('<rect')).toBeTruthy();
   });
 });
@@ -53,7 +52,7 @@ describe('> Add background to SVG', () => {
   it('should add a given background to a given SVG Element', () => {
     const doc = createIconDocumentFromPath(SAMPLE_ICON_PATH);
     const svg = createSVGElement(doc);
-    const background = createBackground(doc, 'github-profile', 'dark');
+    const background = createBackground(doc, TEST_RESULT_APP_NAME, 'dark');
     const svgWithBackground = addBackgroundToSVG(background, svg);
     expect(svgWithBackground.toString().includes('<rect')).toBeTruthy();
   });
@@ -66,27 +65,27 @@ describe('> Save SVG to PNG file', () => {
     await saveSVGToPNGFile(svg, 
     {
       outputName: 'test',
-      platform: 'github-profile',
+      app: TEST_RESULT_APP_NAME,
       theme: 'dark',
     },
     __dirname
     );
-    expect(statSync(`${__dirname}/test-github-profile-dark.png`)).toBeDefined();
+    expect(statSync(`${__dirname}/${TEST_RESULT_FILE_NAME}`)).toBeDefined();
   });
   it("should default to '.' when an output directory is not specified", async () => {
     const doc = createIconDocumentFromPath(SAMPLE_ICON_PATH);
     const svg = createSVGElement(doc);
     await saveSVGToPNGFile(svg, {
       outputName: 'test',
-      platform: 'github-profile',
+      app: TEST_RESULT_APP_NAME,
       theme: 'dark',
     });
-    expect(statSync('./test-github-profile-dark.png')).toBeDefined();
+    expect(statSync(`./${TEST_RESULT_FILE_NAME}`)).toBeDefined();
   });
 
   afterAll(() => {
-    unlinkSync(`${__dirname}/test-github-profile-dark.png`);
-    unlinkSync('./test-github-profile-dark.png');
+    unlinkSync(`${__dirname}/${TEST_RESULT_FILE_NAME}`);
+    unlinkSync(`./${TEST_RESULT_FILE_NAME}`);
   });
   
 });
