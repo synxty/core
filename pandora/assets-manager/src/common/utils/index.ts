@@ -1,4 +1,3 @@
-import { readFileSync } from 'fs';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
 import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
@@ -9,15 +8,9 @@ export interface PNGSpecs {
   theme: SupportedThemes;
 };
 
-export function createIconDocumentFromPath(path: string): Document {
-  const fileData = readFileSync(path).toString();
-  const iconDocument = new DOMParser().parseFromString(fileData, 'text/xml');
-  return iconDocument;
-}
-
-export function createIconDocumentFromString(iconString: string): Document {
-  if (!iconString.startsWith('<svg') || !iconString.endsWith('</svg>')) throw Error('Not an SVG Icon');
-  const iconDocument = new DOMParser().parseFromString(iconString, 'text/xml');
+export function createIconDocument(svgString: string): Document {
+  if (!svgString.startsWith('<svg') || !svgString.endsWith('</svg>')) throw Error('Not an SVG Icon');
+  const iconDocument = new DOMParser().parseFromString(svgString, 'text/xml');
   return iconDocument;
 }
 
