@@ -12,7 +12,7 @@ pnpm add @synxty/brand-assets
 
 ## 📖 API Reference
 
-### Use Synxty icons as an SVG string
+### Use Synxty assets as SVG strings
 
 ```typescript
 import { SynxtyIcon } from '@synxty/brand-assets';
