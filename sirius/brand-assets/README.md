@@ -20,12 +20,12 @@ import { SynxtyIcon } from '@synxty/brand-assets';
 console.log(SynxtyIcon) // <svg>...</svg>
 ```
 
-### Get apps specific sizes
+### Get apps Profile Icon specs
 
 ```typescript
 import { getProfileIconSpecs, ProfileIconSpecs } from '@synxty/brand-assets/apps-specs';
 
-const { size }: ProfileIconSpecs = getProfileIconSpecs(appName);
+const profileIconSpecs: ProfileIconSpecs = getProfileIconSpecs(appName);
 ```
 
 | Parameter | Type            | Description                                                                                        |
