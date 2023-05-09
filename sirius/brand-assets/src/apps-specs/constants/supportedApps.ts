@@ -1,4 +1,4 @@
-export const supportedApps = {
+export const SUPPORTED_APPS = {
   DISCORD: 'discord',
   FACEBOOK: 'facebook',
   GITHUB: 'github',

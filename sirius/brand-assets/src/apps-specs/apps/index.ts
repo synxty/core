@@ -9,7 +9,7 @@ import { twitter } from './Twitter';
 import { vscode } from './VSCode';
 import { youtube } from './YouTube';
 
-export const appSpecs: AppSpecs = {
+const appSpecs: AppSpecs = {
   discord,
   facebook,
   github,

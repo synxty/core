@@ -1,6 +1,6 @@
-import { supportedApps } from '../constants';
+import { SUPPORTED_APPS } from '../constants';
 
-export type SupportedApps = typeof supportedApps[keyof typeof supportedApps];
+export type SupportedApps = typeof SUPPORTED_APPS[keyof typeof SUPPORTED_APPS];
 
 export type ProfileIconSpecs = {
   size: number;
