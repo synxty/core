@@ -3,9 +3,9 @@ import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
 import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
 
-export interface PNGSettings {
+export interface PNGSpecs {
   outputName: string;
-  app: SupportedApps;
+  appName: SupportedApps;
   theme: SupportedThemes;
 };
 
@@ -29,10 +29,10 @@ export function createSVGElement(iconDocument: Document): SVGSVGElement {
 
 export function createBackground(
   iconDocument: Document,
-  app: SupportedApps,
+  appName: SupportedApps,
   theme: SupportedThemes
 ): HTMLElement {
-  const { size, radius } = getProfileIconSpecs(app);
+  const { size, radius } = getProfileIconSpecs(appName);
   const { backgroundColor } = getThemeConfig(theme);
 
   const background = iconDocument.createElement('rect');
@@ -54,11 +54,11 @@ export function addBackgroundToSVG(
 
 export async function saveSVGToPNGFile(
   svg: SVGSVGElement,
-  settings: PNGSettings,
+  specs: PNGSpecs,
   outDir: string = '.',
 ): Promise<void> {
-  const { outputName, app, theme } = settings;
-  const outputFilePath = `${outDir}/${outputName}-${app}-${theme}.png`;
+  const { outputName, appName, theme } = specs;
+  const outputFilePath = `${outDir}/${outputName}-${appName}-${theme}.png`;
 
   const imageBuffer = Buffer.from(new XMLSerializer().serializeToString(svg))
   const image = sharp(imageBuffer);

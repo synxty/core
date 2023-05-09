@@ -9,7 +9,7 @@ describe('> Convert icon file to PNG', () => {
       SAMPLE_ICON_PATH,
       {
         outputName: 'test',
-        app: TEST_RESULT_APP_NAME,
+        appName: TEST_RESULT_APP_NAME,
         theme: 'dark'
       },
       __dirname

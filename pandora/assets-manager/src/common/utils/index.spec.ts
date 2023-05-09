@@ -65,7 +65,7 @@ describe('> Save SVG to PNG file', () => {
     await saveSVGToPNGFile(svg, 
     {
       outputName: 'test',
-      app: TEST_RESULT_APP_NAME,
+      appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     },
     __dirname
@@ -77,7 +77,7 @@ describe('> Save SVG to PNG file', () => {
     const svg = createSVGElement(doc);
     await saveSVGToPNGFile(svg, {
       outputName: 'test',
-      app: TEST_RESULT_APP_NAME,
+      appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     });
     expect(statSync(`./${TEST_RESULT_FILE_NAME}`)).toBeDefined();
