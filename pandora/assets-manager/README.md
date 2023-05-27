@@ -4,26 +4,24 @@
 
 ## ⚙️ Install
 
-Install it locally in your project folder as a dev dependency:
-
-### pnpm
-
 ```bash
 pnpm add @synxty/assets-manager -D
 ```
 
 ## 📖 API Reference
 
-### Convert SVG Icon files to PNG
+### Convert Synxty icons to PNG
 
 ```typescript
-import { convertIconFileToPNG } from '@synxty/assets-manager';
+// example
 
-convertIconFileToPNG(
+import { convertIconToPNG } from '@synxty/assets-manager';
+
+convertIconToPNG(
   iconPath, 
   {
-    outputName: 'icon',
-    platform: 'github-profile',
+    outputName: 'profile-icon',
+    appName: 'github',
     theme: 'dark'
   },
   outDir
@@ -33,40 +31,18 @@ convertIconFileToPNG(
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `iconPath` | `string` | **Required**. Path to the svg icon to convert. |
-| `settings` | `PNGSettings` | **Required**. Settings to specify the desired outcome. Head down to [Interfaces](#interfaces)|
-| `outDir` | `string` | **Optional**. Path to store the converted file. Defaults to the current directory. |
-
-### Convert SVG String to PNG
-
-```typescript
-import { convertIconStringToPNG } from '@synxty/assets-manager';
-
-convertIconStringToPNG(
-  iconString, 
-  {
-    outputName: 'icon',
-    platform: 'github-profile',
-    theme: 'dark'
-  },
-  outDir
-);
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `iconString` | `string` | **Required**. Icon as a SVG string to convert. |
-| `settings` | `PNGSettings` | **Required**. Settings to specify the desired outcome. Head down to [Interfaces](#interfaces) |
+| `specs` | `PNGSpecs` | **Required**. Options to convert the icon. Head down to [Interfaces](#interfaces) for more details.|
 | `outDir` | `string` | **Optional**. Path to store the converted file. Defaults to the current directory. |
 
 ### Interfaces
 
-#### PNG Settings
+#### `PNGSpecs`
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `outputName` | `string` | **Required**. Name of the output PNG file. |
-| `platform` | `Platforms` | **Required**. Platform desired to display the icon. Check [@synxty/platforms-assets-config](https://github.com/synxty/sirius/pkgs/npm/platforms-assets-config) for all supported platforms |
-| `theme` | `Themes` | **Required**. This will set the background for the icon. Currently the supported themes are `dark` and `light` |
+| `appName` | `SupportedApps` | **Required**. App where the icon is going to be displayed. Check [@synxty/brand-assets](https://github.com/synxty/core/tree/main/sirius/brand-assets#supported-apps) for all supported apps. |
+| `theme` | `SupportedThemes` | **Required**. This will set the background for the icon. Currently the supported themes are `dark` and `light`. |
 
 ## ⚖️ License
 
