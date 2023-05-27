@@ -1,23 +1,16 @@
-import { readFileSync } from 'fs';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
-import { PlatformIconProps, Platforms, Themes, platformsIconsConfig, themesConfig } from '@synxty/platforms-assets-config';
+import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
 
-export interface PNGSettings {
+export interface PNGSpecs {
   outputName: string;
-  platform: Platforms;
-  theme: Themes;
+  appName: SupportedApps;
+  theme: SupportedThemes;
 };
 
-export function createIconDocumentFromPath(path: string): Document {
-  const fileData = readFileSync(path).toString();
-  const iconDocument = new DOMParser().parseFromString(fileData, 'text/xml');
-  return iconDocument;
-}
-
-export function createIconDocumentFromString(iconString: string): Document {
-  if (!iconString.startsWith('<svg') || !iconString.endsWith('</svg>')) throw Error('Not an SVG Icon');
-  const iconDocument = new DOMParser().parseFromString(iconString, 'text/xml');
+export function createIconDocument(svgString: string): Document {
+  if (!svgString.startsWith('<svg') || !svgString.endsWith('</svg>')) throw Error('Not an SVG Icon');
+  const iconDocument = new DOMParser().parseFromString(svgString, 'text/xml');
   return iconDocument;
 }
 
@@ -29,18 +22,17 @@ export function createSVGElement(iconDocument: Document): SVGSVGElement {
 
 export function createBackground(
   iconDocument: Document,
-  platform: Platforms,
-  theme: Themes
+  appName: SupportedApps,
+  theme: SupportedThemes
 ): HTMLElement {
-  const size = getSize(platform);
-  const radius = getRadius(platform);
-  const backgroundColor = getBackgroundColor(theme);
+  const { size, radius } = getProfileIconSpecs(appName);
+  const { backgroundColor } = getThemeConfig(theme);
 
   const background = iconDocument.createElement('rect');
   background.setAttribute('fill', backgroundColor);
   background.setAttribute('width', size.toString());
   background.setAttribute('height', size.toString());
-  background.setAttribute('rx', radius);
+  background.setAttribute('rx', radius ? radius.toString() : '0%');
   return background;
 };
 
@@ -55,28 +47,13 @@ export function addBackgroundToSVG(
 
 export async function saveSVGToPNGFile(
   svg: SVGSVGElement,
-  settings: PNGSettings,
+  specs: PNGSpecs,
   outDir: string = '.',
 ): Promise<void> {
-  const { outputName, platform, theme } = settings;
-  const outputFilePath = `${outDir}/${outputName}-${platform}-${theme}.png`;
+  const { outputName, appName, theme } = specs;
+  const outputFilePath = `${outDir}/${outputName}-${appName}-${theme}.png`;
 
   const imageBuffer = Buffer.from(new XMLSerializer().serializeToString(svg))
   const image = sharp(imageBuffer);
   await image.toFile(outputFilePath);
-};
-
-function getSize(platform: Platforms): number {
-  const size = platformsIconsConfig[platform].size;
-  return size;
-};
-
-function getRadius(platform: Platforms): string {
-  const iconProps: PlatformIconProps = platformsIconsConfig[platform];
-  return iconProps.radius || '0%';
-};
-
-function getBackgroundColor(theme: Themes): string {
-  const backgroundColor = themesConfig[theme].backgroundColor;
-  return backgroundColor;
 };
