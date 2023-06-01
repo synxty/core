@@ -11,6 +11,15 @@ importers:
         specifier: latest
         version: 1.9.3
 
+  callisto/design-tokens:
+    devDependencies:
+      tsup:
+        specifier: ^6.7.0
+        version: 6.7.0(typescript@5.0.4)
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
+
   pandora/assets-manager:
     dependencies:
       '@synxty/brand-assets':
