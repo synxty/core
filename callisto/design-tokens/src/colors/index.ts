@@ -29,7 +29,7 @@ export const colors = {
   verdigris,
   white,
   xanthous,
-}
+};
 
 export const aliases: Aliases = {
   red: bittersweet,
@@ -50,4 +50,4 @@ export const aliases: Aliases = {
   info: dodger,
   warning: crayola,
   danger: bittersweet,
-}
+};
