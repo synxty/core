@@ -1,6 +1,6 @@
 {
   "name": "@synxty/design-tokens",
-  "description": "Centralize and streamline your UI components with essential design elements like colors, typography, and spacing",
+  "description": "Centralize and streamline your UI components, libraries or themes with essential design elements like colors, typography, and spacing.",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
