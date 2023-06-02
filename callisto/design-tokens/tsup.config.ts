@@ -1,10 +1,11 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/colors/index.ts'],
+  entry: ['src/index.ts', 'src/colors/index.ts'],
   outDir: 'lib',
   sourcemap: true,
   minify: true,
   format: ['esm', 'cjs'],
-  dts: true
+  dts: true,
+  clean: true
 });

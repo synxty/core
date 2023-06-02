@@ -1,12 +1,33 @@
 {
   "name": "@synxty/design-tokens",
-  "description": "",
+  "description": "Centralize and streamline your UI components with essential design elements like colors, typography, and spacing",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
-  "main": "lib/index.js",
-  "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js",
+      "import": "./lib/index.js",
+      "node": "./lib/index.cjs",
+      "require": "./lib/index.cjs"
+    },
+    "./colors": {
+      "types": "./lib/colors/index.d.ts",
+      "default": "./lib/colors/index.js",
+      "import": "./lib/colors/index.js",
+      "node": "./lib/colors/index.cjs",
+      "require": "./lib/colors/index.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "colors":[
+        "./lib/colors/index.d.ts"
+      ]
+    }
+  },
   "devDependencies": {
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
