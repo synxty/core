@@ -23,17 +23,20 @@
   },
   "typesVersions": {
     "*": {
-      "colors":[
+      "colors": [
         "./lib/colors/index.d.ts"
       ]
     }
   },
   "devDependencies": {
+    "@types/node": "^18.16.0",
     "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
     "typescript": "^5.0.4"
   },
   "scripts": {
     "build": "tsup",
-    "lint:": "tsc"
+    "lint:": "tsc",
+    "generate-colors-samples": "tsx scripts/generate-colors-samples.ts"
   }
 }
