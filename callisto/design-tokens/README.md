@@ -10,9 +10,9 @@ pnpm add @synxty/design-tokens
 
 ## 🎨 Colors
 
-| Name         | Aliases            | Hex       | RGB           | HSL             | 🖍️                                                                        |
-|:------------ |:------------------ |---------- | ------------- | --------------- | ------------------------------------------------------------------------- |
-| Bittersweet  | Red, Danger        | `#F4413E` | `244 65 62`   | `1° 89% 60%`    | ![alt bittersweet](.github/assets/bittersweet.svg)                        |
+| Name         | Aliases            | Hex       | RGB           | HSL             | 🖍️                                             |
+|:------------ |:------------------ |---------- | ------------- | --------------- | ---------------------------------------------- |
+| Bittersweet  | Red, Danger        | `#F4413E` | `244 65 62`   | `1° 89% 60%`    | ![bittersweet](.github/assets/bittersweet.svg) |
 | Crayola      | Vermilion, Warning | `#FA763A` | `250 118 58`  | `19° 95% 60%`   | |
 | Sandy        | Orange, Secondary  | `#FFA337` | `255 163 55`  | `32° 100% 61%`  | |
 | Xanthous     | Amber              | `#FEC365` | `254 195 101` | `37° 99% 70%`   | |
