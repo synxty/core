@@ -108,10 +108,12 @@ module.exports = {
 Usage examples:
 
 ```html
+<!-- color -->
 <div class="bg-jasmine"></div>
 <div class="bg-jasmine-tint-10"></div>
 <div class="bg-jasmine-shade-10"></div>
 
+<!-- aliases -->
 <div class="bg-primary"></div>
 <div class="bg-primary-tint-10"></div>
 <div class="bg-primary-shade-10"></div>
