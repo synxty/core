@@ -27,6 +27,102 @@ pnpm add @synxty/design-tokens
 | White        |                    | `#FFFFFF` | `255 255 255` | `0° 0% 100%`    | ![white](.github/assets/white.svg)             |
 | Black        |                    | `#000000` | `0 0 0`       | `0° 0% 0%`      | ![black](.github/assets/black.svg)             |
 
+Every `color` can be tinted or shaded 9 times, except for `black` and `white` that can be tinted or shaded 12 times respectively to get tones of grays.
+
+### Usage
+
+After installing the package you can either consume it directly through its API or configure it to work with tailwind, replacing (recommended) or extending your configuration.
+
+#### API
+
+Using a color:
+
+```typescript
+import { colors } from '@synxty/design-tokens/colors';
+
+const { jasmine } = colors;
+
+console.log(jasmine.DEFAULT) // #FCE393
+console.log(jasmine.tint[10]) // #FCE69E
+console.log(jasmine.shade[10]) // #E3CC84
+```
+
+Using a color alias:
+
+```typescript
+import { aliases } from '@synxty/design-tokens/colors';
+
+const { primary, yellow } = aliases;
+
+console.log(primary.DEFAULT) // #FCE393
+console.log(primary.tint[10]) // #FCE69E
+console.log(primary.shade[10]) // #E3CC84
+
+console.log(yellow.DEFAULT) // #FCE393
+console.log(yellow.tint[10]) // #FCE69E
+console.log(yellow.shade[10]) // #E3CC84
+```
+
+#### Tailwind
+
+Replacing tailwinds colors palette (recommended):
+
+```javascript
+// tailwind.config.js
+
+import { colors, aliases } from '@synxty/design-tokens/colors';
+
+module.exports = {
+  theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      ...colors,
+      ...aliases
+    },
+  },
+};
+```
+
+Extending tailwinds colors palette:
+
+```javascript
+// tailwind.config.js
+
+import { colors, aliases } from '@synxty/design-tokens/colors';
+
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        ...colors,
+        ...aliases
+      },
+    }
+  },
+};
+```
+
+Usage examples:
+
+```html
+<div class="bg-jasmine"></div>
+<div class="bg-jasmine-tint-10"></div>
+<div class="bg-jasmine-shade-10"></div>
+
+<div class="bg-primary"></div>
+<div class="bg-primary-tint-10"></div>
+<div class="bg-primary-shade-10"></div>
+
+<div class="bg-yellow"></div>
+<div class="bg-yellow-tint-10"></div>
+<div class="bg-yellow-shade-10"></div>
+```
+
+### Interfaces
+
 ## ⚖️ License
 
 This package is open source software [licensed as MIT](LICENSE).
