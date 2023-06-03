@@ -31,7 +31,7 @@ Every `color` can be tinted or shaded 9 times, except for `black` and `white` th
 
 ### Usage
 
-After installing the package you can either consume it directly through its API or configure it to work with tailwind, replacing (recommended) or extending your configuration.
+After installing the package you can either consume it directly through its API or configure it to work with tailwind, replacing (recommended) or extending the palette in your configuration.
 
 #### API
 
@@ -65,7 +65,7 @@ console.log(yellow.shade[10]) // #E3CC84
 
 #### Tailwind
 
-Replacing tailwinds colors palette (recommended):
+Replacing tailwinds color palette (recommended):
 
 ```javascript
 // tailwind.config.js
@@ -84,7 +84,7 @@ module.exports = {
 };
 ```
 
-Extending tailwinds colors palette:
+Extending tailwinds color palette:
 
 ```javascript
 // tailwind.config.js
