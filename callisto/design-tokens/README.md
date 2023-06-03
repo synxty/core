@@ -123,8 +123,6 @@ Usage examples:
 <div class="bg-yellow-shade-10"></div>
 ```
 
-### Interfaces
-
 ## ⚖️ License
 
 This package is open source software [licensed as MIT](LICENSE).
