@@ -2,7 +2,7 @@ import { NeutralColor } from '../types/colors';
 
 export const black: NeutralColor = {
   DEFAULT: '#000000',
-  shade: {
+  tint: {
     '010': '#080808',
     '020': '#111111',
     '030': '#191919',
