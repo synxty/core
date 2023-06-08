@@ -8,17 +8,17 @@
   "exports": {
     ".": {
       "types": "./lib/index.d.ts",
-      "default": "./lib/index.js",
       "import": "./lib/index.js",
       "node": "./lib/index.cjs",
-      "require": "./lib/index.cjs"
+      "require": "./lib/index.cjs",
+      "default": "./lib/index.js"
     },
     "./colors": {
       "types": "./lib/colors/index.d.ts",
-      "default": "./lib/colors/index.js",
       "import": "./lib/colors/index.js",
       "node": "./lib/colors/index.cjs",
-      "require": "./lib/colors/index.cjs"
+      "require": "./lib/colors/index.cjs",
+      "default": "./lib/colors/index.js"
     }
   },
   "typesVersions": {
