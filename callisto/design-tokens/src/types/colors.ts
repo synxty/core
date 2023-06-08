@@ -27,32 +27,32 @@ export type Color = {
 export type NeutralColor = {
   DEFAULT: string,
   tint?: {
-    '010': string,
-    '020': string,
-    '030': string,
-    '040': string,
-    '050': string,
-    '060': string,
-    '070': string,
-    '080': string,
-    '090': string,
-    '100': string,
-    '110': string,
-    '120': string
+    10: string,
+    20: string,
+    30: string,
+    40: string,
+    50: string,
+    60: string,
+    70: string,
+    80: string,
+    90: string,
+    100: string,
+    110: string,
+    120: string
   },
   shade?: {
-    '010': string,
-    '020': string,
-    '030': string,
-    '040': string,
-    '050': string,
-    '060': string,
-    '070': string,
-    '080': string,
-    '090': string,
-    '100': string,
-    '110': string,
-    '120': string
+    10: string,
+    20: string,
+    30: string,
+    40: string,
+    50: string,
+    60: string,
+    70: string,
+    80: string,
+    90: string,
+    100: string,
+    110: string,
+    120: string
   }  
 }
 
