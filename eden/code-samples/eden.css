@@ -1,0 +1,30 @@
+/*
+ * Eden is full of beautiful islands...
+ */
+
+ :root {
+  --primary: #FCE393;
+}
+
+body {
+  background: #191919;
+}
+
+.island {
+  background: #3793FF !important;
+}
+
+/* ...one of them is named Elysian */
+
+#elysian {
+  display: flex;
+  font-family: "Mulish";
+  background-color: var(--primary);
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("/location/Mulish.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}

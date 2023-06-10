@@ -1,0 +1,8 @@
+{
+  "island": {
+    "name": "Elysian",
+    "length": 300,
+    "width": 350,
+    "features": ["Sunsets", "Beaches"]
+  }
+}
