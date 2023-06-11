@@ -1,0 +1,8 @@
+# Eden is full of beautiful islands...
+island:
+  name: Elysian # ...one of them is named Elysian
+  length: 300
+  width: 350
+  features:
+    - Sunsets
+    - Beaches
