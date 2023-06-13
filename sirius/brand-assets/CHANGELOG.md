@@ -1,5 +1,11 @@
 # @synxty/brand-assets
 
+## 1.1.1
+
+### Patch Changes
+
+- d2dd0bd: Fix VS Code app specs radius to make the icon circular
+
 ## 1.1.0
 
 ### Minor Changes
