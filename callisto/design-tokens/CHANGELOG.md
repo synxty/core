@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- 68a9295: Fixed neutral colors types that made tinted and shaded values possible undefined
+- 68a9295: Fixed neutral colors types that made tinted and shaded values possibly undefined
 
 ## 0.1.1
 
