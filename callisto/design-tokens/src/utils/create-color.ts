@@ -8,10 +8,8 @@ type ColorSpecs = {
 
 export function createColor( { DEFAULT, tint, shade }: ColorSpecs ): Color {
   return {
+    DEFAULT,
     tint,
     shade,
-    toString() {
-      return DEFAULT;
-    }
   }
 }
