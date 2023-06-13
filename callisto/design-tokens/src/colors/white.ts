@@ -15,5 +15,8 @@ export const white: Omit<NeutralColor, 'tint'> = {
     100: '#AAAAAA',
     110: '#999999',
     120: '#888888'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

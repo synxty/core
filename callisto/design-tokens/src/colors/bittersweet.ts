@@ -24,4 +24,7 @@ export const bittersweet: Color = {
     80: '#310D0C',
     90: '#180606'
   },
+  toString() {
+    return this.DEFAULT
+  }
 };

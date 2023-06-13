@@ -23,5 +23,8 @@ export const dodger: Color = {
     70: '#102C4C',
     80: '#0B1D33',
     90: '#050F19'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

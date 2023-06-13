@@ -23,5 +23,8 @@ export const grape: Color = {
     70: '#231336',
     80: '#170D24',
     90: '#0C0612'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

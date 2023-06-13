@@ -23,5 +23,8 @@ export const emerald: Color = {
     70: '#0A3C1E',
     80: '#072814',
     90: '#03140A'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

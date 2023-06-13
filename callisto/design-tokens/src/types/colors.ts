@@ -1,5 +1,5 @@
 export type Color = {
-  DEFAULT: string,
+  DEFAULT: string;
   tint: {
     10: string,
     20: string,
@@ -10,7 +10,7 @@ export type Color = {
     70: string,
     80: string,
     90: string
-  },
+  };
   shade: {
     10: string,
     20: string,
@@ -21,11 +21,12 @@ export type Color = {
     70: string,
     80: string,
     90: string
-  }
+  };
+  toString: () => string;
 }
 
 export type NeutralColor = {
-  DEFAULT: string,
+  DEFAULT: string;
   tint: {
     10: string,
     20: string,
@@ -39,7 +40,7 @@ export type NeutralColor = {
     100: string,
     110: string,
     120: string
-  },
+  };
   shade: {
     10: string,
     20: string,
@@ -53,7 +54,8 @@ export type NeutralColor = {
     100: string,
     110: string,
     120: string
-  }  
+  };
+  toString: () => string;
 }
 
 export type Aliases = {

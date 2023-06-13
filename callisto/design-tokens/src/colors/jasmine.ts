@@ -23,5 +23,8 @@ export const jasmine: Color = {
     70: '#4C442C',
     80: '#322D1D',
     90: '#19170F'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

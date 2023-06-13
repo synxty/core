@@ -23,5 +23,8 @@ export const sandy: Color = {
     70: '#4C3110',
     80: '#33210B',
     90: '#191005'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

@@ -23,5 +23,8 @@ export const mulberry: Color = {
     70: '#341326',
     80: '#230D19',
     90: '#11060D'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

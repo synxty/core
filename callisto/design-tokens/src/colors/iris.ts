@@ -23,5 +23,8 @@ export const iris: Color = {
     70: '#1B193A',
     80: '#121026',
     90: '#090813'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

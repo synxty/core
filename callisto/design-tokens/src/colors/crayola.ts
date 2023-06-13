@@ -23,5 +23,8 @@ export const crayola: Color = {
     70: '#4B2311',
     80: '#32180C',
     90: '#190C06'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

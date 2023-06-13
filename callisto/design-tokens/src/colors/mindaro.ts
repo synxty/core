@@ -23,5 +23,8 @@ export const mindaro: Color = {
     70: '#3A4228',
     80: '#272C1B',
     90: '#13160D'
+  },
+  toString() {
+    return this.DEFAULT
   }
 };

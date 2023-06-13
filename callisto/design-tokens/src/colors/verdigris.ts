@@ -23,5 +23,8 @@ export const verdigris: Color = {
     70: '#0B3538',
     80: '#082325',
     90: '#041213'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

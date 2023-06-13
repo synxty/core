@@ -23,5 +23,8 @@ export const xanthous: Color = {
     70: '#4C3A1E',
     80: '#332714',
     90: '#19130A'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }

@@ -15,5 +15,8 @@ export const black: Omit<NeutralColor, 'shade'> = {
     100: '#555555',
     110: '#666666',
     120: '#777777'
+  },
+  toString() {
+    return this.DEFAULT
   }
 }
