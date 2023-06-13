@@ -1,6 +1,6 @@
 import { NeutralColor } from '../types/colors';
 
-export const white: NeutralColor = {
+export const white: Omit<NeutralColor, 'tint'> = {
   DEFAULT: '#FFFFFF',
   shade: {
     10: '#F7F7F7',

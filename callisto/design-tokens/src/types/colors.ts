@@ -26,7 +26,7 @@ export type Color = {
 
 export type NeutralColor = {
   DEFAULT: string,
-  tint?: {
+  tint: {
     10: string,
     20: string,
     30: string,
@@ -40,7 +40,7 @@ export type NeutralColor = {
     110: string,
     120: string
   },
-  shade?: {
+  shade: {
     10: string,
     20: string,
     30: string,
