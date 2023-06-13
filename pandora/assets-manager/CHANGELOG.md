@@ -1,5 +1,12 @@
 # @synxty/assets-manager
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [d2dd0bd]
+  - @synxty/brand-assets@1.1.1
+
 ## 2.0.0
 
 ### Major Changes
