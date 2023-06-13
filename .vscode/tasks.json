@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "generate-eden-theme-file",
+      "type": "shell",
+      "command": "source ~/.nvm/nvm.sh && nvm use && pnpm --filter eden-vscode build",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "new"
+      }
+    }
+  ]
+}

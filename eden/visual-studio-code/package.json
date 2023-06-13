@@ -1,0 +1,52 @@
+{
+  "name": "@synxty/eden-vscode",
+  "version": "0.0.0",
+  "displayName": "Eden",
+  "description": "Bring your code to paradise",
+  "preview": true,
+  "icon": "icon-vscode-light.png",
+  "license": "MIT",
+  "publisher": "synxty",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synxty/core.git",
+    "directory": "eden/visual-studio-code"
+  },
+  "keywords": [
+    "eden",
+    "paradise",
+    "theme",
+    "color-theme"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Eden",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eden-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@synxty/assets-manager": "workspace:^",
+    "@synxty/brand-assets": "workspace:^",
+    "@synxty/design-tokens": "workspace:^",
+    "@types/node": "^18.16.0",
+    "@vscode/vsce": "^2.19.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "dev": "tsx watch scripts/build.ts",
+    "lint:": "tsc",
+    "prepublish": "tsx scripts/generate-icon.ts",
+    "publish": "vsce publish"
+  }
+}
