@@ -46,7 +46,7 @@
     "build": "tsx scripts/build.ts",
     "dev": "tsx watch scripts/build.ts",
     "lint:": "tsc",
-    "prepublish": "tsx scripts/generate-icon.ts",
+    "prepublish": "tsx scripts/generate-icon.ts && vsce package",
     "publish": "vsce publish"
   }
 }
