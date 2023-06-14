@@ -1,12 +1,15 @@
 {
   "name": "eden-vscode",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "displayName": "Eden",
   "description": "Bring your code to paradise",
   "preview": true,
   "icon": "eden-icon-vscode-light.png",
   "license": "MIT",
   "publisher": "synxty",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "engines": {
     "vscode": "^1.79.0"
   },
