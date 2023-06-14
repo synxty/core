@@ -4,7 +4,7 @@
   "displayName": "Eden",
   "description": "Bring your code to paradise",
   "preview": true,
-  "icon": "icon-vscode-light.png",
+  "icon": "eden-icon-vscode-light.png",
   "license": "MIT",
   "publisher": "synxty",
   "engines": {
@@ -43,10 +43,10 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "tsx scripts/build.ts",
+    "build": "tsx scripts/build.ts && tsx scripts/generate-icon.ts",
     "dev": "tsx watch scripts/build.ts",
     "lint:": "tsc",
-    "prepublish": "tsx scripts/generate-icon.ts && vsce package",
+    "prepublish": "vsce package",
     "publish": "vsce publish"
   }
 }
