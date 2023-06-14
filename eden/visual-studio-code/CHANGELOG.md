@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.6
+
+### Patch Changes
+
+- b96b5a1: Add --no-dependencies to prepublish
+
 ## 0.0.5
 
 ### Patch Changes
