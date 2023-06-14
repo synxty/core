@@ -1,0 +1,58 @@
+import { colors, aliases } from '@synxty/design-tokens';
+import { EditorColorsGeneral } from '../types';
+import { TESTING } from '../constants';
+
+const { primary, info } = aliases;
+const { black, white } = colors;
+
+export const general: EditorColorsGeneral = {
+  "editor.background": black.tint[10],
+  "editor.foreground": white.shade[10],
+  "editorLineNumber.foreground": black.tint[90],
+  "editorLineNumber.activeForeground": primary.DEFAULT,
+  "editorLineNumber.dimmedForeground": black.tint[50],
+  "editorCursor.background": black.tint[10],
+  "editorCursor.foreground": primary.DEFAULT,
+  "editor.selectionBackground": primary.shade[40],
+  "editor.selectionForeground": black.tint[10],
+  "editor.inactiveSelectionBackground": primary.shade[70],
+  "editor.selectionHighlightBackground": primary.shade[70],
+  //"editor.selectionHighlightBorder": TESTING,
+  "editor.wordHighlightBackground": primary.shade[70],
+  //"editor.wordHighlightBorder": TESTING,
+  "editor.wordHighlightStrongBackground": primary.shade[30],
+  //"editor.wordHighlightStrongBorder": TESTING,
+  "editor.wordHighlightTextBackground": primary.shade[70],
+  //"editor.wordHighlightTextBorder": TESTING,
+  "editor.findMatchBackground": primary.shade[70],
+  "editor.findMatchHighlightBackground": primary.shade[70],
+  "editor.findRangeHighlightBackground": black.tint[30],
+  //"editor.findMatchBorder": TESTING,
+  //"editor.findMatchHighlightBorder": TESTING,
+  //"editor.findRangeHighlightBorder": TESTING,
+  "search.resultsInfoForeground": info.DEFAULT,
+  "searchEditor.findMatchBackground": primary.shade[30],
+  //"searchEditor.findMatchBorder": TESTING,
+  "searchEditor.textInputBorder": primary.DEFAULT,
+  "editor.hoverHighlightBackground": primary.shade[30],
+  "editor.lineHighlightBackground": black.tint[30],
+  //"editor.lineHighlightBorder": TESTING,
+  "editorUnicodeHighlight.border": TESTING,
+  "editorUnicodeHighlight.background": TESTING,
+  "editorLink.activeForeground": white.shade[10],
+  "editor.rangeHighlightBackground": black.tint[30],
+  //"editor.rangeHighlightBorder": TESTING,
+  "editor.symbolHighlightBackground": primary.shade[70],
+  //"editor.symbolHighlightBorder": TESTING,
+  //"editorWhitespace.foreground": black.tint[30],
+  //"editorIndentGuide.background": black.tint[30],
+  "editorIndentGuide.activeBackground": primary.DEFAULT,
+  "editorInlayHint.background": TESTING,
+  "editorInlayHint.foreground": TESTING,
+  "editorInlayHint.typeForeground": TESTING,
+  "editorInlayHint.typeBackground": TESTING,
+  "editorInlayHint.parameterForeground": TESTING,
+  "editorInlayHint.parameterBackground": TESTING,
+  "editorRuler.foreground": black.tint[30],
+  "editor.linkedEditingBackground": TESTING
+}

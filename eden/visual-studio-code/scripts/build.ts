@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { template } from '../src/template';
-import { editorColors } from '../src/editor';
+import { editorColors } from '../src/editorColors';
 
 const result = {
   ...template,

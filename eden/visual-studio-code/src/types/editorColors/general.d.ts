@@ -1,6 +1,4 @@
-import { colors } from '@synxty/design-tokens';
-
-const editorKeys = [
+const editorColorsGeneralKeys = [
   "editor.background",
   "editor.foreground",
   "editorLineNumber.foreground",
@@ -52,11 +50,4 @@ const editorKeys = [
   "editor.linkedEditingBackground"
 ] as const;
 
-type EditorColors = Partial<{ [K in typeof editorKeys[number]]: string }>; ;
-
-export const editorColors: EditorColors = {
-  "editor.background": colors.black.tint?.[10],
-  "editor.foreground": colors.white.shade?.[10],
-  "editorLineNumber.foreground": colors.bittersweet.tint[10],
-  "editorLineNumber.activeForeground": colors.bittersweet.DEFAULT,
-}
+export type EditorColorsGeneral = Partial<{ [K in typeof editorColorsGeneralKeys[number]]: string }>;
