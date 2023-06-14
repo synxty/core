@@ -12,6 +12,7 @@ env:
   NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
   FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+  VSCE_PAT: ${{ secrets.VSCE_PAT }}
 
 jobs:
   build:
