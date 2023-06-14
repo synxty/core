@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.3
+
+### Patch Changes
+
+- fa29a74: Fixed extension name
+
 ## 0.0.2
 
 ### Patch Changes
