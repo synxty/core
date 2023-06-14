@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.7
+
+### Patch Changes
+
+- 159c135: Add publishConfig
+
 ## 0.0.6
 
 ### Patch Changes
