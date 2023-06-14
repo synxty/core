@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.5
+
+### Patch Changes
+
+- 7570da9: Add eden icon
+
 ## 0.0.4
 
 ### Patch Changes
