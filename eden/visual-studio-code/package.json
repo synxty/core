@@ -1,6 +1,6 @@
 {
   "name": "@synxty/eden-vscode",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "displayName": "Eden",
   "description": "Bring your code to paradise",
   "preview": true,
