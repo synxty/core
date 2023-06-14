@@ -2,4 +2,4 @@
 "eden-vscode": patch
 ---
 
-Add publishConfig
+Add vat to publish script
