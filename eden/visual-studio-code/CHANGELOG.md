@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.4
+
+### Patch Changes
+
+- 466f155: Added LICENSE
+
 ## 0.0.3
 
 ### Patch Changes
