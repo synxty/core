@@ -1,5 +1,11 @@
 # @synxty/design-tokens
 
+## 0.1.3
+
+### Patch Changes
+
+- e2dc605: Small code refactor to make color configs more extensible
+
 ## 0.1.2
 
 ### Patch Changes
