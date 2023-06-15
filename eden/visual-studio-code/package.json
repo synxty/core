@@ -7,7 +7,6 @@
   "icon": "eden-icon-vscode-light.png",
   "license": "MIT",
   "publisher": "synxty",
-  "private": true,
   "engines": {
     "vscode": "^1.79.0"
   },
