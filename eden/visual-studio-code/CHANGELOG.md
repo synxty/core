@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.8
+
+### Patch Changes
+
+- e3091a2: Add vat to publish script
+
 ## 0.0.7
 
 ### Patch Changes
