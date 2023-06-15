@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.11
+
+### Patch Changes
+
+- aa094be: Fix package name
+
 ## 0.0.10
 
 ### Patch Changes
