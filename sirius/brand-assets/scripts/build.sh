@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo '> Importing icons from Figma...'
 pnpm tsx -r dotenv/config ./node_modules/@figma-export/cli/dist/run.js use-config src/generate-assets/figma-import
 

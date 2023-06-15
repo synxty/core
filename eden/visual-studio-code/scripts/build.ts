@@ -9,8 +9,11 @@ const result = {
   }
 }
 
-const THEME_PATH = 'themes';
+const THEME_DIRECTORY = 'themes';
+const THEME_FILE_NAME = 'eden-color-theme.json';
+const THEME_PATH = `${THEME_DIRECTORY}/${THEME_FILE_NAME}`
 
-if(!existsSync(THEME_PATH)) mkdirSync(THEME_PATH);
+if (!existsSync(THEME_DIRECTORY)) mkdirSync(THEME_DIRECTORY);
 
-writeFileSync(`${THEME_PATH}/eden-color-theme.json`, JSON.stringify(result, null, 2));
+writeFileSync(THEME_PATH, JSON.stringify(result, null, 2));
+console.log('Theme file written to', THEME_PATH)
