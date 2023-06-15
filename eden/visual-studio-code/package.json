@@ -7,9 +7,6 @@
   "icon": "eden-icon-vscode-light.png",
   "license": "MIT",
   "publisher": "synxty",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "engines": {
     "vscode": "^1.79.0"
   },
