@@ -24,7 +24,6 @@
     "lint:": "tsc",
     "test": "vitest --run --no-threads",
     "test:coverage": "vitest --run --coverage --no-threads ",
-    "test:watch": "vitest --no-threads",
-    "release": "pnpm publish"
+    "test:watch": "vitest --no-threads"
   }
 }
