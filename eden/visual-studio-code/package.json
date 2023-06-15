@@ -50,6 +50,6 @@
     "dev": "tsx watch scripts/build.ts",
     "lint:": "tsc",
     "prepublish": "vsce package --no-dependencies",
-    "publish": "vsce publish -p $VSCE_PAT"
+    "publish": "echo 'Custom publish script executed'"
   }
 }
