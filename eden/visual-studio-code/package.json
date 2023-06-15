@@ -45,7 +45,6 @@
   "scripts": {
     "build": "tsx scripts/build.ts && tsx scripts/generate-icon.ts",
     "dev": "tsx watch scripts/build.ts",
-    "lint:": "tsc",
-    "postpublish": "tsx scripts/generate-marketplace-name.ts && vsce package --no-dependencies && vsce publish"
+    "lint:": "tsc"
   }
 }
