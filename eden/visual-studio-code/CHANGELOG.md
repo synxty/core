@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.9
+
+### Patch Changes
+
+- 57c9e33: Add release script
+
 ## 0.0.8
 
 ### Patch Changes
