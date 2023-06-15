@@ -6,15 +6,15 @@
       "outputs": ["dist/**", "lib/**"]
     },
     "test": {
-      "dependsOn": ["^build"]
-    },
-    "lint": {},
-    "release": {
       "dependsOn": ["build"]
+    },
+    "release": {
+      "dependsOn": ["build", "test"]
     },
     "dev": {
       "cache": false,
       "persistent": true
-    }
+    },
+    "lint": {}
   }
 }
