@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.10
+
+### Patch Changes
+
+- 76ea427: Add postpublish script
+
 ## 0.0.9
 
 ### Patch Changes
