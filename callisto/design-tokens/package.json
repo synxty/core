@@ -37,7 +37,6 @@
   "scripts": {
     "build": "tsup",
     "generate-colors-samples": "tsx scripts/generate-colors-samples.ts",
-    "lint:": "tsc",
-    "release": "pnpm publish"
+    "lint:": "tsc"
   }
 }
