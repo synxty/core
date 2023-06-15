@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.14
+
+### Patch Changes
+
+- 1108de8: Added release script
+
 ## 0.0.13
 
 ### Patch Changes
