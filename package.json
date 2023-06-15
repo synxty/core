@@ -13,10 +13,10 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "ci:publish": "changeset publish",
     "ci:version": "changeset version",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "release": "turbo run release",
     "test": "turbo run test"
   }
 }

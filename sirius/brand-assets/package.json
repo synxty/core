@@ -42,6 +42,7 @@
   },
   "scripts": {
     "build": "sh scripts/build.sh",
-    "lint": "tsc"
+    "lint": "tsc",
+    "release": "pnpm publish"
   }
 }

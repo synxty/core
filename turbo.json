@@ -9,6 +9,9 @@
       "dependsOn": ["^build"]
     },
     "lint": {},
+    "release": {
+      "dependsOn": ["build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

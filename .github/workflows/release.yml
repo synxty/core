@@ -41,6 +41,6 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm ci:version
-          publish: pnpm ci:publish
+          publish: pnpm release
           commit: 'Release: Version Packages'
           title: 'Release: Version Packages'
