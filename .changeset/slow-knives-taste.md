@@ -2,4 +2,4 @@
 "eden-vscode": patch
 ---
 
-Add release script
+Add postpublish script
