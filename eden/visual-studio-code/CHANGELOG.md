@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.13
+
+### Patch Changes
+
+- 7e284c1: Reenabled postpublish script
+
 ## 0.0.12
 
 ### Patch Changes
