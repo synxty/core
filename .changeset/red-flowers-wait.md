@@ -2,4 +2,4 @@
 "@synxty/eden-vscode": minor
 ---
 
-Add Overview ruler colors
+Add Overview Ruler colors
