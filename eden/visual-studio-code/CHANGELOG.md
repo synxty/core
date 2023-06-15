@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.0.12
+
+### Patch Changes
+
+- 1bf2488: Temporarily disabled the postpublish script
+
 ## 0.0.11
 
 ### Patch Changes
