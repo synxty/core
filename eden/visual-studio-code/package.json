@@ -1,5 +1,5 @@
 {
-  "name": "eden-vscode",
+  "name": "@synxty/eden-vscode",
   "version": "0.0.10",
   "displayName": "Eden",
   "description": "Bring your code to paradise",
@@ -46,7 +46,6 @@
     "build": "tsx scripts/build.ts && tsx scripts/generate-icon.ts",
     "dev": "tsx watch scripts/build.ts",
     "lint:": "tsc",
-    "prepublishOnly": "vsce package --no-dependencies",
-    "postpublish": "vsce publish"
+    "postpublish": "tsx scripts/generate-marketplace-name.ts && vsce package --no-dependencies && vsce publish"
   }
 }
