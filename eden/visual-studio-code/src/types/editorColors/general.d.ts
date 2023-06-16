@@ -48,7 +48,23 @@ const generalKeys = [
   "editorInlayHint.parameterBackground",
   "editorRuler.foreground",
   "editor.linkedEditingBackground",
-  "editor.foldBackground"
+  "editor.foldBackground",
+  "editorError.foreground",
+  "editorError.border",
+  "editorError.background",
+  "editorWarning.foreground",
+  "editorWarning.border",
+  "editorWarning.background",
+  "editorInfo.foreground",
+  "editorInfo.border",
+  "editorInfo.background",
+  "editorHint.foreground",
+  "editorHint.border",
+  "problemsErrorIcon.foreground",
+  "problemsWarningIcon.foreground",
+  "problemsInfoIcon.foreground",
+  "editorUnnecessaryCode.border",
+  "editorUnnecessaryCode.opacity"
 ] as const;
 
 export type General = Partial<{ [K in typeof generalKeys[number]]: string }>;
