@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.1.1
+
+### Patch Changes
+
+- 11d39a2: Fix icon source on package json
+
 ## 0.1.0
 
 ### Minor Changes
