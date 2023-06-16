@@ -2,7 +2,7 @@ import { colors, aliases } from '@synxty/design-tokens';
 import { General } from '../types';
 import { TESTING } from '../constants';
 
-const { primary, info } = aliases;
+const { primary, info, danger, warning } = aliases;
 const { black, white } = colors;
 
 export const general: General = {
@@ -55,5 +55,19 @@ export const general: General = {
   "editorInlayHint.parameterBackground": TESTING,
   "editorRuler.foreground": black.tint[30],
   "editor.linkedEditingBackground": TESTING,
-  "editor.foldBackground": black.tint[30]
+  "editor.foldBackground": black.tint[30],
+  "editorError.foreground": danger.DEFAULT,
+  //"editorError.border": TESTING,
+  //"editorError.background": TESTING,
+  "editorWarning.foreground": warning.DEFAULT,
+  //"editorWarning.border": TESTING,
+  //"editorWarning.background": TESTING,
+  "editorInfo.foreground": info.DEFAULT,
+  //"editorInfo.border": TESTING,
+  //"editorInfo.background": TESTING,
+  "problemsErrorIcon.foreground": TESTING,
+  "problemsWarningIcon.foreground": TESTING,
+  "problemsInfoIcon.foreground": TESTING,
+  "editorUnnecessaryCode.border": TESTING,
+  "editorUnnecessaryCode.opacity": TESTING
 }

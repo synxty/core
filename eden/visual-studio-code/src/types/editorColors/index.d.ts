@@ -13,10 +13,18 @@ export { BracketPairs } from './bracketPairs';
 import { OverviewRuler } from './overviewRuler';
 export { OverviewRuler } from './overviewRuler';
 
+import { Gutter } from './gutter';
+export { Gutter } from './gutter';
+
+import { CommentsWidget } from './commentsWidget';
+export { CommentsWidget } from './commentsWidget';
+
 export type EditorColors = 
   General | 
   CodeLens | 
   LightBulb |
   BracketPairs |
-  OverviewRuler
+  OverviewRuler |
+  Gutter |
+  CommentsWidget
 ;
