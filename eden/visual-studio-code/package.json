@@ -4,7 +4,7 @@
   "displayName": "Eden",
   "description": "Bring your code to paradise",
   "preview": true,
-  "icon": "eden-icon-vscode-light.png",
+  "icon": "eden-icon-vscode-dark.png",
   "license": "MIT",
   "publisher": "synxty",
   "engines": {
