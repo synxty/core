@@ -1,4 +1,4 @@
-const editorColorsGeneralKeys = [
+const generalKeys = [
   "editor.background",
   "editor.foreground",
   "editorLineNumber.foreground",
@@ -47,7 +47,8 @@ const editorColorsGeneralKeys = [
   "editorInlayHint.parameterForeground",
   "editorInlayHint.parameterBackground",
   "editorRuler.foreground",
-  "editor.linkedEditingBackground"
+  "editor.linkedEditingBackground",
+  "editor.foldBackground"
 ] as const;
 
-export type EditorColorsGeneral = Partial<{ [K in typeof editorColorsGeneralKeys[number]]: string }>;
+export type General = Partial<{ [K in typeof generalKeys[number]]: string }>;

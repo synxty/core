@@ -1,12 +1,12 @@
 import { colors, aliases } from '@synxty/design-tokens';
-import { EditorColorsGeneral } from '../types';
+import { General } from '../types';
 import { TESTING } from '../constants';
 
 const { primary, info } = aliases;
 const { black, white } = colors;
 
-export const general: EditorColorsGeneral = {
-  "editor.background": black.tint[10],
+export const general: General = {
+  "editor.background": black.tint[20],
   "editor.foreground": white.shade[10],
   "editorLineNumber.foreground": black.tint[90],
   "editorLineNumber.activeForeground": primary.DEFAULT,
@@ -54,5 +54,6 @@ export const general: EditorColorsGeneral = {
   "editorInlayHint.parameterForeground": TESTING,
   "editorInlayHint.parameterBackground": TESTING,
   "editorRuler.foreground": black.tint[30],
-  "editor.linkedEditingBackground": TESTING
+  "editor.linkedEditingBackground": TESTING,
+  "editor.foldBackground": black.tint[30]
 }
