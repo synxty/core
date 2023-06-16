@@ -1,5 +1,19 @@
 # @synxty/eden-vscode
 
+## 0.2.0
+
+### Minor Changes
+
+- 4ded561: Added Gutter colors
+- 4ded561: Added foregrounds to errors, warnings and infos
+- 4ded561: Added Comments Widget colors
+
+### Patch Changes
+
+- 4ded561: Fix CodeLens foreground
+- 4ded561: Fix Overview Ruler word highlight text foreground and bracket match foreground
+- 4ded561: Fix Lightbulb autofix foreground
+
 ## 0.1.1
 
 ### Patch Changes
