@@ -103,7 +103,9 @@
     "sideBarTitle.foreground": "#F7F7F7",
     "sideBarSectionHeader.background": "#191919",
     "sideBarSectionHeader.foreground": "#F7F7F7",
-    "sideBarSectionHeader.border": "#111111"
+    "sideBarSectionHeader.border": "#111111",
+    "window.activeBorder": "#111111",
+    "window.inactiveBorder": "#111111"
   },
   "tokenColors": []
 }
