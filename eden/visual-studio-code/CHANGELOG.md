@@ -1,5 +1,16 @@
 # @synxty/eden-vscode
 
+## 0.1.0
+
+### Minor Changes
+
+- ac990af: Update editors background color
+- 9a25f71: Add CodeLens colors
+- b2b7723: Update theme's icon to better reflect a dark theme
+- 060676a: Add Overview Ruler colors
+- e63d58f: Add Lightbulb colors
+- c1585e1: Add Brackets colors
+
 ## 0.0.14
 
 ### Patch Changes
