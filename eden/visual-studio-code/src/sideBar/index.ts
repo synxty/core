@@ -10,7 +10,7 @@ export const sideBar: SideBar = {
   "sideBar.border": black.tint[20],
   "sideBar.dropBackground": TESTING,
   "sideBarTitle.foreground": white.shade[10],
-  "sideBarSectionHeader.background": black.tint[40],
+  "sideBarSectionHeader.background": black.tint[30],
   "sideBarSectionHeader.foreground": white.shade[10],
-  "sideBarSectionHeader.border": black.tint[30]
+  "sideBarSectionHeader.border": black.tint[20]
 };
