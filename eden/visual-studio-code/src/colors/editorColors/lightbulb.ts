@@ -1,5 +1,5 @@
 import { aliases } from '@synxty/design-tokens';
-import { LightBulb } from '../types';
+import { LightBulb } from '../../types';
 
 const { amber, chartreuse } = aliases;
 

@@ -1,7 +1,7 @@
 import { colors, aliases } from '@synxty/design-tokens';
 
-import { TESTING } from '../constants';
-import { OverviewRuler } from '../types';
+import { TESTING } from '../../constants';
+import { OverviewRuler } from '../../types';
 
 const { primary, amber, danger, info, success, warning } = aliases;
 const { black } = colors;

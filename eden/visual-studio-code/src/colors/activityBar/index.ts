@@ -1,6 +1,6 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { TESTING } from '../constants';
-import { ActivityBar } from '../types/ActivityBar';
+import { TESTING } from '../../constants';
+import { ActivityBar } from '../../types';
 
 const { black } = colors;
 const { primary, secondary } = aliases;

@@ -1,4 +1,4 @@
-import { EditorColors } from '../types';
+import { EditorColors } from '../../types';
 import { bracketPairs } from './bracketPairs';
 import { codeLens } from './codeLens';
 import { commentsWidget } from './commentsWidget';

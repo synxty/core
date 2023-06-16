@@ -1,6 +1,16 @@
 {
   "name": "Eden",
   "colors": {
+    "activityBar.background": "#111111",
+    "activityBar.dropBorder": "#FCE393",
+    "activityBar.foreground": "#FCE393",
+    "activityBar.inactiveForeground": "#4D4D4D",
+    "activityBar.border": "#111111",
+    "activityBarBadge.background": "#FFA337",
+    "activityBarBadge.foreground": "#111111",
+    "activityBar.activeBorder": "#FCE393",
+    "activityBar.activeBackground": "#191919",
+    "activityBar.activeFocusBorder": "#7541B4",
     "editor.background": "#111111",
     "editor.foreground": "#F7F7F7",
     "editorLineNumber.foreground": "#4D4D4D",
@@ -93,17 +103,7 @@
     "sideBarTitle.foreground": "#F7F7F7",
     "sideBarSectionHeader.background": "#191919",
     "sideBarSectionHeader.foreground": "#F7F7F7",
-    "sideBarSectionHeader.border": "#111111",
-    "activityBar.background": "#111111",
-    "activityBar.dropBorder": "#FCE393",
-    "activityBar.foreground": "#FCE393",
-    "activityBar.inactiveForeground": "#4D4D4D",
-    "activityBar.border": "#111111",
-    "activityBarBadge.background": "#FFA337",
-    "activityBarBadge.foreground": "#111111",
-    "activityBar.activeBorder": "#FCE393",
-    "activityBar.activeBackground": "#191919",
-    "activityBar.activeFocusBorder": "#7541B4"
+    "sideBarSectionHeader.border": "#111111"
   },
   "tokenColors": []
 }
