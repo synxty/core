@@ -4,5 +4,5 @@ import { EdenIcon } from '@synxty/brand-assets';
 convertIconToPNG(EdenIcon, {
   appName: 'vscode',
   outputName: 'eden-icon',
-  theme: 'light'
+  theme: 'dark'
 })
