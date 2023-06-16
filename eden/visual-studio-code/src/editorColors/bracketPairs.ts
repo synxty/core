@@ -1,9 +1,7 @@
 import { colors, aliases } from '@synxty/design-tokens';
-
-import { TESTING } from '../constants';
 import { BracketPairs } from '../types';
 
-const { primary, magenta, violet, teal, amber, chartreuse, red, danger } = aliases;
+const { primary, magenta, violet, teal, amber, chartreuse, danger } = aliases;
 const { black } = colors;
 
 export const bracketPairs: BracketPairs = {

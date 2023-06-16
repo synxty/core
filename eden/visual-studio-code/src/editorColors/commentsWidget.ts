@@ -1,4 +1,3 @@
-import { colors } from '@synxty/design-tokens';
 import { CommentsWidget } from '../types';
 import { TESTING } from '../constants';
 
