@@ -85,7 +85,15 @@
     "editorCommentsWidget.rangeBackground": "#7541B4",
     "editorCommentsWidget.rangeBorder": "#7541B4",
     "editorCommentsWidget.rangeActiveBackground": "#7541B4",
-    "editorCommentsWidget.rangeActiveBorder": "#7541B4"
+    "editorCommentsWidget.rangeActiveBorder": "#7541B4",
+    "sideBar.background": "#191919",
+    "sideBar.foreground": "#F7F7F7",
+    "sideBar.border": "#111111",
+    "sideBar.dropBackground": "#7541B4",
+    "sideBarTitle.foreground": "#F7F7F7",
+    "sideBarSectionHeader.background": "#222222",
+    "sideBarSectionHeader.foreground": "#F7F7F7",
+    "sideBarSectionHeader.border": "#191919"
   },
   "tokenColors": []
 }
