@@ -15,6 +15,16 @@
                 "${workspaceFolder}/eden/code-samples"
             ],
             "preLaunchTask": "generate-eden-theme-file"
+        },
+        {
+            "name": "Eden Debug (with extensions)",
+            "type": "extensionHost",
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}/eden/visual-studio-code",
+                "${workspaceFolder}/eden/code-samples"
+            ],
+            "preLaunchTask": "generate-eden-theme-file"
         }   
     ]
 }
