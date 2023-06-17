@@ -1,13 +1,10 @@
-import { activityBar } from './activityBar';
-import { editorColors } from './editorColors';
-import { sideBar } from './sideBar';
-import { template } from './template';
+import colors from './colors';
+import { Theme } from './types';
 
-export default {
-  ...template,
-  colors: {
-    ...editorColors,
-    ...sideBar,
-    ...activityBar
-  }
+const theme: Theme = {
+  name: 'Eden',
+  colors,
+  tokenColors: []
 }
+
+export default theme;

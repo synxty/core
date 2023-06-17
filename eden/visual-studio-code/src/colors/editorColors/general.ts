@@ -1,6 +1,6 @@
 import { colors, aliases } from '@synxty/design-tokens';
-import { General } from '../types';
-import { TESTING } from '../constants';
+import { General } from '../../types';
+import { TESTING } from '../../constants';
 
 const { primary, info, danger, warning } = aliases;
 const { black, white } = colors;

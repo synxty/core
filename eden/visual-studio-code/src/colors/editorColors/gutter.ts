@@ -1,6 +1,6 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { TESTING } from '../constants';
-import { Gutter } from '../types';
+import { TESTING } from '../../constants';
+import { Gutter } from '../../types';
 
 const { info, success, danger } = aliases;
 const { black } = colors;
