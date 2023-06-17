@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.3.2
+
+### Patch Changes
+
+- e5c81cf: Enabled dev mode in debugger
+
 ## 0.3.1
 
 ### Patch Changes
