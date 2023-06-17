@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.3.1
+
+### Patch Changes
+
+- 3aa372b: Added developer mode
+
 ## 0.3.0
 
 ### Minor Changes
