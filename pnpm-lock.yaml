@@ -43,6 +43,9 @@ importers:
       '@vscode/vsce':
         specifier: ^2.19.0
         version: 2.19.0
+      chalk:
+        specifier: ^5.2.0
+        version: 5.2.0
       tsx:
         specifier: ^3.12.7
         version: 3.12.7
@@ -1106,6 +1109,11 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: true
+
+  /chalk@5.2.0:
+    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /chardet@0.7.0:

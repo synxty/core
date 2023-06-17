@@ -1,8 +1,8 @@
 import { writeFileSync } from 'node:fs';
-import pkg from '../package.json';
+import pkg from '../../package.json';
 
 if (process.argv.length !== 3) {
-  console.error('Please provide only one argument.');
+  console.error('Please provide one argument.');
   process.exit(1);
 }
 
