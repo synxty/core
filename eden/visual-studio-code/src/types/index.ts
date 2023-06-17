@@ -1,27 +1,32 @@
 import { ActivityBar } from './ActivityBar';
 import { EditorColors } from './EditorColors';
+import { EditorGroupsAndTabs } from './EditorGroupsAndTabs';
 import { SideBar } from './SideBar';
 import { TitleBar } from './TitleBar';
 import { WindowBorder } from './WindowBorder';
 
-export type * from './EditorColors';
+export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[number]]: string }>;
+
 export type * from './ActivityBar';
+export type * from './EditorColors';
+export type * from './EditorGroupsAndTabs';
 export type * from './SideBar';
 export type * from './TitleBar';
 export type * from './WindowBorder';
 
-export type Colors = 
+export type ThemeColors = 
   ActivityBar | 
   EditorColors | 
   SideBar | 
   WindowBorder |
-  TitleBar
+  TitleBar |
+  EditorGroupsAndTabs
 ;
 
 export type TokenColors = [];
 
 export type Theme = {
   name: string;
-  colors: Colors;
+  colors: ThemeColors;
   tokenColors: TokenColors;
 }

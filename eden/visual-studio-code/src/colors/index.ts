@@ -1,13 +1,18 @@
+import { ThemeColors } from '../types';
 import { activityBar } from './activityBar';
 import { editorColors } from './editorColors';
+import { editorGroupsAndTabs } from './editorGroupsAndTabs';
 import { sideBar } from './sideBar';
 import { titleBar } from './titleBar';
 import { windowBorder } from './windowBorder';
 
-export default {
+const themeColors: ThemeColors = {
   ...activityBar,
   ...editorColors,
   ...sideBar,
   ...windowBorder,
-  ...titleBar
+  ...titleBar,
+  ...editorGroupsAndTabs
 }
+
+export default themeColors;
