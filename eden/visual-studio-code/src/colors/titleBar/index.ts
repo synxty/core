@@ -8,5 +8,5 @@ export const titleBar: TitleBar = {
   "titleBar.activeForeground": black.tint[120],
   "titleBar.inactiveBackground": black.tint[20],
   "titleBar.inactiveForeground": black.tint[90],
-  "titleBar.border": black.tint[30]
+  "titleBar.border": black.tint[20]
 };
