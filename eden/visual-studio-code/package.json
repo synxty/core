@@ -27,9 +27,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Eden",
+        "label": "Eden Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/eden-color-theme.json"
+        "path": "./themes/dark.json"
       }
     ]
   },
@@ -39,13 +39,14 @@
     "@synxty/design-tokens": "workspace:^",
     "@types/node": "^18.16.0",
     "@vscode/vsce": "^2.19.0",
+    "chalk": "^5.2.0",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "tsx scripts/build.ts && tsx scripts/generate-icon.ts",
-    "dev": "tsx watch scripts/build.ts",
+    "build": "sh scripts/build.sh",
+    "dev": "sh scripts/dev.sh",
     "lint:": "tsc",
-    "postpublish": "sh scripts/release-to-marketplace.sh"
+    "postpublish": "sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
   }
 }
