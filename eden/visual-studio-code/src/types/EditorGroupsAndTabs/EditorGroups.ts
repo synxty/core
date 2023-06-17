@@ -11,7 +11,10 @@ const editorGroupsProps = [
   "editorGroup.focusedEmptyBorder",
   "editorGroup.dropIntoPromptForeground",
   "editorGroup.dropIntoPromptBackground",
-  "editorGroup.dropIntoPromptBorder"
+  "editorGroup.dropIntoPromptBorder",
+  "editorPane.background",
+  "sideBySideEditor.horizontalBorder",
+  "sideBySideEditor.verticalBorder"
 ] as const;
 
 export type EditorGroups = ParseThemeColors<typeof editorGroupsProps>;
