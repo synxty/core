@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.3.3
+
+### Patch Changes
+
+- 7378b78: Fixed pack script that was not generating the theme icon
+
 ## 0.3.2
 
 ### Patch Changes
