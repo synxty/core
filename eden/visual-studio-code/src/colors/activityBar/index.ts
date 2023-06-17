@@ -10,7 +10,7 @@ export const activityBar: ActivityBar = {
  "activityBar.dropBorder": primary.DEFAULT,
  "activityBar.foreground": primary.DEFAULT,
  "activityBar.inactiveForeground": black.tint[90],
- "activityBar.border": black.tint[20],
+ "activityBar.border": black.tint[30],
  "activityBarBadge.background": secondary.DEFAULT,
  "activityBarBadge.foreground": black.tint[20],
  "activityBar.activeBorder": primary.DEFAULT,
