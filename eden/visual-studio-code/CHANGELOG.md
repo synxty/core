@@ -1,5 +1,16 @@
 # @synxty/eden-vscode
 
+## 0.4.0
+
+### Minor Changes
+
+- 0bb763e: Added Editor Groups colors
+- 0bb763e: Added Tabs colors
+
+### Patch Changes
+
+- 0bb763e: Fixed Side Bar and Title Bar borders
+
 ## 0.3.3
 
 ### Patch Changes
