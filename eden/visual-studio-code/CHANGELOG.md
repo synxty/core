@@ -1,5 +1,14 @@
 # @synxty/eden-vscode
 
+## 0.3.0
+
+### Minor Changes
+
+- 959eedf: Added Title Bar colors
+- 959eedf: Add Window Border colors
+- 97ad473: Added Activity Bar colors
+- b8ef589: Added Side Bar colors
+
 ## 0.2.0
 
 ### Minor Changes
