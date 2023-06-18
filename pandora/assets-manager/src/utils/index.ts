@@ -1,7 +1,7 @@
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
 import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
-import { OutputFile, PNGSpecs } from '../types';
+import { OutputFilename, PNGSpecs } from '../types';
 
 export function createIconDocument(svgString: string): Document {
   if (!svgString.startsWith('<svg') || !svgString.endsWith('</svg>')) throw Error('Not an SVG Icon');
@@ -51,14 +51,14 @@ export async function saveSVGToPNGFile(
   await image.toFile(outputFilePath);
 };
 
-export function generateFilename({ outputFile, appName, theme }: PNGSpecs): string {
-  if (typeof outputFile === 'string') return `${outputFile}-${appName}-${theme}`;
-  if (outputFile.addSuffixes) return addSuffixes(outputFile, appName, theme);
-  return outputFile.filename;
+export function generateFilename({ outputFilename, appName, theme }: PNGSpecs): string {
+  if (typeof outputFilename === 'string') return `${outputFilename}-${appName}-${theme}`;
+  if (outputFilename.addSuffixes) return addSuffixes(outputFilename, appName, theme);
+  return outputFilename.filename;
 };
 
 export function addSuffixes( 
-  { filename, addSuffixes }: OutputFile, 
+  { filename, addSuffixes }: OutputFilename, 
   appName: SupportedApps, 
   theme: SupportedThemes) {
   const suffixes = { theme, appName };

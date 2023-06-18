@@ -1,14 +1,14 @@
 import { SupportedApps, SupportedThemes } from '@synxty/brand-assets/apps-specs';
 
 export type PNGSpecs = {
-  outputFile: OutputFile | string;
+  outputFilename: OutputFilename | string;
   appName: SupportedApps;
   theme: SupportedThemes;
 };
 
-export type OutputFile = {
+export type OutputFilename = {
   filename: string;
   addSuffixes?: FilenameSuffixes;
 }
 
-export type FilenameSuffixes = ('theme' | 'appName')[];
+export type FilenameSuffixes = ('appName' | 'theme' )[];
