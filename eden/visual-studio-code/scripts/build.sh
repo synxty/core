@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo '> Generating theme files...'
-pnpm tsx src/utils/generateThemeFiles.ts
+pnpm tsx src/utils/buildMode.ts
