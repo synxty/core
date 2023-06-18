@@ -1,5 +1,12 @@
 # @synxty/eden-vscode
 
+## 0.4.2
+
+### Patch Changes
+
+- b9d1b23: Fixed missing file from marketplace
+- b9d1b23: Fixed theme files generator script that was not being called
+
 ## 0.4.1
 
 ### Patch Changes
