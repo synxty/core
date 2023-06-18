@@ -1,6 +1,6 @@
 {
   "name": "@synxty/eden-vscode",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "displayName": "Eden",
   "description": "Bring your code to paradise",
   "preview": true,
@@ -47,6 +47,6 @@
     "build": "sh scripts/build.sh",
     "dev": "sh scripts/dev.sh",
     "lint:": "tsc",
-    "postpublish": "sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
+    "postpublish": "sh scripts/build.sh && sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
   }
 }
