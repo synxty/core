@@ -4,8 +4,8 @@ import { ICON_THEME } from '../constants';
 
 convertIconToPNG(EdenIcon, {
   appName: 'vscode',
-  outputFile: {
+  outputFilename: {
     filename: 'icon'
   },
   theme: ICON_THEME
-})
+});
