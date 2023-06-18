@@ -4,7 +4,7 @@
   "displayName": "Eden",
   "description": "Bring your code to paradise",
   "preview": true,
-  "icon": "eden-icon-vscode-dark.png",
+  "icon": "icon.png",
   "license": "MIT",
   "publisher": "synxty",
   "engines": {
@@ -47,6 +47,6 @@
     "build": "sh scripts/build.sh",
     "dev": "sh scripts/dev.sh",
     "lint:": "tsc",
-    "postpublish": "sh scripts/build.sh && sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
+    "postpublish": "sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
   }
 }
