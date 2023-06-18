@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.4.1
+
+### Patch Changes
+
+- 219cb07: Fixed missing file from marketplace
+
 ## 0.4.0
 
 ### Minor Changes
