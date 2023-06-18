@@ -9,7 +9,7 @@ describe('> Convert icon to PNG', () => {
     await convertIconToPNG(
       SynxtyIcon,
       {
-        outputName: 'test',
+        outputFile: 'test',
         appName: TEST_RESULT_APP_NAME,
         theme: 'dark'
       },

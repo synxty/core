@@ -1,9 +1,8 @@
-import { describe, it, expect, afterAll } from 'vitest';
 import { DOMParser } from '@xmldom/xmldom';
 import { SynxtyIcon } from '@synxty/brand-assets';
-import { addBackgroundToSVG, createBackground, createIconDocument, createSVGElement, saveSVGToPNGFile } from '.';
+import { PNGSpecs, addBackgroundToSVG, createBackground, createIconDocument, createSVGElement, generateFilename, saveSVGToPNGFile } from '.';
 import { statSync, unlinkSync } from 'fs';
-import { TEST_RESULT_APP_NAME, TEST_RESULT_FILE_NAME } from '../../constants';
+import { TEST_RESULT_APP_NAME, TEST_RESULT_FILE_NAME } from '../constants';
 
 describe('> Create an icon document from an svg string', () => {
   it('should create a document given a valid SVG icon as a string', () => {
@@ -54,7 +53,7 @@ describe('> Save SVG to PNG file', () => {
     const svg = createSVGElement(doc);
     await saveSVGToPNGFile(svg, 
     {
-      outputName: 'test',
+      outputFile: 'test',
       appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     },
@@ -66,7 +65,7 @@ describe('> Save SVG to PNG file', () => {
     const doc = createIconDocument(SynxtyIcon);
     const svg = createSVGElement(doc);
     await saveSVGToPNGFile(svg, {
-      outputName: 'test',
+      outputFile: 'test',
       appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     });
@@ -77,5 +76,37 @@ describe('> Save SVG to PNG file', () => {
     unlinkSync(`${__dirname}/${TEST_RESULT_FILE_NAME}`);
     unlinkSync(`./${TEST_RESULT_FILE_NAME}`);
   });
-  
 });
+
+describe('> Should generate a filename based on the given specs', () => {
+  const specs: PNGSpecs = {
+    appName: 'vscode',
+    outputFile: 'test',
+    theme: 'dark'
+  }
+  it ('should create a filename with added suffixes', () => {
+    const filename = generateFilename(specs);
+    expect(filename).toBe('test-vscode-dark');
+  });
+  it ('should create a filename without any added suffixes', () => {
+    const testSpecs: PNGSpecs = {
+      ...specs,
+      outputFile: {
+        filename: 'test',
+      },
+    }
+    const filename = generateFilename(testSpecs);
+    expect(filename).toBe('test');
+  });
+  it ('should create a file with only the specified suffixes', () => {
+    const testSpecs: PNGSpecs = {
+      ...specs,
+      outputFile: {
+        filename: 'test',
+        addSuffixes: ['appName']
+      },
+    }
+    const filename = generateFilename(testSpecs);
+    expect(filename).toBe('test-vscode');
+  })
+})
