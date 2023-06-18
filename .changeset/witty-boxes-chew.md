@@ -2,4 +2,4 @@
 "@synxty/eden-vscode": patch
 ---
 
-Fixed build script
+Fixed theme files generator script that was not being called
