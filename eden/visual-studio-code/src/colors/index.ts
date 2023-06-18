@@ -1,5 +1,6 @@
 import { ThemeColors } from '../types';
 import { activityBar } from './activityBar';
+import { baseColors } from './baseColors';
 import { editorColors } from './editorColors';
 import { editorGroupsAndTabs } from './editorGroupsAndTabs';
 import { sideBar } from './sideBar';
@@ -12,7 +13,8 @@ const themeColors: ThemeColors = {
   ...sideBar,
   ...windowBorder,
   ...titleBar,
-  ...editorGroupsAndTabs
+  ...editorGroupsAndTabs,
+  ...baseColors
 }
 
 export default themeColors;

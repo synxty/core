@@ -1,4 +1,6 @@
-const sideBarKeys = [
+import { ParseThemeColors } from '..';
+
+const sideBarProps = [
   "sideBar.background",
   "sideBar.foreground",
   "sideBar.border",
@@ -9,4 +11,4 @@ const sideBarKeys = [
   "sideBarSectionHeader.border"
 ] as const;
 
-export type SideBar = Partial<{ [K in typeof sideBarKeys[number]]: string }>;
+export type SideBar = ParseThemeColors<typeof sideBarProps>;

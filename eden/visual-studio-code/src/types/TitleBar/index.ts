@@ -1,4 +1,6 @@
-const titleBarKeys = [
+import { ParseThemeColors } from '..';
+
+const titleBarProps = [
   "titleBar.activeBackground",
   "titleBar.activeForeground",
   "titleBar.inactiveBackground",
@@ -6,4 +8,4 @@ const titleBarKeys = [
   "titleBar.border"
 ] as const;
 
-export type TitleBar = Partial<{ [K in typeof titleBarKeys[number]]: string }>;
+export type TitleBar = ParseThemeColors<typeof titleBarProps>;

@@ -1,4 +1,6 @@
-const gutterKeys = [
+import { ParseThemeColors } from '..';
+
+const gutterProps = [
   "editorGutter.background",
   "editorGutter.modifiedBackground",
   "editorGutter.addedBackground",
@@ -9,4 +11,4 @@ const gutterKeys = [
   "editorGutter.foldingControlForeground"
 ] as const;
 
-export type Gutter = Partial<{ [K in typeof gutterKeys[number]]: string }>;
+export type Gutter = ParseThemeColors<typeof gutterProps>;

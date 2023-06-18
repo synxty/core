@@ -1,4 +1,6 @@
-const bracketPairsKeys = [
+import { ParseThemeColors } from '..';
+
+const bracketPairsProps = [
   "editorBracketMatch.background",
   "editorBracketMatch.border",
   "editorBracketHighlight.foreground1",
@@ -22,4 +24,4 @@ const bracketPairsKeys = [
   "editorBracketPairGuide.background6",
 ] as const;
 
-export type BracketPairs = Partial<{ [K in typeof bracketPairsKeys[number]]: string }>;
+export type BracketPairs = ParseThemeColors<typeof bracketPairsProps>;

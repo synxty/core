@@ -1,4 +1,6 @@
-const activityBarKeys = [
+import { ParseThemeColors } from '..';
+
+const activityBarProps = [
   "activityBar.background",
   "activityBar.dropBorder",
   "activityBar.foreground",
@@ -11,4 +13,4 @@ const activityBarKeys = [
   "activityBar.activeFocusBorder"
 ] as const;
 
-export type ActivityBar = Partial<{ [K in typeof activityBarKeys[number]]: string }>;
+export type ActivityBar = ParseThemeColors<typeof activityBarProps>

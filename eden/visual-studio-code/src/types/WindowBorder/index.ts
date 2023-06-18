@@ -1,6 +1,8 @@
-const windowBorderKeys = [
+import { ParseThemeColors } from '..';
+
+const windowBorderProps = [
   "window.activeBorder",
   "window.inactiveBorder"
 ] as const;
 
-export type WindowBorder = Partial<{ [K in typeof windowBorderKeys[number]]: string }>;
+export type WindowBorder = ParseThemeColors<typeof windowBorderProps>;

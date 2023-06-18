@@ -1,4 +1,6 @@
-const commentsWidget = [
+import { ParseThemeColors } from '..';
+
+const commentsWidgetProps = [
   "editorCommentsWidget.resolvedBorder",
   "editorCommentsWidget.unresolvedBorder",
   "editorCommentsWidget.rangeBackground",
@@ -7,4 +9,4 @@ const commentsWidget = [
   "editorCommentsWidget.rangeActiveBorder"
 ] as const;
 
-export type CommentsWidget = Partial<{ [K in typeof commentsWidget[number]]: string }>;
+export type CommentsWidget = ParseThemeColors<typeof commentsWidgetProps>;
