@@ -38,11 +38,11 @@ convertIconToPNG(
 
 #### `PNGSpecs`
 
-| Property         | Type                      | Description                                                                                                                                                                                  |
-| :--------------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `outputFilename` | `OutputFilename | string` | **Required**. Name of the output PNG file. Includes the `appName` and the `theme` as suffixes by default but you can but you can change it by providing an `OutputFile`.                     |
-| `appName`        | `SupportedApps`           | **Required**. App where the icon is going to be displayed. Check [@synxty/brand-assets](https://github.com/synxty/core/tree/main/sirius/brand-assets#supported-apps) for all supported apps. |
-| `theme`          | `SupportedThemes`         | **Required**. This will determine the background for the icon. Currently the supported themes are `dark` and `light`.                                                                        |
+| Property         | Type                       | Description                                                                                                                                                                                  |
+| :--------------- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `outputFilename` | `OutputFilename \| string` | **Required**. Name of the output PNG file. Includes the `appName` and the `theme` as suffixes by default but you can but you can change it by providing an `OutputFile`.                     |
+| `appName`        | `SupportedApps`            | **Required**. App where the icon is going to be displayed. Check [@synxty/brand-assets](https://github.com/synxty/core/tree/main/sirius/brand-assets#supported-apps) for all supported apps. |
+| `theme`          | `SupportedThemes`          | **Required**. This will determine the background for the icon. Currently the supported themes are `dark` and `light`.                                                                        |
 
 #### `OutputFilename`
 
