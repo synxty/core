@@ -28,3 +28,7 @@ dist
 
 # tests
 coverage
+
+# assets
+*.png
+!**/.github/**/*.png
