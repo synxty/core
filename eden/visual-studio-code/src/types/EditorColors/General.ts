@@ -1,4 +1,6 @@
-const generalKeys = [
+import { ParseThemeColors } from '..';
+
+const generalProps = [
   "editor.background",
   "editor.foreground",
   "editorLineNumber.foreground",
@@ -67,4 +69,4 @@ const generalKeys = [
   "editorUnnecessaryCode.opacity"
 ] as const;
 
-export type General = Partial<{ [K in typeof generalKeys[number]]: string }>;
+export type General = ParseThemeColors<typeof generalProps>;

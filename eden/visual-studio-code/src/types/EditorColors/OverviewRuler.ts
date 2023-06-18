@@ -1,4 +1,6 @@
-const overviewRuler = [
+import { ParseThemeColors } from '..';
+
+const overviewRulerProps = [
   "editorOverviewRuler.background",
   "editorOverviewRuler.border",
   "editorOverviewRuler.findMatchForeground",
@@ -16,4 +18,4 @@ const overviewRuler = [
   "editorOverviewRuler.bracketMatchForeground"
 ] as const;
 
-export type OverviewRuler = Partial<{ [K in typeof overviewRuler[number]]: string }>;
+export type OverviewRuler = ParseThemeColors<typeof overviewRulerProps>;

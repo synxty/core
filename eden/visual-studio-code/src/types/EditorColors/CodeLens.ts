@@ -1,5 +1,7 @@
-const codeLensKeys = [
+import { ParseThemeColors } from '..';
+
+const codeLensProps = [
   "editorCodeLens.foreground"
 ] as const;
 
-export type CodeLens = Partial<{ [K in typeof codeLensKeys[number]]: string }>;
+export type CodeLens = ParseThemeColors<typeof codeLensProps>;

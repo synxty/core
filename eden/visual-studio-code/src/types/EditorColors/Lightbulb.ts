@@ -1,6 +1,8 @@
-const lightBulbKeys = [
+import { ParseThemeColors } from '..';
+
+const lightBulbProps = [
   "editorLightBulb.foreground",
   "editorLightBulbAutoFix.foreground"
 ] as const;
 
-export type LightBulb = Partial<{ [K in typeof lightBulbKeys[number]]: string }>;
+export type LightBulb = ParseThemeColors<typeof lightBulbProps>;
