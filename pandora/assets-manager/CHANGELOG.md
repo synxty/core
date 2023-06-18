@@ -1,5 +1,13 @@
 # @synxty/assets-manager
 
+## 3.0.0
+
+### Major Changes
+
+- a84ea69: The PNGSpecs interface has been updated! Here's what you have to change:
+
+  - ~~outputName~~ &rarr; outputFilename
+
 ## 2.1.0
 
 ### Minor Changes
