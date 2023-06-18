@@ -1,3 +1,4 @@
+import { ActionColors } from './ActionColors';
 import { ActivityBar } from './ActivityBar';
 import { BaseColors } from './BaseColors';
 import { EditorColors } from './EditorColors';
@@ -8,6 +9,7 @@ import { WindowBorder } from './WindowBorder';
 
 export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[number]]: string }>;
 
+export type * from './ActionColors';
 export type * from './ActivityBar';
 export type * from './BaseColors';
 export type * from './EditorColors';
@@ -23,7 +25,8 @@ export type ThemeColors =
   WindowBorder |
   TitleBar |
   EditorGroupsAndTabs |
-  BaseColors
+  BaseColors |
+  ActionColors
 ;
 
 export type TokenColors = [];
