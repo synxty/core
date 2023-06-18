@@ -1,4 +1,5 @@
 import { ThemeColors } from '../types';
+import { actionColors } from './actionColors';
 import { activityBar } from './activityBar';
 import { baseColors } from './baseColors';
 import { editorColors } from './editorColors';
@@ -14,7 +15,8 @@ const themeColors: ThemeColors = {
   ...windowBorder,
   ...titleBar,
   ...editorGroupsAndTabs,
-  ...baseColors
+  ...baseColors,
+  ...actionColors
 }
 
 export default themeColors;
