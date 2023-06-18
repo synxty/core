@@ -66,7 +66,7 @@ describe ('> Save SVG to PNG file', () => {
     const svg = createSVGElement(doc);
     await saveSVGToPNGFile(svg, 
     {
-      outputFile: 'test',
+      outputFilename: 'test',
       appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     },
@@ -80,7 +80,7 @@ describe ('> Save SVG to PNG file', () => {
     const doc = createIconDocument(SynxtyIcon);
     const svg = createSVGElement(doc);
     await saveSVGToPNGFile(svg, {
-      outputFile: 'test',
+      outputFilename: 'test',
       appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     });
@@ -91,7 +91,7 @@ describe ('> Save SVG to PNG file', () => {
 describe ('> Should generate a filename based on the given specs', () => {
   const specs: PNGSpecs = {
     appName: 'vscode',
-    outputFile: 'test',
+    outputFilename: 'test',
     theme: 'dark'
   }
 
@@ -103,7 +103,7 @@ describe ('> Should generate a filename based on the given specs', () => {
   it ('should create a filename without any added suffixes', () => {
     const testSpecs: PNGSpecs = {
       ...specs,
-      outputFile: {
+      outputFilename: {
         filename: 'test',
       },
     }
@@ -114,7 +114,7 @@ describe ('> Should generate a filename based on the given specs', () => {
   it ('should create a file with only the specified suffixes', () => {
     const testSpecs: PNGSpecs = {
       ...specs,
-      outputFile: {
+      outputFilename: {
         filename: 'test',
         addSuffixes: ['appName']
       },
