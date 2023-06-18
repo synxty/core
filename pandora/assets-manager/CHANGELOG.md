@@ -1,5 +1,11 @@
 # @synxty/assets-manager
 
+## 2.1.0
+
+### Minor Changes
+
+- 4d428ef: Added feature that allows users to select which and if suffixes should be added to the filename
+
 ## 2.0.1
 
 ### Patch Changes
