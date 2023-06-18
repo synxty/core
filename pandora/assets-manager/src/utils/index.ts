@@ -1,19 +1,7 @@
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
 import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
-
-export type PNGSpecs = {
-  outputFile: OutputFile | string;
-  appName: SupportedApps;
-  theme: SupportedThemes;
-};
-
-export type OutputFile = {
-  filename: string;
-  addSuffixes?: FilenameSuffixes;
-}
-
-export type FilenameSuffixes = ('theme' | 'appName')[];
+import { OutputFile, PNGSpecs } from '../types';
 
 export function createIconDocument(svgString: string): Document {
   if (!svgString.startsWith('<svg') || !svgString.endsWith('</svg>')) throw Error('Not an SVG Icon');
