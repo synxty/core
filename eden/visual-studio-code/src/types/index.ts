@@ -1,6 +1,7 @@
 import { ActionColors } from './ActionColors';
 import { ActivityBar } from './ActivityBar';
 import { BaseColors } from './BaseColors';
+import { ButtonControl } from './ButtonControl';
 import { EditorColors } from './EditorColors';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs';
 import { SideBar } from './SideBar';
@@ -12,6 +13,7 @@ export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[
 export type * from './ActionColors';
 export type * from './ActivityBar';
 export type * from './BaseColors';
+export type * from './ButtonControl';
 export type * from './EditorColors';
 export type * from './EditorGroupsAndTabs';
 export type * from './SideBar';
@@ -26,7 +28,8 @@ export type ThemeColors =
   TitleBar |
   EditorGroupsAndTabs |
   BaseColors |
-  ActionColors
+  ActionColors |
+  ButtonControl
 ;
 
 export type TokenColors = [];
