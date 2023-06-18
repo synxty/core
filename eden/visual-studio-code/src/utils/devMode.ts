@@ -10,12 +10,12 @@ const { amber, info, success } = aliases;
 const { black, white } = colors;
 
 if (!existsSync(THEMES_DIRECTORY)) {
-  generateThemeFiles;
+  generateThemeFiles();
 };
 
 const previousData = JSON.parse(readFileSync(DARK_THEME_PATH, 'utf-8'));
 
-generateThemeFiles;
+generateThemeFiles();
 
 const newData = JSON.parse(readFileSync(DARK_THEME_PATH, 'utf-8'));
 
