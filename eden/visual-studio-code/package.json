@@ -47,6 +47,6 @@
     "build": "sh scripts/build.sh",
     "dev": "sh scripts/dev.sh",
     "lint:": "tsc",
-    "postpublish": "sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
+    "postpublish": "sh scripts/build.sh && sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
   }
 }
