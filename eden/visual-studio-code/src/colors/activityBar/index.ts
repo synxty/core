@@ -3,7 +3,7 @@ import { TESTING } from '../../constants';
 import { ActivityBar } from '../../types';
 
 const { black } = colors;
-const { primary, secondary } = aliases;
+const { primary, amber } = aliases;
 
 export const activityBar: ActivityBar = {
  "activityBar.background": black.tint[20],
@@ -11,8 +11,8 @@ export const activityBar: ActivityBar = {
  "activityBar.foreground": primary.DEFAULT,
  "activityBar.inactiveForeground": black.tint[90],
  "activityBar.border": black.tint[30],
- "activityBarBadge.background": secondary.DEFAULT,
- "activityBarBadge.foreground": black.tint[20],
+ "activityBarBadge.background": amber.DEFAULT,
+ "activityBarBadge.foreground": black.tint[30],
  "activityBar.activeBorder": primary.DEFAULT,
  "activityBar.activeBackground": black.tint[30],
  "activityBar.activeFocusBorder": TESTING
