@@ -5,6 +5,7 @@ import { ButtonControl } from './ButtonControl';
 import { EditorColors } from './EditorColors';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs';
 import { SideBar } from './SideBar';
+import { StatusBarColors } from './StatusBarColors';
 import { TitleBar } from './TitleBar';
 import { WindowBorder } from './WindowBorder';
 
@@ -17,6 +18,7 @@ export type * from './ButtonControl';
 export type * from './EditorColors';
 export type * from './EditorGroupsAndTabs';
 export type * from './SideBar';
+export type * from './StatusBarColors';
 export type * from './TitleBar';
 export type * from './WindowBorder';
 
@@ -29,7 +31,8 @@ export type ThemeColors =
   EditorGroupsAndTabs |
   BaseColors |
   ActionColors |
-  ButtonControl
+  ButtonControl |
+  StatusBarColors
 ;
 
 export type TokenColors = [];
