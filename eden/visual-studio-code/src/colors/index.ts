@@ -6,6 +6,7 @@ import { buttonControl } from './buttonControl';
 import { editorColors } from './editorColors';
 import { editorGroupsAndTabs } from './editorGroupsAndTabs';
 import { sideBar } from './sideBar';
+import { statusBarColors } from './statusBarColors';
 import { titleBar } from './titleBar';
 import { windowBorder } from './windowBorder';
 
@@ -18,7 +19,8 @@ const themeColors: ThemeColors = {
   ...editorGroupsAndTabs,
   ...baseColors,
   ...actionColors,
-  ...buttonControl
+  ...buttonControl,
+  ...statusBarColors
 }
 
 export default themeColors;

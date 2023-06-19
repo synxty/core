@@ -1,8 +1,9 @@
-import { colors } from '@synxty/design-tokens';
+import { aliases, colors } from '@synxty/design-tokens';
 import { Tabs } from '../../types';
 import { TESTING } from '../../constants';
 
 const { black, white } = colors;
+const { primary } = aliases;
 
 export const tabs: Tabs = {
   "tab.activeBackground": black.tint[20],
@@ -11,7 +12,7 @@ export const tabs: Tabs = {
   "tab.border": black.tint[30],
   "tab.activeBorder": black.tint[20],
   "tab.unfocusedActiveBorder": black.tint[20],
-  "tab.activeBorderTop": black.tint[20],
+  "tab.activeBorderTop": primary.DEFAULT,
   "tab.unfocusedActiveBorderTop": black.tint[20],
   "tab.lastPinnedBorder": black.tint[30],
   "tab.inactiveBackground": black.tint[30],
