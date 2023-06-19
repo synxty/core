@@ -6,6 +6,7 @@ import { buttonControl } from './buttonControl';
 import { dropdownControl } from './dropdownControl';
 import { editorColors } from './editorColors';
 import { editorGroupsAndTabs } from './editorGroupsAndTabs';
+import { inputControl } from './inputControl';
 import { sideBar } from './sideBar';
 import { statusBarColors } from './statusBarColors';
 import { titleBar } from './titleBar';
@@ -22,7 +23,8 @@ const themeColors: ThemeColors = {
   ...actionColors,
   ...buttonControl,
   ...statusBarColors,
-  ...dropdownControl
+  ...dropdownControl,
+  ...inputControl
 }
 
 export default themeColors;

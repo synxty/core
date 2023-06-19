@@ -5,6 +5,7 @@ import { ButtonControl } from './ButtonControl';
 import { DropdownControl } from './DropdownControl';
 import { EditorColors } from './EditorColors';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs';
+import { InputControl } from './InputControl';
 import { SideBar } from './SideBar';
 import { StatusBarColors } from './StatusBarColors';
 import { TitleBar } from './TitleBar';
@@ -19,6 +20,7 @@ export type * from './ButtonControl';
 export type * from './DropdownControl';
 export type * from './EditorColors';
 export type * from './EditorGroupsAndTabs';
+export type * from './InputControl';
 export type * from './SideBar';
 export type * from './StatusBarColors';
 export type * from './TitleBar';
@@ -35,7 +37,8 @@ export type ThemeColors =
   ActionColors |
   ButtonControl |
   StatusBarColors |
-  DropdownControl
+  DropdownControl |
+  InputControl
 ;
 
 export type TokenColors = [];
