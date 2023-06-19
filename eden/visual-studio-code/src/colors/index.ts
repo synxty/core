@@ -3,6 +3,7 @@ import { actionColors } from './actionColors';
 import { activityBar } from './activityBar';
 import { baseColors } from './baseColors';
 import { buttonControl } from './buttonControl';
+import { dropdownControl } from './dropdownControl';
 import { editorColors } from './editorColors';
 import { editorGroupsAndTabs } from './editorGroupsAndTabs';
 import { sideBar } from './sideBar';
@@ -20,7 +21,8 @@ const themeColors: ThemeColors = {
   ...baseColors,
   ...actionColors,
   ...buttonControl,
-  ...statusBarColors
+  ...statusBarColors,
+  ...dropdownControl
 }
 
 export default themeColors;

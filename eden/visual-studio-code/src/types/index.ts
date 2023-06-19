@@ -2,6 +2,7 @@ import { ActionColors } from './ActionColors';
 import { ActivityBar } from './ActivityBar';
 import { BaseColors } from './BaseColors';
 import { ButtonControl } from './ButtonControl';
+import { DropdownControl } from './DropdownControl';
 import { EditorColors } from './EditorColors';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs';
 import { SideBar } from './SideBar';
@@ -15,6 +16,7 @@ export type * from './ActionColors';
 export type * from './ActivityBar';
 export type * from './BaseColors';
 export type * from './ButtonControl';
+export type * from './DropdownControl';
 export type * from './EditorColors';
 export type * from './EditorGroupsAndTabs';
 export type * from './SideBar';
@@ -32,7 +34,8 @@ export type ThemeColors =
   BaseColors |
   ActionColors |
   ButtonControl |
-  StatusBarColors
+  StatusBarColors |
+  DropdownControl
 ;
 
 export type TokenColors = [];
