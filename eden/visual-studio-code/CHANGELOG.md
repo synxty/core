@@ -1,5 +1,21 @@
 # @synxty/eden-vscode
 
+## 0.5.0
+
+### Minor Changes
+
+- 861b2a8: Added Input Control colors
+- 04e5727: Added Dropdown Control colors
+- 32e94f0: Added Action colors
+- 2dc0dc6: Added Status Bar colors
+- 5a01cd9: Added Button Control colors
+- bd0bf66: Added Base colors
+
+### Patch Changes
+
+- 5a01cd9: Fixed Activity Bar Badge color
+- 5cd64c1: Updated icon name
+
 ## 0.4.2
 
 ### Patch Changes
