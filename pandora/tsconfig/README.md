@@ -1,6 +1,6 @@
 # TS Config
 
-> Extend your TypeScript compiler options with Synxty's TS Config package.
+> Extend your TypeScript compiler options with Pandora's TS Config package.
 
 ## ⚙️ Install
 
@@ -14,7 +14,7 @@ All you need to do is extend the tsconfig file in your package root like in the 
 
 ### Base
 
-```json
+```typescript
 // tsconfig.json
 
 {
