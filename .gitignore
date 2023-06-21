@@ -32,3 +32,6 @@ coverage
 # assets
 *.png
 !**/.github/**/*.png
+
+# packs
+*.tgz
