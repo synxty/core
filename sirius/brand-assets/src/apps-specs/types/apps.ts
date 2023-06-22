@@ -1,4 +1,4 @@
-import { SUPPORTED_APPS } from '../constants';
+import { SUPPORTED_APPS } from 'apps-specs/constants/index.ts';
 
 export type SupportedApps = typeof SUPPORTED_APPS[keyof typeof SUPPORTED_APPS];
 

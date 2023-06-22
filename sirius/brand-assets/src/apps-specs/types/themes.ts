@@ -1,4 +1,4 @@
-import { supportedThemes } from '../themes/supportedThemes';
+import { supportedThemes } from 'apps-specs/themes/index.ts';
 
 export type SupportedThemes = typeof supportedThemes[keyof typeof supportedThemes];
 

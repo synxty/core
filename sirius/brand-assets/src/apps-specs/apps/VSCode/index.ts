@@ -1,4 +1,4 @@
-import { AppSpecs } from '../../types';
+import { AppSpecs } from 'apps-specs/types/index.ts';
 
 export const vscode: AppSpecs['vscode'] = {
   icon: {
