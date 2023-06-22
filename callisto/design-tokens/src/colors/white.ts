@@ -1,4 +1,4 @@
-import { createShadedNeutralColor } from '../utils/create-neutral-color';
+import { createShadedNeutralColor } from 'utils/create-neutral-color.ts';
 
 export const white = createShadedNeutralColor(
   {

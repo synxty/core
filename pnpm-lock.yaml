@@ -13,6 +13,9 @@ importers:
 
   callisto/design-tokens:
     devDependencies:
+      '@synxty/tsconfig':
+        specifier: workspace:^
+        version: link:../../pandora/tsconfig
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0

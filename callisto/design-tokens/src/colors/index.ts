@@ -1,18 +1,18 @@
-import { Aliases } from '../types/colors';
-import { bittersweet } from './bittersweet';
-import { black } from './black';
-import { crayola } from './crayola';
-import { dodger } from './dodger';
-import { emerald } from './emerald';
-import { grape } from './grape';
-import { iris } from './iris';
-import { jasmine } from './jasmine';
-import { mindaro } from './mindaro';
-import { mulberry } from './mulberry';
-import { sandy } from './sandy';
-import { verdigris } from './verdigris';
-import { white } from './white';
-import { xanthous } from './xanthous';
+import { Aliases } from 'types/Colors.ts';
+import { bittersweet } from './bittersweet.ts';
+import { black } from './black.ts';
+import { crayola } from './crayola.ts';
+import { dodger } from './dodger.ts';
+import { emerald } from './emerald.ts';
+import { grape } from './grape.ts';
+import { iris } from './iris.ts';
+import { jasmine } from './jasmine.ts';
+import { mindaro } from './mindaro.ts';
+import { mulberry } from './mulberry.ts';
+import { sandy } from './sandy.ts';
+import { verdigris } from './verdigris.ts';
+import { white } from './white.ts';
+import { xanthous } from './xanthous.ts';
 
 export const colors = {
   bittersweet,

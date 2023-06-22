@@ -1,1 +1,1 @@
-export type { Color, NeutralColor } from './colors';
+export type { Color, NeutralColor } from './Colors.ts';

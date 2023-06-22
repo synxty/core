@@ -9,26 +9,21 @@
     ".": {
       "types": "./lib/index.d.ts",
       "import": "./lib/index.js",
-      "node": "./lib/index.cjs",
       "require": "./lib/index.cjs",
+      "node": "./lib/index.cjs",
       "default": "./lib/index.js"
     },
     "./colors": {
       "types": "./lib/colors/index.d.ts",
       "import": "./lib/colors/index.js",
-      "node": "./lib/colors/index.cjs",
       "require": "./lib/colors/index.cjs",
+      "node": "./lib/colors/index.cjs",
       "default": "./lib/colors/index.js"
     }
   },
-  "typesVersions": {
-    "*": {
-      "colors": [
-        "./lib/colors/index.d.ts"
-      ]
-    }
-  },
+  "files": [ "lib" ],
   "devDependencies": {
+    "@synxty/tsconfig": "workspace:^",
     "@types/node": "^18.16.0",
     "tsup": "^6.7.0",
     "tsx": "^3.12.7",
