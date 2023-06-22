@@ -1,7 +1,7 @@
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import sharp from 'sharp';
 import {  SupportedApps, SupportedThemes, getProfileIconSpecs, getThemeConfig } from '@synxty/brand-assets/apps-specs';
-import { OutputFilename, PNGSpecs } from '../types';
+import { PNGSpecs, OutputFilename } from 'types/index.ts';
 
 export function createIconDocument(svgString: string): Document {
   if (!svgString.startsWith('<svg') || !svgString.endsWith('</svg>')) throw Error('Not an SVG Icon');

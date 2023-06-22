@@ -1,5 +1,6 @@
-import { PNGSpecs } from '../../types';
-import { addBackgroundToSVG, createBackground, createIconDocument, createSVGElement, saveSVGToPNGFile } from '../../utils';
+import { PNGSpecs } from 'types/index.ts';
+import { addBackgroundToSVG, createBackground, createIconDocument, createSVGElement, saveSVGToPNGFile } from 'utils/index.ts';
+
 
 export async function convertIconToPNG(svgIcon: string, specs: PNGSpecs, outDir?: string) {
   const { appName, theme } = specs;

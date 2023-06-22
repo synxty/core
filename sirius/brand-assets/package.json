@@ -21,7 +21,7 @@
       "default": "./lib/apps-specs/index.js"
     }
   },
-  "files": ["lib"],
+  "files": [ "lib" ],
   "devDependencies": {
     "@figma-export/cli": "^4.5.0",
     "@figma-export/output-components-as-es6": "^4.5.0",

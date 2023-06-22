@@ -1,16 +1,10 @@
 import { DOMParser } from '@xmldom/xmldom';
 import { SynxtyIcon } from '@synxty/brand-assets';
 import sharp from 'sharp';
-import { TEST_RESULT_APP_NAME } from '../constants';
-import { PNGSpecs } from '../types';
-import { 
-  addBackgroundToSVG, 
-  createBackground, 
-  createIconDocument, 
-  createSVGElement, 
-  generateFilename, 
-  saveSVGToPNGFile 
-} from '.';
+import { addBackgroundToSVG, createBackground, createIconDocument, createSVGElement, generateFilename, saveSVGToPNGFile } from './index.ts';
+import { TEST_RESULT_APP_NAME } from 'constants/index.ts';
+import { PNGSpecs } from 'types/index.ts';
+
 
 describe ('> Create an icon document from an svg string', () => {
   it ('should create a document given a valid SVG icon as a string', () => {

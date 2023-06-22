@@ -1,1 +1,1 @@
-export { convertIconToPNG } from './useCases/convertIconToPNG';
+export { convertIconToPNG } from 'useCases/convertIconToPNG/index.ts';
