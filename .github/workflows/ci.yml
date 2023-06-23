@@ -79,9 +79,6 @@ jobs:
       - name: Installing dependencies
         run: pnpm install
 
-      - name: Setup
-        uses: ./.github/workflows/setup
-
       - name: Building
         run: pnpm build
 
@@ -109,9 +106,6 @@ jobs:
 
       - name: Installing dependencies
         run: pnpm install
-
-      - name: Setup
-        uses: ./.github/workflows/setup
 
       - name: Testing
         run: pnpm test
