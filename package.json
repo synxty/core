@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
+    "prettier": "2.8.8",
     "turbo": "latest"
   },
   "scripts": {
@@ -16,6 +17,7 @@
     "ci:publish": "changeset publish",
     "ci:version": "changeset version",
     "dev": "turbo run dev",
+    "format": "prettier -w",
     "lint": "turbo run lint",
     "test": "turbo run test"
   }
