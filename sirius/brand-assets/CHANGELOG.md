@@ -1,5 +1,11 @@
 # @synxty/brand-assets
 
+## 1.1.2
+
+### Patch Changes
+
+- 6386cec: Bundle size reduced by publishing only the lib
+
 ## 1.1.1
 
 ### Patch Changes

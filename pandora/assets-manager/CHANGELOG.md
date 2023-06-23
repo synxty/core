@@ -1,5 +1,13 @@
 # @synxty/assets-manager
 
+## 3.0.1
+
+### Patch Changes
+
+- 6386cec: Bundle size reduced by publishing only the lib
+- Updated dependencies [6386cec]
+  - @synxty/brand-assets@1.1.2
+
 ## 3.0.0
 
 ### Major Changes

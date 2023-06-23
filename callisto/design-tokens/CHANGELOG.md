@@ -1,5 +1,11 @@
 # @synxty/design-tokens
 
+## 0.1.4
+
+### Patch Changes
+
+- 6386cec: Bundle size reduced by publishing only the lib
+
 ## 0.1.3
 
 ### Patch Changes
