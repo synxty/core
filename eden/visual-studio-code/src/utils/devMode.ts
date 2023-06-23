@@ -1,10 +1,10 @@
 import { colors, aliases } from '@synxty/design-tokens';
 import chalk from 'chalk';
 import { existsSync, readFileSync } from 'node:fs';
-import { DARK_THEME_PATH, THEMES_DIRECTORY } from '../constants';
-import generateThemeFiles from './generateThemeFiles';
-import { getObjectDifferences } from './getObjectDifferences';
+import generateThemeFiles from './generateThemeFiles.ts';
+import { getObjectDifferences } from './getObjectDifferences.ts';
 import path from 'node:path';
+import { THEMES_DIRECTORY, DARK_THEME_PATH } from 'constants/index.ts';
 
 const { amber, info, success } = aliases;
 const { black, white } = colors;

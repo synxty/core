@@ -1,4 +1,4 @@
-import { createTintedNeutralColor } from '../utils/create-neutral-color';
+import { createTintedNeutralColor } from 'utils/create-neutral-color.ts';
 
 export const black = createTintedNeutralColor(
   {

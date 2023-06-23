@@ -1,4 +1,4 @@
-import { ParseThemeColors } from '..';
+import { ParseThemeColors } from 'types/index.ts';
 
 const commentsWidgetProps = [
   "editorCommentsWidget.resolvedBorder",

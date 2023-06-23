@@ -8,32 +8,27 @@
   "exports": {
     ".": {
       "types": "./lib/generate-assets/index.d.ts",
-      "default": "./lib/generate-assets/index.js",
       "import": "./lib/generate-assets/index.js",
       "node": "./lib/generate-assets/index.cjs",
-      "require": "./lib/generate-assets/index.cjs"
+      "require": "./lib/generate-assets/index.cjs",
+      "default": "./lib/generate-assets/index.js"
     },
     "./apps-specs": {
       "types": "./lib/apps-specs/index.d.ts",
-      "default": "./lib/apps-specs/index.js",
       "import": "./lib/apps-specs/index.js",
       "node": "./lib/apps-specs/index.cjs",
-      "require": "./lib/apps-specs/index.cjs"
+      "require": "./lib/apps-specs/index.cjs",
+      "default": "./lib/apps-specs/index.js"
     }
   },
-  "typesVersions": {
-    "*": {
-      "apps-specs": [
-        "./lib/apps-specs/index.d.ts"
-      ]
-    }
-  },
+  "files": [ "lib" ],
   "devDependencies": {
     "@figma-export/cli": "^4.5.0",
     "@figma-export/output-components-as-es6": "^4.5.0",
     "@figma-export/transform-svg-with-svgo": "^4.5.0",
     "@figma-export/types": "^4.5.0",
     "@figma-export/utils": "^4.0.0",
+    "@synxty/tsconfig": "workspace:^",
     "@types/node": "^18.16.0",
     "dotenv": "^16.0.3",
     "tsup": "^6.7.0",

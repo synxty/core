@@ -1,5 +1,5 @@
-import colors from './colors';
-import { Theme } from './types';
+import colors from 'colors/index.ts';
+import { Theme } from 'types/index.ts';
 
 const theme: Theme = {
   name: 'Eden',

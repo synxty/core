@@ -1,6 +1,6 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { Tabs } from '../../types';
-import { TESTING } from '../../constants';
+import { TESTING } from 'constants/index.ts';
+import { Tabs } from 'types/index.ts';
 
 const { black, white } = colors;
 const { primary } = aliases;

@@ -1,5 +1,6 @@
+import { EXPORT_DIRECTORY, EXPORT_FILE_NAME, IMPORT_DIRECTORY } from 'generate-assets/constants/index.ts';
 import { readdir, readFileSync, createWriteStream } from 'node:fs';
-import { IMPORT_DIRECTORY, EXPORT_DIRECTORY, EXPORT_FILE_NAME } from '../constants';
+
 
 function generateAssetsSource() {
 

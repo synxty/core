@@ -1,4 +1,4 @@
-import { createColor } from '../utils/create-color';
+import { createColor } from 'utils/create-color.ts';
 
 export const crayola = createColor(
   {

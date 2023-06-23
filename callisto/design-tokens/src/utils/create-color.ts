@@ -1,4 +1,4 @@
-import { Color } from '../types/colors';
+import { Color } from 'types/index.ts';
 
 type ColorSpecs = {
   DEFAULT: string;

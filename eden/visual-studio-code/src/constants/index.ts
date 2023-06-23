@@ -1,5 +1,5 @@
 import { SupportedThemes } from '@synxty/brand-assets/apps-specs';
-import { aliases } from '@synxty/design-tokens';
+import { aliases } from '@synxty/design-tokens/colors';
 
 export const ICON_THEME: SupportedThemes = 'dark';
 

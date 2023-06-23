@@ -1,2 +1,2 @@
-export * from './colors';
-export type * from './types'
+export * from './colors/index.ts';
+export type * from './types/index.ts'

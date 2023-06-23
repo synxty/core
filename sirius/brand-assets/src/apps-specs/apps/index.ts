@@ -1,13 +1,14 @@
-import { AppSpecs, ProfileIconSpecs, SupportedApps } from '../types';
-import { discord } from './Discord';
-import { facebook } from './Facebook';
-import { github } from './GitHub';
-import { instagram } from './Instagram';
-import { linkedin } from './LinkedIn';
-import { twitch } from './Twitch';
-import { twitter } from './Twitter';
-import { vscode } from './VSCode';
-import { youtube } from './YouTube';
+
+import { AppSpecs, ProfileIconSpecs, SupportedApps } from 'apps-specs/types/index.ts';
+import { discord } from './Discord/index.ts';
+import { facebook } from './Facebook/index.ts';
+import { github } from './GitHub/index.ts';
+import { instagram } from './Instagram/index.ts';
+import { linkedin } from './LinkedIn/index.ts';
+import { twitch } from './Twitch/index.ts';
+import { twitter } from './Twitter/index.ts';
+import { vscode } from './VSCode/index.ts';
+import { youtube } from './YouTube/index.ts';
 
 const appSpecs: AppSpecs = {
   discord,

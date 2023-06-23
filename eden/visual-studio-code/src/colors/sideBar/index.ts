@@ -1,6 +1,6 @@
 import { colors } from '@synxty/design-tokens';
-import { SideBar } from '../../types';
-import { TESTING } from '../../constants';
+import { TESTING } from 'constants/index.ts';
+import { SideBar } from 'types/index.ts';
 
 const { black, white } = colors;
 

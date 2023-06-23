@@ -11,8 +11,6 @@
     "noUncheckedIndexedAccess": true,
     "noEmit": true,
     "moduleResolution": "Node16",
-    "allowImportingTsExtensions": true,
-    "baseUrl": "./src"
-  },
-  "exclude": ["node_modules"]
+    "allowImportingTsExtensions": true
+  }
 }

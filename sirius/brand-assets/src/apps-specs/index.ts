@@ -1,3 +1,3 @@
-export * from './apps';
-export * from './themes';
-export * from './types';
+export * from './apps/index.ts';
+export * from './themes/index.ts';
+export * from './types/index.ts';

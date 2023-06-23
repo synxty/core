@@ -1,4 +1,4 @@
-import { Themes } from '../types';
+import { Themes } from 'apps-specs/types/index.ts';
 
 export const themes: Themes = {
   dark: {

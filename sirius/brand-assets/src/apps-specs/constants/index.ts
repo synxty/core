@@ -1,1 +1,1 @@
-export * from './supportedApps';
+export * from './supportedApps.ts';

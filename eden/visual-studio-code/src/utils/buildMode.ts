@@ -1,8 +1,8 @@
 import chalk from 'chalk';
-import generateThemeFiles from './generateThemeFiles';
+import generateThemeFiles from './generateThemeFiles.ts';
 import { aliases, colors } from '@synxty/design-tokens';
 import path from 'node:path';
-import { DARK_THEME_PATH } from '../constants';
+import { DARK_THEME_PATH } from 'constants/index.ts';
 
 const { amber, info, success} = aliases;
 const { black } = colors;

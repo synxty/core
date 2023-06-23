@@ -13,8 +13,6 @@ pnpm add @synxty/assets-manager -D
 ### Convert Synxty icons to PNG
 
 ```typescript
-// example
-
 import { convertIconToPNG } from '@synxty/assets-manager';
 
 convertIconToPNG(

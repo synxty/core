@@ -1,11 +1,11 @@
-import { EditorColors } from '../../types';
-import { bracketPairs } from './bracketPairs';
-import { codeLens } from './codeLens';
-import { commentsWidget } from './commentsWidget';
-import { general } from './general';
-import { gutter } from './gutter';
-import { lightbulb } from './lightbulb';
-import { overviewRuler } from './overviewRuler';
+import { EditorColors } from 'types/index.ts';
+import { bracketPairs } from './bracketPairs.ts';
+import { codeLens } from './codeLens.ts';
+import { commentsWidget } from './commentsWidget.ts';
+import { general } from './general.ts';
+import { gutter } from './gutter.ts';
+import { lightbulb } from './lightbulb.ts';
+import { overviewRuler } from './overviewRuler.ts';
 
 export const editorColors: EditorColors = {
   ...general,

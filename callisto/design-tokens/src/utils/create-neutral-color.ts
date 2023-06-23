@@ -1,4 +1,4 @@
-import { NeutralColor } from '../types/colors';
+import { NeutralColor } from 'types/index.ts';
 
 type NeutralTintedColorSpecs = {
   DEFAULT: string;

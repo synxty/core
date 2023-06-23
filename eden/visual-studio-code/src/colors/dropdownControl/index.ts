@@ -1,9 +1,7 @@
-import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from '../../constants';
-import { DropdownControl } from '../../types';
+import { colors } from '@synxty/design-tokens';
+import { DropdownControl } from 'types/index.ts';
 
 const { black, white } = colors;
-const { primary, secondary, amber } = aliases;
 
 export const dropdownControl: DropdownControl = {
   "dropdown.background": black.tint[50],

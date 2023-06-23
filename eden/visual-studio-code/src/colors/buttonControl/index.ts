@@ -1,9 +1,9 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from '../../constants';
-import { ButtonControl } from '../../types';
+import { TESTING } from 'constants/index.ts';
+import { ButtonControl } from 'types/index.ts';
 
-const { black, white } = colors;
-const { primary, secondary, amber, info, vermilion, violet, orange } = aliases;
+const { black } = colors;
+const { primary, secondary, amber } = aliases;
 
 export const buttonControl: ButtonControl = {
   "button.background": primary.DEFAULT,

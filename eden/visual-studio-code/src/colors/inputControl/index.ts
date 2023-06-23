@@ -1,9 +1,8 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { InputControl } from '../../types';
-import { TESTING } from '../../constants';
+import { InputControl } from 'types/index.ts';
 
-const { black, white, sandy } = colors;
-const { primary, secondary, danger, info, warning } = aliases;
+const { black, white } = colors;
+const { primary, danger, info, warning } = aliases;
 
 export const inputControl: InputControl = {
   "input.background": black.tint[50],
