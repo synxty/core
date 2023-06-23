@@ -54,39 +54,8 @@ jobs:
           git commit -m "Commit message"
           git push
 
-  test:
-    needs: format
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-
-      - name: Setting up Node.js environment
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: '.nvmrc'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@synxty'
-          cache: 'pnpm'
-
-      - name: Installing dependencies
-        run: pnpm install
-
-      - name: Setup
-        uses: ./.github/workflows/setup
-
-      - name: Testing
-        run: pnpm test
-
   build:
-    needs: test
+    needs: format
     runs-on: ubuntu-latest
 
     steps:
@@ -115,3 +84,34 @@ jobs:
 
       - name: Building
         run: pnpm build
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Setting up Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@synxty'
+          cache: 'pnpm'
+
+      - name: Installing dependencies
+        run: pnpm install
+
+      - name: Setup
+        uses: ./.github/workflows/setup
+
+      - name: Testing
+        run: pnpm test
