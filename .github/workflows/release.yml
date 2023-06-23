@@ -27,13 +27,13 @@ jobs:
           node-version-file: '.nvmrc'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@synxty'
-          cache: "pnpm"
+          cache: 'pnpm'
 
       - run: pnpm install
 
       - name: Building packages...
         run: pnpm build
-        
+
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1

@@ -5,7 +5,7 @@ import { ICON_THEME } from 'constants/index.ts';
 convertIconToPNG(EdenIcon, {
   appName: 'vscode',
   outputFilename: {
-    filename: 'icon'
+    filename: 'icon',
   },
-  theme: ICON_THEME
+  theme: ICON_THEME,
 });

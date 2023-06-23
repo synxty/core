@@ -24,7 +24,7 @@ const themeColors: ThemeColors = {
   ...buttonControl,
   ...statusBarColors,
   ...dropdownControl,
-  ...inputControl
-}
+  ...inputControl,
+};
 
 export default themeColors;

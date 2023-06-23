@@ -9,6 +9,6 @@ export type PNGSpecs = {
 export type OutputFilename = {
   filename: string;
   addSuffixes?: FilenameSuffixes;
-}
+};
 
-export type FilenameSuffixes = ('appName' | 'theme' )[];
+export type FilenameSuffixes = ('appName' | 'theme')[];

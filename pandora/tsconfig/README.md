@@ -21,11 +21,12 @@ All you need to do is extend the tsconfig file in your package root like in the 
   "extends": "@synxty/tsconfig/base.json"
   ...
 }
- ```
+```
 
 ## ⚖️ License
 
 This package is open source software [licensed as MIT](LICENSE).
 
 ---
+
 Thank you, made with 💗 by [&copy; Synxty](https://github.com/synxty).

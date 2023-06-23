@@ -21,4 +21,5 @@ This set can also be helpful to develop or fix issues in the theme and is as eas
 This package is open source software [licensed as MIT](LICENSE).
 
 ---
+
 Thank you, made with 💗 by [&copy; Synxty](https://github.com/synxty).

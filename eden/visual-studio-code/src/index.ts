@@ -4,7 +4,7 @@ import { Theme } from 'types/index.ts';
 const theme: Theme = {
   name: 'Eden',
   colors,
-  tokenColors: []
-}
+  tokenColors: [],
+};
 
 export default theme;

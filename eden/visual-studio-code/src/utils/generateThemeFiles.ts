@@ -4,6 +4,6 @@ import { DARK_THEME_PATH, THEMES_DIRECTORY } from 'constants/index.ts';
 
 export default function () {
   if (!existsSync(THEMES_DIRECTORY)) mkdirSync(THEMES_DIRECTORY);
-  
+
   writeFileSync(DARK_THEME_PATH, JSON.stringify(source, null, 2));
-};
+}
