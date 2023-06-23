@@ -41,12 +41,7 @@ jobs:
       - name: Formatting
         run: pnpm format
 
-      - name: Check for Changes
-        id: check_changes
-        run: git diff --quiet || echo "Changes detected"
-
       - name: Commit Changes
-        if: steps.check_changes.outputs.result == 'Changes detected'
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
