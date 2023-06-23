@@ -38,8 +38,20 @@ jobs:
       - name: Installing dependencies
         run: pnpm install
 
+      - name: Formatting
+        run: pnpm format
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply formatting
+          commit_options: '--no-verify'
+
       - name: Testing
         run: pnpm test
 
       - name: Building
         run: pnpm build
+
+
+        
