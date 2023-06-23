@@ -1,23 +1,23 @@
-import { CodeLens } from './CodeLens';
-export { CodeLens } from './CodeLens';
+import { CodeLens } from './CodeLens.ts';
+export { CodeLens } from './CodeLens.ts';
 
-import { General } from './General';
-export { General } from './General';
+import { General } from './General.ts';
+export { General } from './General.ts';
 
-import { LightBulb } from './Lightbulb';
-export { LightBulb } from './Lightbulb';
+import { LightBulb } from './Lightbulb.ts';
+export { LightBulb } from './Lightbulb.ts';
 
-import { BracketPairs } from './BracketPairs';
-export { BracketPairs } from './BracketPairs';
+import { BracketPairs } from './BracketPairs.ts';
+export { BracketPairs } from './BracketPairs.ts';
 
-import { OverviewRuler } from './OverviewRuler';
-export { OverviewRuler } from './OverviewRuler';
+import { OverviewRuler } from './OverviewRuler.ts';
+export { OverviewRuler } from './OverviewRuler.ts';
 
-import { Gutter } from './Gutter';
-export { Gutter } from './Gutter';
+import { Gutter } from './Gutter.ts';
+export { Gutter } from './Gutter.ts';
 
-import { CommentsWidget } from './CommentsWidget';
-export { CommentsWidget } from './CommentsWidget';
+import { CommentsWidget } from './CommentsWidget.ts';
+export { CommentsWidget } from './CommentsWidget.ts';
 
 export type EditorColors = 
   General | 

@@ -1,6 +1,6 @@
 import { colors } from '@synxty/design-tokens';
-import { EditorGroups } from '../../types';
-import { TESTING } from '../../constants';
+import { TESTING } from 'constants/index.ts';
+import { EditorGroups } from 'types/index.ts';
 
 const { black, white } = colors;
 

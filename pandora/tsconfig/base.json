@@ -12,6 +12,5 @@
     "noEmit": true,
     "moduleResolution": "Node16",
     "allowImportingTsExtensions": true
-  },
-  "exclude": ["node_modules"]
+  }
 }

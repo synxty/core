@@ -3,5 +3,6 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "types": [ "vitest/globals" ]
-  }
+  },
+  "exclude": ["node_modules", "lib"]
 }

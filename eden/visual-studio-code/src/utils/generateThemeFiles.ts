@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
-import source from '../';
-import { DARK_THEME_PATH, THEMES_DIRECTORY } from '../constants';
+import source from 'index.ts';
+import { DARK_THEME_PATH, THEMES_DIRECTORY } from 'constants/index.ts';
 
 export default function () {
   if (!existsSync(THEMES_DIRECTORY)) mkdirSync(THEMES_DIRECTORY);

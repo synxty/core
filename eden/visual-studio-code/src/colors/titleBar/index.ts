@@ -1,7 +1,7 @@
 import { colors } from '@synxty/design-tokens';
-import {  TitleBar } from '../../types';
+import { TitleBar } from 'types/index.ts';
 
-const { black, white } = colors;
+const { black } = colors;
 
 export const titleBar: TitleBar = {
   "titleBar.activeBackground": black.tint[20],

@@ -1,5 +1,5 @@
 import { colors } from '@synxty/design-tokens';
-import {  WindowBorder } from '../../types';
+import { WindowBorder } from 'types/index.ts';
 
 const { black } = colors;
 

@@ -1,9 +1,7 @@
-import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from '../../constants';
-import { ActionColors } from '../../types';
+import { colors } from '@synxty/design-tokens';
+import { ActionColors } from 'types/index.ts';
 
 const { black } = colors;
-const { primary, secondary, amber } = aliases;
 
 export const actionColors: ActionColors = {
   "toolbar.hoverBackground": black.tint[70],
