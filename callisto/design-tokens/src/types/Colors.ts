@@ -22,7 +22,7 @@ export type Color = {
     80: string;
     90: string;
   };
-}
+};
 
 export type NeutralColor = {
   DEFAULT: string;
@@ -54,7 +54,7 @@ export type NeutralColor = {
     110: string;
     120: string;
   };
-}
+};
 
 export type Aliases = {
   primary: Color;
@@ -62,7 +62,7 @@ export type Aliases = {
   success: Color;
   info: Color;
   warning: Color;
-  danger: Color
+  danger: Color;
   red: Color;
   vermilion: Color;
   orange: Color;
@@ -71,8 +71,8 @@ export type Aliases = {
   chartreuse: Color;
   green: Color;
   teal: Color;
-  blue: Color
+  blue: Color;
   violet: Color;
   purple: Color;
   magenta: Color;
-}
+};

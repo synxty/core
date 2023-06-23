@@ -1,7 +1,7 @@
 {
   "extends": "@synxty/tsconfig/base.json",
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "./src"
   },
   "exclude": ["node_modules", "lib"]
 }

@@ -1,4 +1,4 @@
-export function getObjectDifferences<T extends object>(obj1: T, obj2: T): Partial<T> | null{
+export function getObjectDifferences<T extends object>(obj1: T, obj2: T): Partial<T> | null {
   const keys = new Set([...Object.keys(obj1), ...Object.keys(obj2)]);
   const differences: Partial<T> = {};
 

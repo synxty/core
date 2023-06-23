@@ -1,4 +1,3 @@
-
 import { AppSpecs, ProfileIconSpecs, SupportedApps } from 'apps-specs/types/index.ts';
 import { discord } from './Discord/index.ts';
 import { facebook } from './Facebook/index.ts';
@@ -19,7 +18,7 @@ const appSpecs: AppSpecs = {
   twitch,
   twitter,
   vscode,
-  youtube
+  youtube,
 } as const;
 
 export function getProfileIconSpecs(app: SupportedApps): ProfileIconSpecs {

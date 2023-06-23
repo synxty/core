@@ -17,7 +17,7 @@ pnpm add @synxty/brand-assets
 ```typescript
 import { SynxtyIcon } from '@synxty/brand-assets';
 
-console.log(SynxtyIcon) // <svg>...</svg>
+console.log(SynxtyIcon); // <svg>...</svg>
 ```
 
 ### Get apps Profile Icon specs
@@ -28,38 +28,39 @@ import { getProfileIconSpecs, ProfileIconSpecs } from '@synxty/brand-assets/apps
 const profileIconSpecs: ProfileIconSpecs = getProfileIconSpecs(appName);
 ```
 
-| Parameter | Type            | Description                                                                                        |
-| :-------- | :-------------- | :------------------------------------------------------------------------------------------------- |
-| `appName` | `SupportedApps` | **Required**. There's a set of [supported apps](#supported-apps) to Synxty assets that you can use.|
+| Parameter | Type            | Description                                                                                         |
+| :-------- | :-------------- | :-------------------------------------------------------------------------------------------------- |
+| `appName` | `SupportedApps` | **Required**. There's a set of [supported apps](#supported-apps) to Synxty assets that you can use. |
 
 ### Supported Apps
 
 Currently you can get specifications for Synxty assets for the following apps:
 
-| `SupportedApps` | Profile     | Banners    | Posts      |
-| :-------------  | :-------:   | :--------: | :--------: |
-| Discord         | &check;     |            |            |
-| Facebook        | &check;     |            |            |
-| GitHub          | &check;     |            |            |
-| Instagram       | &check;     |            |            |
-| LinkedIn        | &check;     |            |            |
-| Twitch          | &check;     |            |            |
-| Twitter         | &check;     |            |            |
-| VS Code         | &check;     |            |            |
-| YouTube         | &check;     |            |            |
+| `SupportedApps` | Profile | Banners | Posts |
+| :-------------- | :-----: | :-----: | :---: |
+| Discord         | &check; |         |       |
+| Facebook        | &check; |         |       |
+| GitHub          | &check; |         |       |
+| Instagram       | &check; |         |       |
+| LinkedIn        | &check; |         |       |
+| Twitch          | &check; |         |       |
+| Twitter         | &check; |         |       |
+| VS Code         | &check; |         |       |
+| YouTube         | &check; |         |       |
 
 ### Types & Interfaces
 
 #### `ProfileIconSpecs`
 
-| Parameter | Type     | Description                                                                      |
-| :-------- | :------- | :------------------------------------------------------------------------------- |
-| `size`    | `number` | **Required**. Size in **px** of the profile icon for an app.                     |
-| `radius`  | `number` | Border radius in **%**. Some apps support different border radius for the icon.  |
+| Parameter | Type     | Description                                                                     |
+| :-------- | :------- | :------------------------------------------------------------------------------ |
+| `size`    | `number` | **Required**. Size in **px** of the profile icon for an app.                    |
+| `radius`  | `number` | Border radius in **%**. Some apps support different border radius for the icon. |
 
 ## ⚖️ License
 
 This package is open source software [licensed as MIT](LICENSE).
 
 ---
+
 Thank you, made with 💗 by [&copy; Synxty](https://github.com/synxty).

@@ -2,7 +2,7 @@
   "extends": "@synxty/tsconfig/base.json",
   "compilerOptions": {
     "baseUrl": "./src",
-    "types": [ "vitest/globals" ]
+    "types": ["vitest/globals"]
   },
   "exclude": ["node_modules", "lib"]
 }

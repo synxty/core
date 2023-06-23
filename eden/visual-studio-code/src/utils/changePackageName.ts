@@ -6,12 +6,12 @@ if (process.argv.length !== 3) {
   process.exit(1);
 }
 
-const [ PACKAGE_NAME ]: string[] = process.argv.slice(2);
+const [PACKAGE_NAME]: string[] = process.argv.slice(2);
 
 const result = {
   ...pkg,
-  name: PACKAGE_NAME
-}
+  name: PACKAGE_NAME,
+};
 
 writeFileSync(`./package.json`, JSON.stringify(result, null, 2));
 console.log('Package name changed to', PACKAGE_NAME);

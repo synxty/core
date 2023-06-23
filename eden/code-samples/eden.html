@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Eden</title>
-</head>
-<body>
-  <!-- Eden is full of beautiful islands... -->
-  <h1>Islands</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eden</title>
+  </head>
+  <body>
+    <!-- Eden is full of beautiful islands... -->
+    <h1>Islands</h1>
 
-  <form>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="name" value="Elysian" />
 
-    <label for="name">Name</label>
-    <input type="text" name="name" value="Elysian">
+      <label for="length">Length:</label>
+      <input type="number" name="length" value="300" />
 
-    <label for="length">Length:</label>
-    <input type="number" name="length" value="300">
+      <label for="width">Width:</label>
+      <input type="number" name="width" value="350" />
 
-    <label for="width">Width:</label>
-    <input type="number" name="width" value="350">
+      <label for="features">Features:</label>
+      <input type="checkbox" name="features" value="Sunsets" checked />
+      <input type="checkbox" name="features" value="Beaches" checked />
 
-    <label for="features">Features:</label>
-    <input type="checkbox" name="features" value="Sunsets" checked>
-    <input type="checkbox" name="features" value="Beaches" checked>
+      <button type="submit">Submit</button>
+    </form>
 
-    <button type="submit">Submit</button>
-  </form>
-
-  <script>
-    // ...one of them is named Elysian
-    const form = document.querySelector('form');
-    form.addEventListener('submit', (e) => {
-      const { length, width } = e.target;
-      const area = length.value * width.value;
-    });
-  </script>
-</body>
+    <script>
+      // ...one of them is named Elysian
+      const form = document.querySelector('form');
+      form.addEventListener('submit', (e) => {
+        const { length, width } = e.target;
+        const area = length.value * width.value;
+      });
+    </script>
+  </body>
 </html>

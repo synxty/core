@@ -6,14 +6,15 @@
 
 > Islands interface
 
-| Key        | Type        |
-|------------|-------------|
-| name       | string      |
-| length     | number      |
-| width      | number      |
-| features   | string[]    |
+| Key      | Type     |
+| -------- | -------- |
+| name     | string   |
+| length   | number   |
+| width    | number   |
+| features | string[] |
 
 <!-- ...one of them is named Elysian -->
+
 ## Elysian
 
 ### Name

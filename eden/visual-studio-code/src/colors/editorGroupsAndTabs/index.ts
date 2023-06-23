@@ -4,5 +4,5 @@ import { tabs } from './tabs.ts';
 
 export const editorGroupsAndTabs: EditorGroupsAndTabs = {
   ...editorGroups,
-  ...tabs
-}
+  ...tabs,
+};

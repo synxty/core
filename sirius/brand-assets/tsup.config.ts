@@ -1,4 +1,4 @@
-import { defineConfig}  from 'tsup';
+import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: ['src/generate-assets/index.ts', 'src/apps-specs/index.ts'],

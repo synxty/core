@@ -5,4 +5,4 @@ export { supportedThemes } from './supportedThemes.ts';
 
 export function getThemeConfig(theme: SupportedThemes): ThemeConfig {
   return themes[theme];
-};
+}

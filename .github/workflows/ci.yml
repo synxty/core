@@ -1,8 +1,8 @@
 name: CI
- 
+
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   pull_request:
     types: [opened, synchronize]
 
@@ -15,31 +15,41 @@ env:
 
 jobs:
   build:
-      runs-on: ubuntu-latest
- 
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
-          with:
-            fetch-depth: 2
- 
-        - uses: pnpm/action-setup@v2
-          with:
-            version: 7
- 
-        - name: Setting up Node.js environment
-          uses: actions/setup-node@v3
-          with:
-            node-version-file: '.nvmrc'
-            registry-url: 'https://npm.pkg.github.com'
-            scope: '@synxty'
-            cache: "pnpm"
- 
-        - name: Installing dependencies
-          run: pnpm install
- 
-        - name: Testing
-          run: pnpm test
+    runs-on: ubuntu-latest
 
-        - name: Building
-          run: pnpm build
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Setting up Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@synxty'
+          cache: 'pnpm'
+
+      - name: Installing dependencies
+        run: pnpm install
+
+      - name: Formatting
+        run: pnpm format
+
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
+
+      - name: Building
+        run: pnpm build
+
+      - name: Testing
+        run: pnpm test

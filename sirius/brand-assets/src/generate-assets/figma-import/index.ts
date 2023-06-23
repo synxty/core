@@ -1,4 +1,8 @@
-import { FigmaExportRC, ComponentsCommandOptions, ComponentOutputterParamOption } from '@figma-export/types';
+import {
+  FigmaExportRC,
+  ComponentsCommandOptions,
+  ComponentOutputterParamOption,
+} from '@figma-export/types';
 import { pascalCase } from '@figma-export/utils';
 import transformSvgWithSvgo from '@figma-export/transform-svg-with-svgo';
 import outputComponentsAsEs6 from '@figma-export/output-components-as-es6';
@@ -29,8 +33,9 @@ const componentOptions: ComponentsCommandOptions = {
   outputters: [
     outputComponentsAsEs6({
       output: IMPORT_DIRECTORY,
-      getVariableName: (options: ComponentOutputterParamOption) => pascalCase(options.componentName.trim()),
-    })
+      getVariableName: (options: ComponentOutputterParamOption) =>
+        pascalCase(options.componentName.trim()),
+    }),
   ],
 };
 

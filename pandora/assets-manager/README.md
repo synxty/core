@@ -16,13 +16,13 @@ pnpm add @synxty/assets-manager -D
 import { convertIconToPNG } from '@synxty/assets-manager';
 
 convertIconToPNG(
-  iconPath, 
+  iconPath,
   {
     outputFilename: 'profile-icon',
     appName: 'github',
-    theme: 'dark'
+    theme: 'dark',
   },
-  outDir
+  outDir,
 );
 ```
 
@@ -61,4 +61,5 @@ convertIconToPNG(
 This package is open source software [licensed as MIT](LICENSE).
 
 ---
+
 Thank you, made with 💗 by [&copy; Synxty](https://github.com/synxty).

@@ -26,20 +26,19 @@ export type * from './StatusBarColors/index.ts';
 export type * from './TitleBar/index.ts';
 export type * from './WindowBorder/index.ts';
 
-export type ThemeColors = 
-  ActivityBar | 
-  EditorColors | 
-  SideBar | 
-  WindowBorder |
-  TitleBar |
-  EditorGroupsAndTabs |
-  BaseColors |
-  ActionColors |
-  ButtonControl |
-  StatusBarColors |
-  DropdownControl |
-  InputControl
-;
+export type ThemeColors =
+  | ActivityBar
+  | EditorColors
+  | SideBar
+  | WindowBorder
+  | TitleBar
+  | EditorGroupsAndTabs
+  | BaseColors
+  | ActionColors
+  | ButtonControl
+  | StatusBarColors
+  | DropdownControl
+  | InputControl;
 
 export type TokenColors = [];
 
@@ -47,4 +46,4 @@ export type Theme = {
   name: string;
   colors: ThemeColors;
   tokenColors: TokenColors;
-}
+};

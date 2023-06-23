@@ -14,5 +14,5 @@ export const editorColors: EditorColors = {
   ...bracketPairs,
   ...overviewRuler,
   ...gutter,
-  ...commentsWidget
-}
+  ...commentsWidget,
+};

@@ -19,12 +19,11 @@ export { Gutter } from './Gutter.ts';
 import { CommentsWidget } from './CommentsWidget.ts';
 export { CommentsWidget } from './CommentsWidget.ts';
 
-export type EditorColors = 
-  General | 
-  CodeLens | 
-  LightBulb |
-  BracketPairs |
-  OverviewRuler |
-  Gutter |
-  CommentsWidget
-;
+export type EditorColors =
+  | General
+  | CodeLens
+  | LightBulb
+  | BracketPairs
+  | OverviewRuler
+  | Gutter
+  | CommentsWidget;

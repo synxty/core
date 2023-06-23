@@ -3,28 +3,28 @@
 // Hover to view descriptions of existing attributes.
 // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 {
-	"version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Eden Debug",
-            "type": "extensionHost",
-            "request": "launch",
-            "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}/eden/visual-studio-code",
-                "--disable-extensions",
-                "${workspaceFolder}/eden/code-samples"
-            ],
-            "preLaunchTask": "generate-eden-theme-file"
-        },
-        {
-            "name": "Eden Debug (with extensions)",
-            "type": "extensionHost",
-            "request": "launch",
-            "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}/eden/visual-studio-code",
-                "${workspaceFolder}/eden/code-samples"
-            ],
-            "preLaunchTask": "generate-eden-theme-file"
-        }   
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Eden Debug",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/eden/visual-studio-code",
+        "--disable-extensions",
+        "${workspaceFolder}/eden/code-samples"
+      ],
+      "preLaunchTask": "generate-eden-theme-file"
+    },
+    {
+      "name": "Eden Debug (with extensions)",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/eden/visual-studio-code",
+        "${workspaceFolder}/eden/code-samples"
+      ],
+      "preLaunchTask": "generate-eden-theme-file"
+    }
+  ]
 }
