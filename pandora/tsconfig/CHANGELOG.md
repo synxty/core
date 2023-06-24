@@ -10,4 +10,4 @@
 
 ### Major Changes
 
-- 2661ee7: Created the base tsconfig file for synxty projects and products.
+- 2661ee7: Created the base tsconfig file for Synxty projects and products.
