@@ -1,2 +1,2 @@
-export type * from './Apps.ts';
-export type * from './Themes.ts';
+export type * from './Apps/index.ts';
+export type * from './Themes/index.ts';
