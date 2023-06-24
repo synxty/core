@@ -1,5 +1,11 @@
 # @synxty/tsconfig
 
+## 1.0.2
+
+### Patch Changes
+
+- 384f703: Updated README
+
 ## 1.0.1
 
 ### Patch Changes
