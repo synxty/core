@@ -1,6 +1,6 @@
 # TS Config
 
-> Extend your TypeScript compiler options with Pandora's TS Config package.
+> Add a tsconfig file to your project easily with Synxty's TS Config package.
 
 ## ⚙️ Install
 
@@ -8,20 +8,21 @@
 pnpm add @synxty/tsconfig -D
 ```
 
-## 🔧 Usage
+## 📝 Setup
 
-All you need to do is extend the tsconfig file in your package root like in the example below.
+### Typescript base
 
-### Base
+Make sure you have a tsconfig.json file in the root of your package. Paste or adjust the following in your file:
 
-```typescript
-// tsconfig.json
-
+```json
 {
-  "extends": "@synxty/tsconfig/base.json"
-  ...
+  "extends": "@synxty/tsconfig/base.json",
+  "compilerOptions": {},
+  "exclude": []
 }
 ```
+
+If you need to add additional compiler options, or exclude your transpiled code directories feel free to do it 🙂
 
 ## ⚖️ License
 

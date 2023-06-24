@@ -1,6 +1,6 @@
 # Assets Manager
 
-> Manage Synxty assets like icons, logos and banners with Pandora's Assets Manager features.
+> Manage Synxty assets like icons, logos and banners with Synxty's Assets Manager features.
 
 ## ⚙️ Install
 
