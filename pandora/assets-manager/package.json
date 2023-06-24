@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint:": "tsc",
+    "lint": "tsc",
     "test": "vitest --run --no-threads",
     "test:coverage": "vitest --run --coverage --no-threads ",
     "test:watch": "vitest --no-threads"
