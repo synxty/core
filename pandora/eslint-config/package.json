@@ -1,6 +1,6 @@
 {
   "name": "@synxty/eslint-config",
-  "description": "Import eslint rules directly into your Synxty packages.",
+  "description": "Add linting to your project easily with Synxty's ES Lint Config package.",
   "version": "0.0.0",
   "license": "MIT",
   "dependencies": {
