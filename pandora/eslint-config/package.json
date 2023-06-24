@@ -1,7 +1,7 @@
 {
   "name": "@synxty/eslint-config",
   "description": "Add linting to your project easily with Synxty's ES Lint Config package.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.60.0",

@@ -1,6 +1,6 @@
 {
   "name": "@synxty/tsconfig",
   "description": "Add a tsconfig file to your project easily with Synxty's TS Config package.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT"
 }
