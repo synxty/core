@@ -43,6 +43,9 @@ importers:
       '@synxty/design-tokens':
         specifier: workspace:^
         version: link:../../callisto/design-tokens
+      '@synxty/eslint-config':
+        specifier: workspace:^
+        version: link:../../pandora/eslint-config
       '@synxty/tsconfig':
         specifier: workspace:^
         version: link:../../pandora/tsconfig
