@@ -77,6 +77,9 @@ importers:
         specifier: ^0.32.0
         version: 0.32.0
     devDependencies:
+      '@synxty/eslint-config':
+        specifier: workspace:^
+        version: link:../eslint-config
       '@synxty/tsconfig':
         specifier: workspace:^
         version: link:../tsconfig
