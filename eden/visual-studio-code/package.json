@@ -38,6 +38,7 @@
     "@synxty/assets-manager": "workspace:^",
     "@synxty/brand-assets": "workspace:^",
     "@synxty/design-tokens": "workspace:^",
+    "@synxty/eslint-config": "workspace:^",
     "@synxty/tsconfig": "workspace:^",
     "@types/node": "^18.16.0",
     "@vscode/vsce": "^2.19.0",
@@ -48,7 +49,7 @@
   "scripts": {
     "build": "sh scripts/build.sh",
     "dev": "sh scripts/dev.sh",
-    "lint:": "tsc",
+    "lint": "eslint . --fix",
     "postpublish": "sh scripts/pack.sh && sh scripts/release.sh && sh scripts/restore.sh"
   }
 }

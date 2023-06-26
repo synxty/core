@@ -30,6 +30,7 @@
     "@figma-export/transform-svg-with-svgo": "^4.5.0",
     "@figma-export/types": "^4.5.0",
     "@figma-export/utils": "^4.0.0",
+    "@synxty/eslint-config": "workspace:^",
     "@synxty/tsconfig": "workspace:^",
     "@types/node": "^18.16.0",
     "dotenv": "^16.0.3",
@@ -39,6 +40,6 @@
   },
   "scripts": {
     "build": "sh scripts/build.sh",
-    "lint": "tsc"
+    "lint": "eslint . --fix"
   }
 }

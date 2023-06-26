@@ -49,7 +49,7 @@ export function addBackgroundToSVG(
 export async function saveSVGToPNGFile(
   svg: SVGSVGElement,
   specs: PNGSpecs,
-  outDir: string = '.',
+  outDir = '.',
 ): Promise<void> {
   const outputFilePath = `${outDir}/${generateFilename(specs)}.png`;
   const imageBuffer = Buffer.from(new XMLSerializer().serializeToString(svg));
@@ -69,8 +69,10 @@ export function addSuffixes(
   theme: SupportedThemes,
 ) {
   const suffixes = { theme, appName };
-  for (let suffix of addSuffixes!) {
-    filename = `${filename}-${suffixes[suffix]}`;
+  if (addSuffixes) {
+    for (const suffix of addSuffixes) {
+      filename = `${filename}-${suffixes[suffix]}`;
+    }
   }
   return filename;
 }

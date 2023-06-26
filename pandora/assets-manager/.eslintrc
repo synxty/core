@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": "@synxty/eslint-config/base.json",
+  "ignorePatterns": ["lib"],
+  "overrides": [
+    {
+      "files": ["*.spec.ts"],
+      "rules": {
+        "@typescript-eslint/unbound-method": "off"
+      }
+    }
+  ]
+}

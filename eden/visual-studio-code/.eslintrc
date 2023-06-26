@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": "@synxty/eslint-config/base.json"
+}
