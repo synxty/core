@@ -133,6 +133,9 @@ importers:
       '@figma-export/utils':
         specifier: ^4.0.0
         version: 4.0.0
+      '@synxty/eslint-config':
+        specifier: workspace:^
+        version: link:../../pandora/eslint-config
       '@synxty/tsconfig':
         specifier: workspace:^
         version: link:../../pandora/tsconfig
