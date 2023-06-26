@@ -42,14 +42,8 @@ jobs:
       - name: Installing dependencies
         run: pnpm install
 
-      - name: Formatting
-        run: pnpm format
+      - name: Formatting | Linting | Testing | Building
+        run: pnpm ci:turbo
 
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
-
-      - name: Building
-        run: pnpm build
-
-      - name: Testing
-        run: pnpm test
