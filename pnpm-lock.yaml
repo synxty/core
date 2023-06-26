@@ -43,6 +43,9 @@ importers:
       '@synxty/design-tokens':
         specifier: workspace:^
         version: link:../../callisto/design-tokens
+      '@synxty/eslint-config':
+        specifier: workspace:^
+        version: link:../../pandora/eslint-config
       '@synxty/tsconfig':
         specifier: workspace:^
         version: link:../../pandora/tsconfig
@@ -74,6 +77,9 @@ importers:
         specifier: ^0.32.0
         version: 0.32.0
     devDependencies:
+      '@synxty/eslint-config':
+        specifier: workspace:^
+        version: link:../eslint-config
       '@synxty/tsconfig':
         specifier: workspace:^
         version: link:../tsconfig
@@ -127,6 +133,9 @@ importers:
       '@figma-export/utils':
         specifier: ^4.0.0
         version: 4.0.0
+      '@synxty/eslint-config':
+        specifier: workspace:^
+        version: link:../../pandora/eslint-config
       '@synxty/tsconfig':
         specifier: workspace:^
         version: link:../../pandora/tsconfig

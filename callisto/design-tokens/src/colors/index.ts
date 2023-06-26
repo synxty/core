@@ -1,4 +1,4 @@
-import { Aliases } from 'types/Colors.ts';
+import { Aliases } from 'types/index.ts';
 import { bittersweet } from './bittersweet.ts';
 import { black } from './black.ts';
 import { crayola } from './crayola.ts';

@@ -84,6 +84,7 @@ describe('> Save SVG to PNG file', () => {
       appName: TEST_RESULT_APP_NAME,
       theme: 'dark',
     });
+
     expect(sharp().toFile).toHaveBeenCalled();
   });
 });

@@ -34,6 +34,6 @@
   "scripts": {
     "build": "tsup",
     "generate-colors-samples": "tsx scripts/generate-colors-samples.ts",
-    "lint:": "tsc"
+    "lint": "tsc"
   }
 }
