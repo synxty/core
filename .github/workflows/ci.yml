@@ -12,6 +12,8 @@ env:
   NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
   FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 
 jobs:
   build:
