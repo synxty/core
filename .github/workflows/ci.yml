@@ -48,5 +48,7 @@ jobs:
       - name: Formatting > Linting > Testing > Building
         run: pnpm ci:turbo
 
-      - name: Git Auto Commit
+      - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        with:
+          commit_message: apply linting and formatting changes
