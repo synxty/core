@@ -15,7 +15,8 @@ env:
   VSCE_PAT: ${{ secrets.VSCE_PAT }}
 
 jobs:
-  build:
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
