@@ -15,6 +15,7 @@
   "scripts": {
     "build": "turbo run build",
     "ci:publish": "changeset publish",
+    "ci:turbo": "turbo run format lint test build",
     "ci:version": "changeset version",
     "dev": "turbo run dev",
     "format": "prettier -w --cache . --loglevel warn",

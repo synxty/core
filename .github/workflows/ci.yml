@@ -12,9 +12,12 @@ env:
   NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
   FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
 
     permissions:
@@ -42,17 +45,10 @@ jobs:
       - name: Installing dependencies
         run: pnpm install
 
-      - name: Linting
-        run: pnpm lint
+      - name: Formatting > Linting > Testing > Building
+        run: pnpm ci:turbo
 
-      - name: Formatting
-        run: pnpm format
-
-      - name: Git Auto Commit
+      - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
-
-      - name: Building
-        run: pnpm build
-
-      - name: Testing
-        run: pnpm test
+        with:
+          commit_message: apply linting and formatting changes
