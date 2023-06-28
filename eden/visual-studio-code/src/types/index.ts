@@ -7,6 +7,7 @@ import { DropdownControl } from './DropdownControl/index.ts';
 import { EditorColors } from './EditorColors/index.ts';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs/index.ts';
 import { InputControl } from './InputControl/index.ts';
+import { ProgressBar } from './ProgressBar/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
@@ -24,6 +25,7 @@ export type * from './DropdownControl/index.ts';
 export type * from './EditorColors/index.ts';
 export type * from './EditorGroupsAndTabs/index.ts';
 export type * from './InputControl/index.ts';
+export type * from './ProgressBar/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './StatusBarColors/index.ts';
@@ -44,7 +46,8 @@ export type ThemeColors =
   | DropdownControl
   | InputControl
   | ScrollbarControl
-  | Badge;
+  | Badge
+  | ProgressBar;
 
 export type TokenColors = [];
 

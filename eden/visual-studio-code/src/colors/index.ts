@@ -13,6 +13,7 @@ import { titleBar } from './titleBar/index.ts';
 import { windowBorder } from './windowBorder/index.ts';
 import { scrollbarControl } from './scrollbarControl/index.ts';
 import { badge } from './badge/index.ts';
+import { progressBar } from './progressBar/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -29,6 +30,7 @@ const themeColors: ThemeColors = {
   ...inputControl,
   ...scrollbarControl,
   ...badge,
+  ...progressBar,
 };
 
 export default themeColors;
