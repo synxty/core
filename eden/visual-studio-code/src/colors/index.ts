@@ -12,6 +12,7 @@ import { statusBarColors } from './statusBarColors/index.ts';
 import { titleBar } from './titleBar/index.ts';
 import { windowBorder } from './windowBorder/index.ts';
 import { scrollbarControl } from './scrollbarControl/index.ts';
+import { badge } from './badge/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -27,6 +28,7 @@ const themeColors: ThemeColors = {
   ...dropdownControl,
   ...inputControl,
   ...scrollbarControl,
+  ...badge,
 };
 
 export default themeColors;

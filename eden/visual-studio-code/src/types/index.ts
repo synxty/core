@@ -1,5 +1,6 @@
 import { ActionColors } from './ActionColors/index.ts';
 import { ActivityBar } from './ActivityBar/index.ts';
+import { Badge } from './Badge/index.ts';
 import { BaseColors } from './BaseColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
 import { DropdownControl } from './DropdownControl/index.ts';
@@ -16,6 +17,7 @@ export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[
 
 export type * from './ActionColors/index.ts';
 export type * from './ActivityBar/index.ts';
+export type * from './Badge/index.ts';
 export type * from './BaseColors/index.ts';
 export type * from './ButtonControl/index.ts';
 export type * from './DropdownControl/index.ts';
@@ -41,7 +43,8 @@ export type ThemeColors =
   | StatusBarColors
   | DropdownControl
   | InputControl
-  | ScrollbarControl;
+  | ScrollbarControl
+  | Badge;
 
 export type TokenColors = [];
 
