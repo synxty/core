@@ -29,6 +29,14 @@ This config includes:
 
 Additionally, make sure to add `ignorePatterns` based on your project's specific distribution code directory. Add any directory paths that contain generated or transpiled files, such as "lib" or "dist. This will prevent ESLint from linting those files and focus only on your source code.
 
+### Enable linting on CI
+
+In order to enable linting on CI or if you want to easily lint your code from the terminal, add the following script to your `package.json` :
+
+```json
+"lint": "eslint . --fix",
+```
+
 ## ⚖️ License
 
 This package is open source software [licensed as MIT](LICENSE).
