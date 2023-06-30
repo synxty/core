@@ -14,6 +14,7 @@ import { windowBorder } from './windowBorder/index.ts';
 import { scrollbarControl } from './scrollbarControl/index.ts';
 import { badge } from './badge/index.ts';
 import { progressBar } from './progressBar/index.ts';
+import { listsAndTrees } from './listsAndTrees/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -31,6 +32,7 @@ const themeColors: ThemeColors = {
   ...scrollbarControl,
   ...badge,
   ...progressBar,
+  ...listsAndTrees,
 };
 
 export default themeColors;
