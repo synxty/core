@@ -15,6 +15,8 @@ import { scrollbarControl } from './scrollbarControl/index.ts';
 import { badge } from './badge/index.ts';
 import { progressBar } from './progressBar/index.ts';
 import { listsAndTrees } from './listsAndTrees/index.ts';
+import { textColors } from './textColors/index.ts';
+import { profiles } from './profiles/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -33,6 +35,8 @@ const themeColors: ThemeColors = {
   ...badge,
   ...progressBar,
   ...listsAndTrees,
+  ...textColors,
+  ...profiles,
 };
 
 export default themeColors;
