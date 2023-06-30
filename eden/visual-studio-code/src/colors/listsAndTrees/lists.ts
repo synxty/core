@@ -1,5 +1,5 @@
 import { colors, aliases } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from 'constants/index.ts';
+import { TESTING } from 'constants/index.ts';
 import { Lists } from 'types/index.ts';
 
 const { primary, amber, danger, warning } = aliases;

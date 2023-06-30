@@ -12,6 +12,7 @@ import { ProgressBar } from './ProgressBar/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
+import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
 
@@ -31,6 +32,7 @@ export type * from './ProgressBar/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './StatusBarColors/index.ts';
+export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
 export type * from './WindowBorder/index.ts';
 
@@ -50,7 +52,8 @@ export type ThemeColors =
   | ScrollbarControl
   | Badge
   | ProgressBar
-  | ListsAndTrees;
+  | ListsAndTrees
+  | TextColors;
 
 export type TokenColors = [];
 
