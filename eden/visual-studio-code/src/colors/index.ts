@@ -17,6 +17,7 @@ import { progressBar } from './progressBar/index.ts';
 import { listsAndTrees } from './listsAndTrees/index.ts';
 import { textColors } from './textColors/index.ts';
 import { profiles } from './profiles/index.ts';
+import { minimap } from './minimap/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -37,6 +38,7 @@ const themeColors: ThemeColors = {
   ...listsAndTrees,
   ...textColors,
   ...profiles,
+  ...minimap,
 };
 
 export default themeColors;

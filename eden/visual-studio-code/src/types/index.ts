@@ -8,6 +8,7 @@ import { EditorColors } from './EditorColors/index.ts';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs/index.ts';
 import { InputControl } from './InputControl/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
+import { Minimap } from './Minimap/index.ts';
 import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
@@ -29,6 +30,7 @@ export type * from './EditorColors/index.ts';
 export type * from './EditorGroupsAndTabs/index.ts';
 export type * from './InputControl/index.ts';
 export type * from './ListsAndTrees/index.ts';
+export type * from './Minimap/index.ts';
 export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
 export type * from './ScrollbarControl/index.ts';
@@ -56,7 +58,8 @@ export type ThemeColors =
   | ProgressBar
   | ListsAndTrees
   | TextColors
-  | Profiles;
+  | Profiles
+  | Minimap;
 
 export type TokenColors = [];
 
