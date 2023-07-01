@@ -1,5 +1,17 @@
 # @synxty/eden-vscode
 
+## 0.6.0
+
+### Minor Changes
+
+- be08d70: Added Profiles colors
+- be08d70: Added Minimap colors
+- 526d8bc: Added Progress Bar colors
+- 526d8bc: Added Badge colors
+- ccb6fe9: Added Lists and Trees colors
+- 526d8bc: Added Scrollbar Control colors
+- 6813f8d: Added Text colors
+
 ## 0.5.0
 
 ### Minor Changes
