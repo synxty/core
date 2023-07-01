@@ -3,7 +3,7 @@ import { TESTING } from 'constants/index.ts';
 import { BaseColors } from 'types/index.ts';
 
 const { black, white } = colors;
-const { primary } = aliases;
+const { primary, amber } = aliases;
 
 export const baseColors: BaseColors = {
   focusBorder: black.tint[90],
@@ -15,5 +15,5 @@ export const baseColors: BaseColors = {
   descriptionForeground: white.shade[120],
   errorForeground: TESTING,
   'icon.foreground': black.tint[120],
-  'sash.hoverBorder': TESTING,
+  'sash.hoverBorder': amber.DEFAULT,
 };
