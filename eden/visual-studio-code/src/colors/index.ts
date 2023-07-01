@@ -18,6 +18,7 @@ import { listsAndTrees } from './listsAndTrees/index.ts';
 import { textColors } from './textColors/index.ts';
 import { profiles } from './profiles/index.ts';
 import { minimap } from './minimap/index.ts';
+import { diffEditorColors } from './diffEditorColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -39,6 +40,7 @@ const themeColors: ThemeColors = {
   ...textColors,
   ...profiles,
   ...minimap,
+  ...diffEditorColors,
 };
 
 export default themeColors;
