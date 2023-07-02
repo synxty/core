@@ -6,7 +6,7 @@ import {
 import { pascalCase } from '@figma-export/utils';
 import transformSvgWithSvgo from '@figma-export/transform-svg-with-svgo';
 import outputComponentsAsEs6 from '@figma-export/output-components-as-es6';
-import { IMPORT_DIRECTORY } from 'generate-assets/constants/index.ts';
+import { IMPORT_DIRECTORY } from 'assets/constants/index.ts';
 
 const fileId = process.env.FIGMA_FILE_ID as string;
 
