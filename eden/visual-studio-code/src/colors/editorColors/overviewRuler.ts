@@ -2,13 +2,13 @@ import { colors, aliases } from '@synxty/design-tokens';
 import { TESTING } from 'constants/index.ts';
 import { OverviewRuler } from 'types/index.ts';
 
-const { primary, amber, danger, info, success, warning } = aliases;
+const { primary, secondary, danger, info, success, warning } = aliases;
 const { black } = colors;
 
 export const overviewRuler: OverviewRuler = {
   'editorOverviewRuler.background': black.tint[20],
   'editorOverviewRuler.border': black.tint[10],
-  'editorOverviewRuler.findMatchForeground': amber.DEFAULT,
+  'editorOverviewRuler.findMatchForeground': secondary.DEFAULT,
   'editorOverviewRuler.rangeHighlightForeground': TESTING,
   'editorOverviewRuler.selectionHighlightForeground': primary.DEFAULT,
   'editorOverviewRuler.wordHighlightForeground': primary.DEFAULT,
