@@ -1,5 +1,5 @@
 import { colors, aliases } from '@synxty/design-tokens';
-import { TESTING } from 'constants/index.ts';
+import { DEBUGGING, TESTING } from 'constants/index.ts';
 import { Lists } from 'types/index.ts';
 
 const { primary, amber, danger, warning } = aliases;
@@ -12,7 +12,7 @@ export const lists: Lists = {
   'list.dropBackground': `${black.tint[40]}`,
   'list.focusBackground': black.tint[20],
   'list.focusForeground': white.shade[10],
-  'list.focusHighlightForeground': TESTING,
+  'list.focusHighlightForeground': amber.DEFAULT,
   'list.focusOutline': primary.DEFAULT,
   'list.focusAndSelectionOutline': amber.DEFAULT,
   'list.highlightForeground': primary.DEFAULT,
