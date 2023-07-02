@@ -1,8 +1,4 @@
-import {
-  EXPORT_DIRECTORY,
-  EXPORT_FILE_NAME,
-  IMPORT_DIRECTORY,
-} from 'generate-assets/constants/index.ts';
+import { EXPORT_DIRECTORY, EXPORT_FILENAME, IMPORT_DIRECTORY } from 'assets/constants/index.ts';
 import { readdir, readFileSync, createWriteStream } from 'node:fs';
 
 function generateAssetsSource() {
@@ -15,7 +11,7 @@ function generateAssetsSource() {
       filesData.push(fileContent);
     });
 
-    const indexFile = createWriteStream(`${EXPORT_DIRECTORY}/${EXPORT_FILE_NAME}`);
+    const indexFile = createWriteStream(`${EXPORT_DIRECTORY}/${EXPORT_FILENAME}`);
     filesData.forEach((data) => indexFile.write(data));
   });
 }

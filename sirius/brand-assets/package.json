@@ -4,14 +4,14 @@
   "version": "1.1.2",
   "license": "MIT",
   "type": "module",
-  "types": "./lib/generate-assets/index.d.ts",
+  "types": "./lib/assets/index.d.ts",
   "exports": {
     ".": {
-      "types": "./lib/generate-assets/index.d.ts",
-      "import": "./lib/generate-assets/index.js",
-      "node": "./lib/generate-assets/index.cjs",
-      "require": "./lib/generate-assets/index.cjs",
-      "default": "./lib/generate-assets/index.js"
+      "types": "./lib/assets/index.d.ts",
+      "import": "./lib/assets/index.js",
+      "node": "./lib/assets/index.cjs",
+      "require": "./lib/assets/index.cjs",
+      "default": "./lib/assets/index.js"
     },
     "./apps-specs": {
       "types": "./lib/apps-specs/index.d.ts",

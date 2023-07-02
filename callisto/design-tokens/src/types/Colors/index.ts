@@ -59,6 +59,7 @@ export type NeutralColor = {
 export type Aliases = {
   primary: Color;
   secondary: Color;
+  tertiary: Color;
   success: Color;
   info: Color;
   warning: Color;
