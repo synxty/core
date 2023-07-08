@@ -8,6 +8,7 @@ import { DiffEditorColors } from './DiffEditorColors/index.ts';
 import { DropdownControl } from './DropdownControl/index.ts';
 import { EditorColors } from './EditorColors/index.ts';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs/index.ts';
+import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { Minimap } from './Minimap/index.ts';
@@ -32,6 +33,7 @@ export type * from './DiffEditorColors/index.ts';
 export type * from './DropdownControl/index.ts';
 export type * from './EditorColors/index.ts';
 export type * from './EditorGroupsAndTabs/index.ts';
+export type * from './EditorWidgetColors/index.ts';
 export type * from './InputControl/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './Minimap/index.ts';
@@ -65,7 +67,8 @@ export type ThemeColors =
   | Profiles
   | Minimap
   | DiffEditorColors
-  | ChatColors;
+  | ChatColors
+  | EditorWidgetColors;
 
 export type TokenColors = [];
 

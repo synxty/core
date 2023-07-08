@@ -20,6 +20,7 @@ import { profiles } from './profiles/index.ts';
 import { minimap } from './minimap/index.ts';
 import { diffEditorColors } from './diffEditorColors/index.ts';
 import { chatColors } from './chatColors/index.ts';
+import { editorWidgetColors } from './editorWidgetColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -43,6 +44,7 @@ const themeColors: ThemeColors = {
   ...minimap,
   ...diffEditorColors,
   ...chatColors,
+  ...editorWidgetColors,
 };
 
 export default themeColors;

@@ -1,0 +1,38 @@
+import { ParseThemeColors } from 'types/index.ts';
+
+const editorWidgetColorsProps = [
+  'editorWidget.foreground',
+  'editorWidget.background',
+  'editorWidget.border',
+  'editorWidget.resizeBorder',
+  'editorSuggestWidget.background',
+  'editorSuggestWidget.border',
+  'editorSuggestWidget.foreground',
+  'editorSuggestWidget.focusHighlightForeground',
+  'editorSuggestWidget.highlightForeground',
+  'editorSuggestWidget.selectedBackground',
+  'editorSuggestWidget.selectedForeground',
+  'editorSuggestWidget.selectedIconForeground',
+  'editorSuggestWidgetStatus.foreground',
+  'editorHoverWidget.foreground',
+  'editorHoverWidget.background',
+  'editorHoverWidget.border',
+  'editorHoverWidget.highlightForeground',
+  'editorHoverWidget.statusBarBackground',
+  'editorGhostText.border',
+  'editorGhostText.background',
+  'editorGhostText.foreground',
+  'editorStickyScroll.background',
+  'editorStickyScrollHover.background',
+  'debugExceptionWidget.background',
+  'debugExceptionWidget.border',
+  'editorMarkerNavigation.background',
+  'editorMarkerNavigationError.background',
+  'editorMarkerNavigationWarning.background',
+  'editorMarkerNavigationInfo.background',
+  'editorMarkerNavigationError.headerBackground',
+  'editorMarkerNavigationWarning.headerBackground',
+  'editorMarkerNavigationInfo.headerBackground',
+] as const;
+
+export type EditorWidgetColors = ParseThemeColors<typeof editorWidgetColorsProps>;
