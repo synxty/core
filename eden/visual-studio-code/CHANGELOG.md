@@ -1,5 +1,22 @@
 # @synxty/eden-vscode
 
+## 0.7.0
+
+### Minor Changes
+
+- 8a06996: Added Diff Editor colors
+- 12f5d78: Added Editor Widget colors
+- 8a06996: Added Chat colors
+- 25d36c0: Added Peek View colors
+
+### Patch Changes
+
+- 25d36c0: Fixed lists filter match border
+- 8a06996: Fixed Sash hover background
+- 12f5d78: Fixed Selection colors
+- 12f5d78: Updated primary colors
+- 8a06996: Fixed Status Bar colors
+
 ## 0.6.0
 
 ### Minor Changes
