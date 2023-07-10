@@ -21,6 +21,7 @@ import { minimap } from './minimap/index.ts';
 import { diffEditorColors } from './diffEditorColors/index.ts';
 import { chatColors } from './chatColors/index.ts';
 import { editorWidgetColors } from './editorWidgetColors/index.ts';
+import { peekViewColors } from './peekViewColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -45,6 +46,7 @@ const themeColors: ThemeColors = {
   ...diffEditorColors,
   ...chatColors,
   ...editorWidgetColors,
+  ...peekViewColors,
 };
 
 export default themeColors;

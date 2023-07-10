@@ -12,6 +12,7 @@ import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { Minimap } from './Minimap/index.ts';
+import { PeekViewColors } from './PeekViewColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
@@ -37,6 +38,7 @@ export type * from './EditorWidgetColors/index.ts';
 export type * from './InputControl/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './Minimap/index.ts';
+export type * from './PeekViewColors/index.ts';
 export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
 export type * from './ScrollbarControl/index.ts';
@@ -68,7 +70,8 @@ export type ThemeColors =
   | Minimap
   | DiffEditorColors
   | ChatColors
-  | EditorWidgetColors;
+  | EditorWidgetColors
+  | PeekViewColors;
 
 export type TokenColors = [];
 

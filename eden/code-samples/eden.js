@@ -1,7 +1,7 @@
 /*
  * Eden is full of beautiful islands...
  */
-class Island {
+export class Island {
   constructor(props) {
     this.name = props.name;
     this.length = props.length;

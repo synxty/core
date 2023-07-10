@@ -11,7 +11,7 @@ interface IslandProps {
 
 type Features = string[];
 
-class Island {
+export class Island {
   name: string;
   length: number;
   width: number;
