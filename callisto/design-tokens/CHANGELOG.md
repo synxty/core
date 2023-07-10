@@ -1,5 +1,11 @@
 # @synxty/design-tokens
 
+## 0.2.0
+
+### Minor Changes
+
+- a0af27f: Update primary color and added a tertiary color
+
 ## 0.1.4
 
 ### Patch Changes

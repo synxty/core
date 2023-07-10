@@ -1,7 +1,7 @@
 {
   "name": "@synxty/brand-assets",
   "description": "Synxty assets repository with configurations for relevant platforms.",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "license": "MIT",
   "type": "module",
   "types": "./lib/assets/index.d.ts",

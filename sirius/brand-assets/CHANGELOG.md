@@ -1,5 +1,11 @@
 # @synxty/brand-assets
 
+## 2.0.0
+
+### Major Changes
+
+- 0a338f4: Updated Synxty's icon color and Eden's icon colors to use the new primary color
+
 ## 1.1.2
 
 ### Patch Changes
