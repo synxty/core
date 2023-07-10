@@ -1,9 +1,9 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from 'constants/index.ts';
+import { TESTING } from 'constants/index.ts';
 import { StatusBarColors } from 'types/index.ts';
 
 const { black, white } = colors;
-const { primary, danger, warning, amber, secondary } = aliases;
+const { primary, danger, warning, amber } = aliases;
 
 export const statusBarColors: StatusBarColors = {
   'statusBar.background': black.tint[20],

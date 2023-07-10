@@ -1,7 +1,7 @@
 import { colors, aliases } from '@synxty/design-tokens';
 import { BracketPairs } from 'types/index.ts';
 
-const { primary, magenta, violet, teal, amber, chartreuse, danger } = aliases;
+const { primary, magenta, violet, teal, tertiary, chartreuse, danger } = aliases;
 const { black } = colors;
 
 export const bracketPairs: BracketPairs = {
@@ -10,14 +10,14 @@ export const bracketPairs: BracketPairs = {
   'editorBracketHighlight.foreground1': primary.DEFAULT,
   'editorBracketHighlight.foreground2': magenta.DEFAULT,
   'editorBracketHighlight.foreground3': teal.DEFAULT,
-  'editorBracketHighlight.foreground4': amber.DEFAULT,
+  'editorBracketHighlight.foreground4': tertiary.DEFAULT,
   'editorBracketHighlight.foreground5': violet.DEFAULT,
   'editorBracketHighlight.foreground6': chartreuse.DEFAULT,
   'editorBracketHighlight.unexpectedBracket.foreground': danger.DEFAULT,
   // "editorBracketPairGuide.activeBackground1": primary.DEFAULT,
   // "editorBracketPairGuide.activeBackground2": magenta.DEFAULT,
   // "editorBracketPairGuide.activeBackground3": teal.DEFAULT,
-  // "editorBracketPairGuide.activeBackground4": amber.DEFAULT,
+  // "editorBracketPairGuide.activeBackground4": primary.DEFAULT,
   // "editorBracketPairGuide.activeBackground5": violet.DEFAULT,
   // "editorBracketPairGuide.activeBackground6": chartreuse.DEFAULT,
   // "editorBracketPairGuide.background1": TESTING,
