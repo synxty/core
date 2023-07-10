@@ -21,7 +21,7 @@ export const lists: Lists = {
   'list.inactiveSelectionBackground': black.tint[20],
   'list.inactiveSelectionForeground': white.shade[10],
   'list.inactiveSelectionIconForeground': primary.DEFAULT,
-  'list.inactiveFocusBackground': TESTING,
+  'list.inactiveFocusBackground': black.tint[20],
   //'list.inactiveFocusOutline': TESTING,
   'list.invalidItemForeground': TESTING,
   'list.errorForeground': danger.DEFAULT,
@@ -31,6 +31,6 @@ export const lists: Lists = {
   'listFilterWidget.noMatchesOutline': TESTING,
   'listFilterWidget.shadow': TESTING,
   'list.filterMatchBackground': TESTING,
-  'list.filterMatchBorder': TESTING,
+  //'list.filterMatchBorder': DEBUGGING,
   'list.deemphasizedForeground': TESTING,
 };

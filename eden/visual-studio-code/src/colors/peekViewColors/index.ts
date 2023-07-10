@@ -1,5 +1,5 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from 'constants/index.ts';
+import { TESTING } from 'constants/index.ts';
 import { PeekViewColors } from 'types/index.ts';
 
 const { black, white } = colors;
