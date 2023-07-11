@@ -23,6 +23,7 @@ import { chatColors } from './chatColors/index.ts';
 import { editorWidgetColors } from './editorWidgetColors/index.ts';
 import { peekViewColors } from './peekViewColors/index.ts';
 import { mergeConflictsColors } from './mergeConflictsColors/index.ts';
+import { inlineChatColors } from './inlineChatColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -49,6 +50,7 @@ const themeColors: ThemeColors = {
   ...editorWidgetColors,
   ...peekViewColors,
   ...mergeConflictsColors,
+  ...inlineChatColors,
 };
 
 export default themeColors;
