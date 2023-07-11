@@ -12,7 +12,7 @@ export const baseColors: BaseColors = {
   'widget.border': black.DEFAULT,
   'widget.shadow': `${black.DEFAULT}40`,
   'selection.background': primary.shade[40],
-  descriptionForeground: white.shade[120],
+  descriptionForeground: white.shade[70],
   errorForeground: TESTING,
   'icon.foreground': black.tint[120],
   'sash.hoverBorder': primary.DEFAULT,
