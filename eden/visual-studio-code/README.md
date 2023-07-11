@@ -3,3 +3,9 @@
 > Bring your code to paradise
 
 WIP
+
+### Temporary conflict
+
+This is an expected temporary conflict
+
+Testing it
