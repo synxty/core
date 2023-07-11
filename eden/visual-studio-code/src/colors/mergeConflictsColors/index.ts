@@ -19,7 +19,7 @@ export const mergeConflictsColors: MergeConflictsColors = {
   'editorOverviewRuler.commentForeground': TESTING,
   'editorOverviewRuler.commentUnresolvedForeground': TESTING,
   'mergeEditor.change.background': black.tint[30],
-  'mergeEditor.change.word.background': teal.shade[50],
+  'mergeEditor.change.word.background': black.tint[30],
   'mergeEditor.conflict.unhandledUnfocused.border': warning.DEFAULT,
   'mergeEditor.conflict.unhandledFocused.border': primary.DEFAULT,
   'mergeEditor.conflict.handledUnfocused.border': success.DEFAULT,
