@@ -11,6 +11,7 @@ import { EditorGroupsAndTabs } from './EditorGroupsAndTabs/index.ts';
 import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
+import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
 import { Minimap } from './Minimap/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
@@ -37,6 +38,7 @@ export type * from './EditorGroupsAndTabs/index.ts';
 export type * from './EditorWidgetColors/index.ts';
 export type * from './InputControl/index.ts';
 export type * from './ListsAndTrees/index.ts';
+export type * from './MergeConflictsColors/index.ts';
 export type * from './Minimap/index.ts';
 export type * from './PeekViewColors/index.ts';
 export type * from './Profiles/index.ts';
@@ -71,7 +73,8 @@ export type ThemeColors =
   | DiffEditorColors
   | ChatColors
   | EditorWidgetColors
-  | PeekViewColors;
+  | PeekViewColors
+  | MergeConflictsColors;
 
 export type TokenColors = [];
 
