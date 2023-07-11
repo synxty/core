@@ -9,6 +9,7 @@ import { DropdownControl } from './DropdownControl/index.ts';
 import { EditorColors } from './EditorColors/index.ts';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs/index.ts';
 import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
+import { InlineChatColors } from './InlineChatColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
@@ -36,6 +37,7 @@ export type * from './DropdownControl/index.ts';
 export type * from './EditorColors/index.ts';
 export type * from './EditorGroupsAndTabs/index.ts';
 export type * from './EditorWidgetColors/index.ts';
+export type * from './InlineChatColors/index.ts';
 export type * from './InputControl/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './MergeConflictsColors/index.ts';
@@ -74,7 +76,8 @@ export type ThemeColors =
   | ChatColors
   | EditorWidgetColors
   | PeekViewColors
-  | MergeConflictsColors;
+  | MergeConflictsColors
+  | InlineChatColors;
 
 export type TokenColors = [];
 
