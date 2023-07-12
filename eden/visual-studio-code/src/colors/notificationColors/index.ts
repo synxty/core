@@ -1,5 +1,4 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { TESTING } from 'constants/index.ts';
 import { NotificationColors } from 'types/index.ts';
 
 const { black, white } = colors;
