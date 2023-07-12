@@ -1,6 +1,7 @@
 import { ActionColors } from './ActionColors/index.ts';
 import { ActivityBar } from './ActivityBar/index.ts';
 import { Badge } from './Badge/index.ts';
+import { BannerColors } from './BannerColors/index.ts';
 import { BaseColors } from './BaseColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
@@ -15,6 +16,7 @@ import { InputControl } from './InputControl/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
 import { Minimap } from './Minimap/index.ts';
+import { NotificationColors } from './NotificationColors/index.ts';
 import { PanelColors } from './PanelColors/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
@@ -31,6 +33,7 @@ export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[
 export type * from './ActionColors/index.ts';
 export type * from './ActivityBar/index.ts';
 export type * from './Badge/index.ts';
+export type * from './BannerColors/index.ts';
 export type * from './BaseColors/index.ts';
 export type * from './ButtonControl/index.ts';
 export type * from './ChatColors/index.ts';
@@ -45,6 +48,7 @@ export type * from './InputControl/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './MergeConflictsColors/index.ts';
 export type * from './Minimap/index.ts';
+export type * from './NotificationColors/index.ts';
 export type * from './PanelColors/index.ts';
 export type * from './PeekViewColors/index.ts';
 export type * from './Profiles/index.ts';
@@ -83,7 +87,9 @@ export type ThemeColors =
   | MergeConflictsColors
   | InlineChatColors
   | PanelColors
-  | CommandCenterColors;
+  | CommandCenterColors
+  | NotificationColors
+  | BannerColors;
 
 export type TokenColors = [];
 
