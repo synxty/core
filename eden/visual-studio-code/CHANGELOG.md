@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.10.0
+
+### Minor Changes
+
+- 0f36f5f: Added Extensions colors
+
 ## 0.9.0
 
 ### Minor Changes
