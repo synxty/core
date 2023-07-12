@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo '> Publishing extension...'
-pnpm vsce publish --no-dependencies
+pnpm vsce publish --no-dependencies --pre-release
