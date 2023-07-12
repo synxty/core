@@ -25,6 +25,7 @@ import { peekViewColors } from './peekViewColors/index.ts';
 import { mergeConflictsColors } from './mergeConflictsColors/index.ts';
 import { inlineChatColors } from './inlineChatColors/index.ts';
 import { panelColors } from './panelColors/index.ts';
+import { commandCenterColors } from './commandCenterColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -53,6 +54,7 @@ const themeColors: ThemeColors = {
   ...mergeConflictsColors,
   ...inlineChatColors,
   ...panelColors,
+  ...commandCenterColors,
 };
 
 export default themeColors;
