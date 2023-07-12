@@ -22,6 +22,7 @@ import { PanelColors } from './PanelColors/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
+import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
@@ -55,6 +56,7 @@ export type * from './PanelColors/index.ts';
 export type * from './PeekViewColors/index.ts';
 export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
+export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './StatusBarColors/index.ts';
@@ -92,7 +94,8 @@ export type ThemeColors =
   | CommandCenterColors
   | NotificationColors
   | BannerColors
-  | ExtensionsColors;
+  | ExtensionsColors
+  | QuickPickerColors;
 
 export type TokenColors = [];
 
