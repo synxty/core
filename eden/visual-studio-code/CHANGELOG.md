@@ -1,5 +1,12 @@
 # @synxty/eden-vscode
 
+## 0.9.0
+
+### Minor Changes
+
+- 8a7f850: Added Banner colors
+- 8a7f850: Added Notification colors
+
 ## 0.8.0
 
 ### Minor Changes
