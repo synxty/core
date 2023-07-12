@@ -26,6 +26,7 @@ import { mergeConflictsColors } from './mergeConflictsColors/index.ts';
 import { inlineChatColors } from './inlineChatColors/index.ts';
 import { panelColors } from './panelColors/index.ts';
 import { commandCenterColors } from './commandCenterColors/index.ts';
+import { notificationColors } from './notificationColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -55,6 +56,7 @@ const themeColors: ThemeColors = {
   ...inlineChatColors,
   ...panelColors,
   ...commandCenterColors,
+  ...notificationColors,
 };
 
 export default themeColors;
