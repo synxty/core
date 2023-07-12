@@ -28,6 +28,7 @@ import { panelColors } from './panelColors/index.ts';
 import { commandCenterColors } from './commandCenterColors/index.ts';
 import { notificationColors } from './notificationColors/index.ts';
 import { bannerColors } from './bannerColors/index.ts';
+import { extensionsColors } from './extensionsColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -59,6 +60,7 @@ const themeColors: ThemeColors = {
   ...commandCenterColors,
   ...notificationColors,
   ...bannerColors,
+  ...extensionsColors,
 };
 
 export default themeColors;
