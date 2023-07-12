@@ -8,7 +8,7 @@ const { black, white } = colors;
 export const lists: Lists = {
   'list.activeSelectionBackground': black.tint[20],
   'list.activeSelectionForeground': white.shade[10],
-  'list.activeSelectionIconForeground': primary.DEFAULT,
+  'list.activeSelectionIconForeground': white.shade[10],
   'list.dropBackground': `${black.tint[40]}`,
   'list.focusBackground': black.tint[20],
   'list.focusForeground': white.shade[10],
@@ -20,7 +20,7 @@ export const lists: Lists = {
   'list.hoverForeground': white.shade[10],
   'list.inactiveSelectionBackground': black.tint[20],
   'list.inactiveSelectionForeground': white.shade[10],
-  'list.inactiveSelectionIconForeground': primary.DEFAULT,
+  'list.inactiveSelectionIconForeground': white.shade[10],
   'list.inactiveFocusBackground': black.tint[20],
   //'list.inactiveFocusOutline': TESTING,
   'list.invalidItemForeground': TESTING,

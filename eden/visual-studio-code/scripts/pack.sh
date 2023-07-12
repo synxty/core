@@ -7,4 +7,4 @@ echo '> Generating VS Code Marketplace package name..'
 pnpm tsx src/utils/changePackageName.ts 'eden-vscode'
 
 echo '> Packing extension...'
-pnpm vsce package --no-dependencies
+pnpm vsce package --no-dependencies --pre-release
