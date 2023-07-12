@@ -1,5 +1,14 @@
 # @synxty/eden-vscode
 
+## 0.8.0
+
+### Minor Changes
+
+- 5cbdfd5: Added Inline Chat colors
+- 15eb7bc: Added Panel colors
+- 6586791: Added Command Center colors
+- 11ca276: Added Merge Conflicts colors
+
 ## 0.7.0
 
 ### Minor Changes
