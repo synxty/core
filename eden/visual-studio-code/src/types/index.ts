@@ -14,6 +14,7 @@ import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { ExtensionsColors } from './ExtensionsColors/index.ts';
 import { InlineChatColors } from './InlineChatColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
+import { KeybindingLabelColors } from './KeybindingLabelColors/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
 import { Minimap } from './Minimap/index.ts';
@@ -48,6 +49,7 @@ export type * from './EditorWidgetColors/index.ts';
 export type * from './ExtensionsColors/index.ts';
 export type * from './InlineChatColors/index.ts';
 export type * from './InputControl/index.ts';
+export type * from './KeybindingLabelColors/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './MergeConflictsColors/index.ts';
 export type * from './Minimap/index.ts';
@@ -95,7 +97,8 @@ export type ThemeColors =
   | NotificationColors
   | BannerColors
   | ExtensionsColors
-  | QuickPickerColors;
+  | QuickPickerColors
+  | KeybindingLabelColors;
 
 export type TokenColors = [];
 

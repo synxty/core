@@ -30,6 +30,7 @@ import { notificationColors } from './notificationColors/index.ts';
 import { bannerColors } from './bannerColors/index.ts';
 import { extensionsColors } from './extensionsColors/index.ts';
 import { quickPickerColors } from './quickPickerColors/index.ts';
+import { keybindingLabelColors } from './keybindingLabelColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -63,6 +64,7 @@ const themeColors: ThemeColors = {
   ...bannerColors,
   ...extensionsColors,
   ...quickPickerColors,
+  ...keybindingLabelColors,
 };
 
 export default themeColors;
