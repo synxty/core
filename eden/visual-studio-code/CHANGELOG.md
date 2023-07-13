@@ -1,5 +1,13 @@
 # @synxty/eden-vscode
 
+## 0.11.0
+
+### Minor Changes
+
+- 944c8dd: Added Keybinding Label colors
+- 944c8dd: Added Quick Picker colors
+- 944c8dd: Added Keyboard Shortcut Table colors
+
 ## 0.10.0
 
 ### Minor Changes
