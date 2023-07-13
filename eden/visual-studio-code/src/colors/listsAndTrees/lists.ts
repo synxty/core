@@ -12,7 +12,7 @@ export const lists: Lists = {
   'list.dropBackground': `${black.tint[40]}`,
   'list.focusBackground': black.tint[20],
   'list.focusForeground': white.shade[10],
-  'list.focusHighlightForeground': secondary.DEFAULT,
+  'list.focusHighlightForeground': white.shade[10],
   'list.focusOutline': primary.DEFAULT,
   'list.focusAndSelectionOutline': secondary.DEFAULT,
   'list.highlightForeground': primary.DEFAULT,
