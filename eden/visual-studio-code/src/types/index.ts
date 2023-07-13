@@ -14,6 +14,8 @@ import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { ExtensionsColors } from './ExtensionsColors/index.ts';
 import { InlineChatColors } from './InlineChatColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
+import { KeybindingLabelColors } from './KeybindingLabelColors/index.ts';
+import { KeyboardShortcutTableColors } from './KeyboardShortcutTableColors/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
 import { Minimap } from './Minimap/index.ts';
@@ -22,6 +24,7 @@ import { PanelColors } from './PanelColors/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
+import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
@@ -47,6 +50,8 @@ export type * from './EditorWidgetColors/index.ts';
 export type * from './ExtensionsColors/index.ts';
 export type * from './InlineChatColors/index.ts';
 export type * from './InputControl/index.ts';
+export type * from './KeybindingLabelColors/index.ts';
+export type * from './KeyboardShortcutTableColors/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './MergeConflictsColors/index.ts';
 export type * from './Minimap/index.ts';
@@ -55,6 +60,7 @@ export type * from './PanelColors/index.ts';
 export type * from './PeekViewColors/index.ts';
 export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
+export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './StatusBarColors/index.ts';
@@ -92,7 +98,10 @@ export type ThemeColors =
   | CommandCenterColors
   | NotificationColors
   | BannerColors
-  | ExtensionsColors;
+  | ExtensionsColors
+  | QuickPickerColors
+  | KeybindingLabelColors
+  | KeyboardShortcutTableColors;
 
 export type TokenColors = [];
 
