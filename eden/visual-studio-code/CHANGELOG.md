@@ -1,5 +1,16 @@
 # @synxty/eden-vscode
 
+## 0.11.0
+
+### Minor Changes
+
+- 7f1526b: Added Integrated Terminal colors
+- 944c8dd: Added Keybinding Label colors
+- 944c8dd: Added Quick Picker colors
+- 944c8dd: Added Keyboard Shortcut Table colors
+- 7f1526b: Added Testing colors
+- 7f1526b: Added Debug colors
+
 ## 0.10.0
 
 ### Minor Changes
