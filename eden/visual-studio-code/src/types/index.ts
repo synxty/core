@@ -30,6 +30,7 @@ import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
+import { TestingColors } from './TestingColors/index.ts';
 import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
@@ -68,6 +69,7 @@ export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './StatusBarColors/index.ts';
+export type * from './TestingColors/index.ts';
 export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
 export type * from './WindowBorder/index.ts';
@@ -107,7 +109,8 @@ export type ThemeColors =
   | KeybindingLabelColors
   | KeyboardShortcutTableColors
   | IntegratedTerminalColors
-  | DebugColors;
+  | DebugColors
+  | TestingColors;
 
 export type TokenColors = [];
 
