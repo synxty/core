@@ -6,6 +6,7 @@ import { BaseColors } from './BaseColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
+import { DebugColors } from './DebugColors/index.ts';
 import { DiffEditorColors } from './DiffEditorColors/index.ts';
 import { DropdownControl } from './DropdownControl/index.ts';
 import { EditorColors } from './EditorColors/index.ts';
@@ -14,6 +15,7 @@ import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { ExtensionsColors } from './ExtensionsColors/index.ts';
 import { InlineChatColors } from './InlineChatColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
+import { IntegratedTerminalColors } from './IntegratedTerminalColors/index.ts';
 import { KeybindingLabelColors } from './KeybindingLabelColors/index.ts';
 import { KeyboardShortcutTableColors } from './KeyboardShortcutTableColors/index.ts';
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
@@ -28,6 +30,7 @@ import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
+import { TestingColors } from './TestingColors/index.ts';
 import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
@@ -42,6 +45,7 @@ export type * from './BaseColors/index.ts';
 export type * from './ButtonControl/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
+export type * from './DebugColors/index.ts';
 export type * from './DiffEditorColors/index.ts';
 export type * from './DropdownControl/index.ts';
 export type * from './EditorColors/index.ts';
@@ -50,6 +54,7 @@ export type * from './EditorWidgetColors/index.ts';
 export type * from './ExtensionsColors/index.ts';
 export type * from './InlineChatColors/index.ts';
 export type * from './InputControl/index.ts';
+export type * from './IntegratedTerminalColors/index.ts';
 export type * from './KeybindingLabelColors/index.ts';
 export type * from './KeyboardShortcutTableColors/index.ts';
 export type * from './ListsAndTrees/index.ts';
@@ -64,6 +69,7 @@ export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './StatusBarColors/index.ts';
+export type * from './TestingColors/index.ts';
 export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
 export type * from './WindowBorder/index.ts';
@@ -101,7 +107,10 @@ export type ThemeColors =
   | ExtensionsColors
   | QuickPickerColors
   | KeybindingLabelColors
-  | KeyboardShortcutTableColors;
+  | KeyboardShortcutTableColors
+  | IntegratedTerminalColors
+  | DebugColors
+  | TestingColors;
 
 export type TokenColors = [];
 
