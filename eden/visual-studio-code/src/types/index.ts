@@ -13,6 +13,7 @@ import { EditorColors } from './EditorColors/index.ts';
 import { EditorGroupsAndTabs } from './EditorGroupsAndTabs/index.ts';
 import { EditorWidgetColors } from './EditorWidgetColors/index.ts';
 import { ExtensionsColors } from './ExtensionsColors/index.ts';
+import { GitColors } from './GitColors/index.ts';
 import { InlineChatColors } from './InlineChatColors/index.ts';
 import { InputControl } from './InputControl/index.ts';
 import { IntegratedTerminalColors } from './IntegratedTerminalColors/index.ts';
@@ -29,10 +30,12 @@ import { ProgressBar } from './ProgressBar/index.ts';
 import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
 import { SideBar } from './SideBar/index.ts';
+import { SourceControlColors } from './SourceControlColors/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
 import { TestingColors } from './TestingColors/index.ts';
 import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
+import { WelcomePageColors } from './WelcomePageColors/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
 
 export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[number]]: string }>;
@@ -52,6 +55,7 @@ export type * from './EditorColors/index.ts';
 export type * from './EditorGroupsAndTabs/index.ts';
 export type * from './EditorWidgetColors/index.ts';
 export type * from './ExtensionsColors/index.ts';
+export type * from './GitColors/index.ts';
 export type * from './InlineChatColors/index.ts';
 export type * from './InputControl/index.ts';
 export type * from './IntegratedTerminalColors/index.ts';
@@ -68,10 +72,12 @@ export type * from './ProgressBar/index.ts';
 export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
 export type * from './SideBar/index.ts';
+export type * from './SourceControlColors/index.ts';
 export type * from './StatusBarColors/index.ts';
 export type * from './TestingColors/index.ts';
 export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
+export type * from './WelcomePageColors/index.ts';
 export type * from './WindowBorder/index.ts';
 
 export type ThemeColors =
@@ -110,7 +116,10 @@ export type ThemeColors =
   | KeyboardShortcutTableColors
   | IntegratedTerminalColors
   | DebugColors
-  | TestingColors;
+  | TestingColors
+  | WelcomePageColors
+  | SourceControlColors
+  | GitColors;
 
 export type TokenColors = [];
 
