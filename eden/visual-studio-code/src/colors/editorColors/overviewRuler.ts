@@ -8,7 +8,7 @@ const { black } = colors;
 export const overviewRuler: OverviewRuler = {
   'editorOverviewRuler.background': black.tint[20],
   'editorOverviewRuler.border': black.tint[10],
-  'editorOverviewRuler.findMatchForeground': secondary.DEFAULT,
+  'editorOverviewRuler.findMatchForeground': primary.DEFAULT,
   'editorOverviewRuler.rangeHighlightForeground': TESTING,
   'editorOverviewRuler.selectionHighlightForeground': primary.DEFAULT,
   'editorOverviewRuler.wordHighlightForeground': primary.DEFAULT,

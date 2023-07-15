@@ -32,6 +32,7 @@ import { extensionsColors } from './extensionsColors/index.ts';
 import { quickPickerColors } from './quickPickerColors/index.ts';
 import { keybindingLabelColors } from './keybindingLabelColors/index.ts';
 import { keyboardShortcutTableColors } from './keyboardShortcutTableColors/index.ts';
+import { integratedTerminalColors } from './integratedTerminalColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -67,6 +68,7 @@ const themeColors: ThemeColors = {
   ...quickPickerColors,
   ...keybindingLabelColors,
   ...keyboardShortcutTableColors,
+  ...integratedTerminalColors,
 };
 
 export default themeColors;
