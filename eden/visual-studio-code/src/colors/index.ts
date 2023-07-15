@@ -35,6 +35,7 @@ import { keyboardShortcutTableColors } from './keyboardShortcutTableColors/index
 import { integratedTerminalColors } from './integratedTerminalColors/index.ts';
 import { debugColors } from './debugColors/index.ts';
 import { testingColors } from './testingColors/index.ts';
+import { welcomePageColors } from './welcomePageColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -73,6 +74,7 @@ const themeColors: ThemeColors = {
   ...integratedTerminalColors,
   ...debugColors,
   ...testingColors,
+  ...welcomePageColors,
 };
 
 export default themeColors;

@@ -33,6 +33,7 @@ import { StatusBarColors } from './StatusBarColors/index.ts';
 import { TestingColors } from './TestingColors/index.ts';
 import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
+import { WelcomePageColors } from './WelcomePageColors/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
 
 export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[number]]: string }>;
@@ -72,6 +73,7 @@ export type * from './StatusBarColors/index.ts';
 export type * from './TestingColors/index.ts';
 export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
+export type * from './WelcomePageColors/index.ts';
 export type * from './WindowBorder/index.ts';
 
 export type ThemeColors =
@@ -110,7 +112,8 @@ export type ThemeColors =
   | KeyboardShortcutTableColors
   | IntegratedTerminalColors
   | DebugColors
-  | TestingColors;
+  | TestingColors
+  | WelcomePageColors;
 
 export type TokenColors = [];
 
