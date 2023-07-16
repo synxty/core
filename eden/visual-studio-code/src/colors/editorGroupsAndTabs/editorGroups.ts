@@ -14,7 +14,7 @@ export const editorGroups: EditorGroups = {
   'editorGroup.emptyBackground': black.tint[20],
   'editorGroup.focusedEmptyBorder': TESTING,
   'editorGroup.dropIntoPromptBackground': black.tint[30],
-  'editorGroup.dropIntoPromptBorder': black.DEFAULT,
+  'editorGroup.dropIntoPromptBorder': black.tint[10],
   'editorGroup.dropIntoPromptForeground': white.shade[10],
   'editorPane.background': TESTING,
   'sideBySideEditor.horizontalBorder': TESTING,

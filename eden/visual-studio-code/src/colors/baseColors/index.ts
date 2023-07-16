@@ -6,11 +6,11 @@ const { black, white } = colors;
 const { primary } = aliases;
 
 export const baseColors: BaseColors = {
-  focusBorder: black.tint[90],
+  focusBorder: black.tint[10],
   foreground: white.shade[10],
   disabledForeground: black.tint[90],
-  'widget.border': black.DEFAULT,
-  'widget.shadow': `${black.DEFAULT}40`,
+  'widget.border': black.tint[10],
+  'widget.shadow': `${black.tint[10]}40`,
   'selection.background': primary.shade[40],
   descriptionForeground: white.shade[70],
   errorForeground: TESTING,

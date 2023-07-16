@@ -29,6 +29,7 @@ import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
 import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
+import { SettingsEditorColors } from './SettingsEditorColors/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { SourceControlColors } from './SourceControlColors/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
@@ -71,6 +72,7 @@ export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
 export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
+export type * from './SettingsEditorColors/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './SourceControlColors/index.ts';
 export type * from './StatusBarColors/index.ts';
@@ -119,7 +121,8 @@ export type ThemeColors =
   | TestingColors
   | WelcomePageColors
   | SourceControlColors
-  | GitColors;
+  | GitColors
+  | SettingsEditorColors;
 
 export type TokenColors = [];
 

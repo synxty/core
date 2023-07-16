@@ -38,6 +38,7 @@ import { testingColors } from './testingColors/index.ts';
 import { welcomePageColors } from './welcomePageColors/index.ts';
 import { sourceControlColors } from './sourceControlColors/index.ts';
 import { gitColors } from './gitColors/index.ts';
+import { settingsEditorColors } from './settingsEditorColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -79,6 +80,7 @@ const themeColors: ThemeColors = {
   ...welcomePageColors,
   ...sourceControlColors,
   ...gitColors,
+  ...settingsEditorColors,
 };
 
 export default themeColors;
