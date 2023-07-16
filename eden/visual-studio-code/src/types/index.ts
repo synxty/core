@@ -3,6 +3,7 @@ import { ActivityBar } from './ActivityBar/index.ts';
 import { Badge } from './Badge/index.ts';
 import { BannerColors } from './BannerColors/index.ts';
 import { BaseColors } from './BaseColors/index.ts';
+import { BreadcrumbsColors } from './BreadcrumbsColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
@@ -46,6 +47,7 @@ export type * from './ActivityBar/index.ts';
 export type * from './Badge/index.ts';
 export type * from './BannerColors/index.ts';
 export type * from './BaseColors/index.ts';
+export type * from './BreadcrumbsColors/index.ts';
 export type * from './ButtonControl/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
@@ -122,7 +124,8 @@ export type ThemeColors =
   | WelcomePageColors
   | SourceControlColors
   | GitColors
-  | SettingsEditorColors;
+  | SettingsEditorColors
+  | BreadcrumbsColors;
 
 export type TokenColors = [];
 
