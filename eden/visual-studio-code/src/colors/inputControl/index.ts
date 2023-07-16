@@ -5,7 +5,7 @@ const { black, white } = colors;
 const { primary, danger, info, warning } = aliases;
 
 export const inputControl: InputControl = {
-  'input.background': black.tint[50],
+  'input.background': black.tint[30],
   'input.border': black.tint[10],
   'input.foreground': white.shade[10],
   'input.placeholderForeground': white.shade[120],

@@ -3,6 +3,7 @@ import { ActivityBar } from './ActivityBar/index.ts';
 import { Badge } from './Badge/index.ts';
 import { BannerColors } from './BannerColors/index.ts';
 import { BaseColors } from './BaseColors/index.ts';
+import { BreadcrumbsColors } from './BreadcrumbsColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
@@ -29,6 +30,7 @@ import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
 import { QuickPickerColors } from './QuickPickerColors/index.ts';
 import { ScrollbarControl } from './ScrollbarControl/index.ts';
+import { SettingsEditorColors } from './SettingsEditorColors/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { SourceControlColors } from './SourceControlColors/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
@@ -45,6 +47,7 @@ export type * from './ActivityBar/index.ts';
 export type * from './Badge/index.ts';
 export type * from './BannerColors/index.ts';
 export type * from './BaseColors/index.ts';
+export type * from './BreadcrumbsColors/index.ts';
 export type * from './ButtonControl/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
@@ -71,6 +74,7 @@ export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
 export type * from './QuickPickerColors/index.ts';
 export type * from './ScrollbarControl/index.ts';
+export type * from './SettingsEditorColors/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './SourceControlColors/index.ts';
 export type * from './StatusBarColors/index.ts';
@@ -119,7 +123,9 @@ export type ThemeColors =
   | TestingColors
   | WelcomePageColors
   | SourceControlColors
-  | GitColors;
+  | GitColors
+  | SettingsEditorColors
+  | BreadcrumbsColors;
 
 export type TokenColors = [];
 
