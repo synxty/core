@@ -34,6 +34,7 @@ import { SettingsEditorColors } from './SettingsEditorColors/index.ts';
 import { SideBar } from './SideBar/index.ts';
 import { SourceControlColors } from './SourceControlColors/index.ts';
 import { StatusBarColors } from './StatusBarColors/index.ts';
+import { SymbolIconsColors } from './SymbolIconsColors/index.ts';
 import { TestingColors } from './TestingColors/index.ts';
 import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
@@ -78,6 +79,7 @@ export type * from './SettingsEditorColors/index.ts';
 export type * from './SideBar/index.ts';
 export type * from './SourceControlColors/index.ts';
 export type * from './StatusBarColors/index.ts';
+export type * from './SymbolIconsColors/index.ts';
 export type * from './TestingColors/index.ts';
 export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
@@ -125,11 +127,13 @@ export type ThemeColors =
   | SourceControlColors
   | GitColors
   | SettingsEditorColors
-  | BreadcrumbsColors;
+  | BreadcrumbsColors
+  | SymbolIconsColors;
 
 export type TokenColors = [];
 
 export type Theme = {
+  $schema: string;
   name: string;
   colors: ThemeColors;
   tokenColors: TokenColors;

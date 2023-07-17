@@ -40,6 +40,7 @@ import { sourceControlColors } from './sourceControlColors/index.ts';
 import { gitColors } from './gitColors/index.ts';
 import { settingsEditorColors } from './settingsEditorColors/index.ts';
 import { breadcrumbsColors } from './breadcrumbsColors/index.ts';
+import { symbolIconsColors } from './symbolIconsColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -83,6 +84,7 @@ const themeColors: ThemeColors = {
   ...gitColors,
   ...settingsEditorColors,
   ...breadcrumbsColors,
+  ...symbolIconsColors,
 };
 
 export default themeColors;
