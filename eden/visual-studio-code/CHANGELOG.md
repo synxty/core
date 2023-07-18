@@ -1,5 +1,16 @@
 # @synxty/eden-vscode
 
+## 0.12.0
+
+### Minor Changes
+
+- 313ff9b: Added Welcome Page colors
+- 83cb3ae: Added Symbol Icons colors
+- 313ff9b: Added Git colors
+- 0f3071d: Added Sttings Editor colors
+- 97a3268: Added Debug Icons colors
+- 0f3071d: Added Breadcrumbs colors
+
 ## 0.11.0
 
 ### Minor Changes
