@@ -8,6 +8,7 @@ import { ButtonControl } from './ButtonControl/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
 import { DebugColors } from './DebugColors/index.ts';
+import { DebugIconsColors } from './DebugIconsColors/index.ts';
 import { DiffEditorColors } from './DiffEditorColors/index.ts';
 import { DropdownControl } from './DropdownControl/index.ts';
 import { EditorColors } from './EditorColors/index.ts';
@@ -53,6 +54,7 @@ export type * from './ButtonControl/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
 export type * from './DebugColors/index.ts';
+export type * from './DebugIconsColors/index.ts';
 export type * from './DiffEditorColors/index.ts';
 export type * from './DropdownControl/index.ts';
 export type * from './EditorColors/index.ts';
@@ -128,7 +130,8 @@ export type ThemeColors =
   | GitColors
   | SettingsEditorColors
   | BreadcrumbsColors
-  | SymbolIconsColors;
+  | SymbolIconsColors
+  | DebugIconsColors;
 
 export type TokenColors = [];
 
