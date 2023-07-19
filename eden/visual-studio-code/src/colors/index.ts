@@ -42,6 +42,7 @@ import { settingsEditorColors } from './settingsEditorColors/index.ts';
 import { breadcrumbsColors } from './breadcrumbsColors/index.ts';
 import { symbolIconsColors } from './symbolIconsColors/index.ts';
 import { debugIconsColors } from './debugIconsColors/index.ts';
+import { notebookColors } from './notebookColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -87,6 +88,7 @@ const themeColors: ThemeColors = {
   ...breadcrumbsColors,
   ...symbolIconsColors,
   ...debugIconsColors,
+  ...notebookColors,
 };
 
 export default themeColors;

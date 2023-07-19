@@ -24,6 +24,7 @@ import { KeyboardShortcutTableColors } from './KeyboardShortcutTableColors/index
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
 import { Minimap } from './Minimap/index.ts';
+import { NotebookColors } from './NotebookColors/index.ts';
 import { NotificationColors } from './NotificationColors/index.ts';
 import { PanelColors } from './PanelColors/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
@@ -70,6 +71,7 @@ export type * from './KeyboardShortcutTableColors/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './MergeConflictsColors/index.ts';
 export type * from './Minimap/index.ts';
+export type * from './NotebookColors/index.ts';
 export type * from './NotificationColors/index.ts';
 export type * from './PanelColors/index.ts';
 export type * from './PeekViewColors/index.ts';
@@ -131,7 +133,8 @@ export type ThemeColors =
   | SettingsEditorColors
   | BreadcrumbsColors
   | SymbolIconsColors
-  | DebugIconsColors;
+  | DebugIconsColors
+  | NotebookColors;
 
 export type TokenColors = [];
 
