@@ -6,7 +6,7 @@ const { black, white } = colors;
 const { primary } = aliases;
 
 export const baseColors: BaseColors = {
-  focusBorder: black.tint[10],
+  focusBorder: primary.DEFAULT,
   foreground: white.shade[10],
   disabledForeground: black.tint[90],
   'widget.border': black.tint[10],

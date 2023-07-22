@@ -5,8 +5,10 @@ import { BannerColors } from './BannerColors/index.ts';
 import { BaseColors } from './BaseColors/index.ts';
 import { BreadcrumbsColors } from './BreadcrumbsColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
+import { ChartColors } from './ChartColors/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
+import { CommentsViewColors } from './CommentsViewColors/index.ts';
 import { DebugColors } from './DebugColors/index.ts';
 import { DebugIconsColors } from './DebugIconsColors/index.ts';
 import { DiffEditorColors } from './DiffEditorColors/index.ts';
@@ -24,9 +26,11 @@ import { KeyboardShortcutTableColors } from './KeyboardShortcutTableColors/index
 import { ListsAndTrees } from './ListsAndTrees/index.ts';
 import { MergeConflictsColors } from './MergeConflictsColors/index.ts';
 import { Minimap } from './Minimap/index.ts';
+import { NotebookColors } from './NotebookColors/index.ts';
 import { NotificationColors } from './NotificationColors/index.ts';
 import { PanelColors } from './PanelColors/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
+import { PortsColors } from './PortsColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
 import { QuickPickerColors } from './QuickPickerColors/index.ts';
@@ -51,8 +55,10 @@ export type * from './BannerColors/index.ts';
 export type * from './BaseColors/index.ts';
 export type * from './BreadcrumbsColors/index.ts';
 export type * from './ButtonControl/index.ts';
+export type * from './ChartColors/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
+export type * from './CommentsViewColors/index.ts';
 export type * from './DebugColors/index.ts';
 export type * from './DebugIconsColors/index.ts';
 export type * from './DiffEditorColors/index.ts';
@@ -70,9 +76,11 @@ export type * from './KeyboardShortcutTableColors/index.ts';
 export type * from './ListsAndTrees/index.ts';
 export type * from './MergeConflictsColors/index.ts';
 export type * from './Minimap/index.ts';
+export type * from './NotebookColors/index.ts';
 export type * from './NotificationColors/index.ts';
 export type * from './PanelColors/index.ts';
 export type * from './PeekViewColors/index.ts';
+export type * from './PortsColors/index.ts';
 export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
 export type * from './QuickPickerColors/index.ts';
@@ -131,7 +139,11 @@ export type ThemeColors =
   | SettingsEditorColors
   | BreadcrumbsColors
   | SymbolIconsColors
-  | DebugIconsColors;
+  | DebugIconsColors
+  | NotebookColors
+  | ChartColors
+  | PortsColors
+  | CommentsViewColors;
 
 export type TokenColors = [];
 
