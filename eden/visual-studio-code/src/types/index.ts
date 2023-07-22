@@ -29,6 +29,7 @@ import { NotebookColors } from './NotebookColors/index.ts';
 import { NotificationColors } from './NotificationColors/index.ts';
 import { PanelColors } from './PanelColors/index.ts';
 import { PeekViewColors } from './PeekViewColors/index.ts';
+import { PortsColors } from './PortsColors/index.ts';
 import { Profiles } from './Profiles/index.ts';
 import { ProgressBar } from './ProgressBar/index.ts';
 import { QuickPickerColors } from './QuickPickerColors/index.ts';
@@ -77,6 +78,7 @@ export type * from './NotebookColors/index.ts';
 export type * from './NotificationColors/index.ts';
 export type * from './PanelColors/index.ts';
 export type * from './PeekViewColors/index.ts';
+export type * from './PortsColors/index.ts';
 export type * from './Profiles/index.ts';
 export type * from './ProgressBar/index.ts';
 export type * from './QuickPickerColors/index.ts';
@@ -137,7 +139,8 @@ export type ThemeColors =
   | SymbolIconsColors
   | DebugIconsColors
   | NotebookColors
-  | ChartColors;
+  | ChartColors
+  | PortsColors;
 
 export type TokenColors = [];
 
