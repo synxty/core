@@ -8,6 +8,7 @@ import { ButtonControl } from './ButtonControl/index.ts';
 import { ChartColors } from './ChartColors/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
+import { CommentsViewColors } from './CommentsViewColors/index.ts';
 import { DebugColors } from './DebugColors/index.ts';
 import { DebugIconsColors } from './DebugIconsColors/index.ts';
 import { DiffEditorColors } from './DiffEditorColors/index.ts';
@@ -57,6 +58,7 @@ export type * from './ButtonControl/index.ts';
 export type * from './ChartColors/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
+export type * from './CommentsViewColors/index.ts';
 export type * from './DebugColors/index.ts';
 export type * from './DebugIconsColors/index.ts';
 export type * from './DiffEditorColors/index.ts';
@@ -140,7 +142,8 @@ export type ThemeColors =
   | DebugIconsColors
   | NotebookColors
   | ChartColors
-  | PortsColors;
+  | PortsColors
+  | CommentsViewColors;
 
 export type TokenColors = [];
 

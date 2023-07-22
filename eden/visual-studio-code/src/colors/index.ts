@@ -45,6 +45,7 @@ import { debugIconsColors } from './debugIconsColors/index.ts';
 import { notebookColors } from './notebookColors/index.ts';
 import { chartColors } from './chartColors/index.ts';
 import { portsColors } from './portsColors/index.ts';
+import { commentsViewColors } from './commentsViewColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -93,6 +94,7 @@ const themeColors: ThemeColors = {
   ...notebookColors,
   ...chartColors,
   ...portsColors,
+  ...commentsViewColors,
 };
 
 export default themeColors;
