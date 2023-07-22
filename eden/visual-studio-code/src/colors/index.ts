@@ -43,6 +43,7 @@ import { breadcrumbsColors } from './breadcrumbsColors/index.ts';
 import { symbolIconsColors } from './symbolIconsColors/index.ts';
 import { debugIconsColors } from './debugIconsColors/index.ts';
 import { notebookColors } from './notebookColors/index.ts';
+import { chartColors } from './chartColors/index.ts';
 
 const themeColors: ThemeColors = {
   ...activityBar,
@@ -89,6 +90,7 @@ const themeColors: ThemeColors = {
   ...symbolIconsColors,
   ...debugIconsColors,
   ...notebookColors,
+  ...chartColors,
 };
 
 export default themeColors;

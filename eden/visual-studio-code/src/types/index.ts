@@ -5,6 +5,7 @@ import { BannerColors } from './BannerColors/index.ts';
 import { BaseColors } from './BaseColors/index.ts';
 import { BreadcrumbsColors } from './BreadcrumbsColors/index.ts';
 import { ButtonControl } from './ButtonControl/index.ts';
+import { ChartColors } from './ChartColors/index.ts';
 import { ChatColors } from './ChatColors/index.ts';
 import { CommandCenterColors } from './CommandCenterColors/index.ts';
 import { DebugColors } from './DebugColors/index.ts';
@@ -52,6 +53,7 @@ export type * from './BannerColors/index.ts';
 export type * from './BaseColors/index.ts';
 export type * from './BreadcrumbsColors/index.ts';
 export type * from './ButtonControl/index.ts';
+export type * from './ChartColors/index.ts';
 export type * from './ChatColors/index.ts';
 export type * from './CommandCenterColors/index.ts';
 export type * from './DebugColors/index.ts';
@@ -134,7 +136,8 @@ export type ThemeColors =
   | BreadcrumbsColors
   | SymbolIconsColors
   | DebugIconsColors
-  | NotebookColors;
+  | NotebookColors
+  | ChartColors;
 
 export type TokenColors = [];
 
