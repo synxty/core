@@ -1,5 +1,14 @@
 # @synxty/eden-vscode
 
+## 0.13.0
+
+### Minor Changes
+
+- a19e195: Added Notebook colors
+- a19e195: Added Comments View colors
+- a19e195: Added Ports colors
+- a19e195: Added Chart colors
+
 ## 0.12.0
 
 ### Minor Changes
