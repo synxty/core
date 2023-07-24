@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const chartColorsProps = [
   'charts.foreground',
@@ -11,4 +11,4 @@ const chartColorsProps = [
   'charts.purple',
 ] as const;
 
-export type ChartColors = ParseThemeColors<typeof chartColorsProps>;
+export type ChartColors = ParseThemeKeys<typeof chartColorsProps>;

@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const mergeConflictsColorsProps = [
   'merge.currentHeaderBackground',
@@ -28,4 +28,4 @@ const mergeConflictsColorsProps = [
   'mergeEditor.conflict.input2.background',
 ] as const;
 
-export type MergeConflictsColors = ParseThemeColors<typeof mergeConflictsColorsProps>;
+export type MergeConflictsColors = ParseThemeKeys<typeof mergeConflictsColorsProps>;

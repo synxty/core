@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const dropdownControlProps = [
   'dropdown.background',
@@ -7,4 +7,4 @@ const dropdownControlProps = [
   'dropdown.foreground',
 ] as const;
 
-export type DropdownControl = ParseThemeColors<typeof dropdownControlProps>;
+export type DropdownControl = ParseThemeKeys<typeof dropdownControlProps>;

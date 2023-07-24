@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const panelColorsProps = [
   'panel.background',
@@ -15,4 +15,4 @@ const panelColorsProps = [
   'panelSectionHeader.border',
 ] as const;
 
-export type PanelColors = ParseThemeColors<typeof panelColorsProps>;
+export type PanelColors = ParseThemeKeys<typeof panelColorsProps>;

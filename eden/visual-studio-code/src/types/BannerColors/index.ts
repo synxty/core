@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const bannerColorsProps = [
   'banner.background',
@@ -6,4 +6,4 @@ const bannerColorsProps = [
   'banner.iconForeground',
 ] as const;
 
-export type BannerColors = ParseThemeColors<typeof bannerColorsProps>;
+export type BannerColors = ParseThemeKeys<typeof bannerColorsProps>;

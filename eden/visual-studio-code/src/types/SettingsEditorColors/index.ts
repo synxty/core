@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const settingsEditorColorsProps = [
   'settings.headerForeground',
@@ -24,4 +24,4 @@ const settingsEditorColorsProps = [
   'settings.settingsHeaderHoverForeground',
 ] as const;
 
-export type SettingsEditorColors = ParseThemeColors<typeof settingsEditorColorsProps>;
+export type SettingsEditorColors = ParseThemeKeys<typeof settingsEditorColorsProps>;

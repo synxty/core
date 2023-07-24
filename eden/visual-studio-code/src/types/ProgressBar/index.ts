@@ -1,5 +1,5 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const progressBarProps = ['progressBar.background'] as const;
 
-export type ProgressBar = ParseThemeColors<typeof progressBarProps>;
+export type ProgressBar = ParseThemeKeys<typeof progressBarProps>;

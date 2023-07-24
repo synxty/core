@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const inputControlProps = [
   'input.background',
@@ -20,4 +20,4 @@ const inputControlProps = [
   'inputValidation.warningBorder',
 ] as const;
 
-export type InputControl = ParseThemeColors<typeof inputControlProps>;
+export type InputControl = ParseThemeKeys<typeof inputControlProps>;

@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const diffEditorColorsProps = [
   'diffEditor.insertedTextBackground',
@@ -16,4 +16,4 @@ const diffEditorColorsProps = [
   'diffEditor.unchangedRegionBackground',
 ] as const;
 
-export type DiffEditorColors = ParseThemeColors<typeof diffEditorColorsProps>;
+export type DiffEditorColors = ParseThemeKeys<typeof diffEditorColorsProps>;

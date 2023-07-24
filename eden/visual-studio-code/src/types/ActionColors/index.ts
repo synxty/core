@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const actionColorsProps = [
   'toolbar.hoverBackground',
@@ -6,4 +6,4 @@ const actionColorsProps = [
   'toolbar.activeBackground',
 ] as const;
 
-export type ActionColors = ParseThemeColors<typeof actionColorsProps>;
+export type ActionColors = ParseThemeKeys<typeof actionColorsProps>;

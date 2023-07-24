@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const minimapProps = [
   'minimap.findMatchHighlight',
@@ -16,4 +16,4 @@ const minimapProps = [
   'minimapGutter.deletedBackground',
 ] as const;
 
-export type Minimap = ParseThemeColors<typeof minimapProps>;
+export type Minimap = ParseThemeKeys<typeof minimapProps>;

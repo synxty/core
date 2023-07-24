@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const quickPickerColorsProps = [
   'pickerGroup.border',
@@ -11,4 +11,4 @@ const quickPickerColorsProps = [
   'quickInputTitle.background',
 ] as const;
 
-export type QuickPickerColors = ParseThemeColors<typeof quickPickerColorsProps>;
+export type QuickPickerColors = ParseThemeKeys<typeof quickPickerColorsProps>;

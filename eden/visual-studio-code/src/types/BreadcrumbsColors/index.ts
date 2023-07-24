@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const breadcrumbsColorsProps = [
   'breadcrumb.foreground',
@@ -8,4 +8,4 @@ const breadcrumbsColorsProps = [
   'breadcrumbPicker.background',
 ] as const;
 
-export type BreadcrumbsColors = ParseThemeColors<typeof breadcrumbsColorsProps>;
+export type BreadcrumbsColors = ParseThemeKeys<typeof breadcrumbsColorsProps>;

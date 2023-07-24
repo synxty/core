@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const bracketPairsProps = [
   'editorBracketMatch.background',
@@ -24,4 +24,4 @@ const bracketPairsProps = [
   'editorBracketPairGuide.background6',
 ] as const;
 
-export type BracketPairs = ParseThemeColors<typeof bracketPairsProps>;
+export type BracketPairs = ParseThemeKeys<typeof bracketPairsProps>;

@@ -1,5 +1,5 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const codeLensProps = ['editorCodeLens.foreground'] as const;
 
-export type CodeLens = ParseThemeColors<typeof codeLensProps>;
+export type CodeLens = ParseThemeKeys<typeof codeLensProps>;

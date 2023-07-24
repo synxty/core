@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const overviewRulerProps = [
   'editorOverviewRuler.background',
@@ -18,4 +18,4 @@ const overviewRulerProps = [
   'editorOverviewRuler.bracketMatchForeground',
 ] as const;
 
-export type OverviewRuler = ParseThemeColors<typeof overviewRulerProps>;
+export type OverviewRuler = ParseThemeKeys<typeof overviewRulerProps>;

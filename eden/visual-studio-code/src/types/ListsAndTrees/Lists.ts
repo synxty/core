@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const listsProps = [
   'list.activeSelectionBackground',
@@ -30,4 +30,4 @@ const listsProps = [
   'list.deemphasizedForeground',
 ] as const;
 
-export type Lists = ParseThemeColors<typeof listsProps>;
+export type Lists = ParseThemeKeys<typeof listsProps>;

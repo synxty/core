@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const commentsWidgetProps = [
   'editorCommentsWidget.resolvedBorder',
@@ -9,4 +9,4 @@ const commentsWidgetProps = [
   'editorCommentsWidget.rangeActiveBorder',
 ] as const;
 
-export type CommentsWidget = ParseThemeColors<typeof commentsWidgetProps>;
+export type CommentsWidget = ParseThemeKeys<typeof commentsWidgetProps>;

@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const extensionsColorsProps = [
   'extensionButton.prominentForeground',
@@ -16,4 +16,4 @@ const extensionsColorsProps = [
   'extensionIcon.sponsorForeground',
 ] as const;
 
-export type ExtensionsColors = ParseThemeColors<typeof extensionsColorsProps>;
+export type ExtensionsColors = ParseThemeKeys<typeof extensionsColorsProps>;

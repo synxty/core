@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const notificationColorsProps = [
   'notificationCenter.border',
@@ -14,4 +14,4 @@ const notificationColorsProps = [
   'notificationsInfoIcon.foreground',
 ] as const;
 
-export type NotificationColors = ParseThemeColors<typeof notificationColorsProps>;
+export type NotificationColors = ParseThemeKeys<typeof notificationColorsProps>;

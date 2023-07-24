@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const generalProps = [
   'editor.background',
@@ -69,4 +69,4 @@ const generalProps = [
   'editorUnnecessaryCode.opacity',
 ] as const;
 
-export type General = ParseThemeColors<typeof generalProps>;
+export type General = ParseThemeKeys<typeof generalProps>;

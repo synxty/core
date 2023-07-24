@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const statusBarColorsProps = [
   'statusBar.background',
@@ -28,4 +28,4 @@ const statusBarColorsProps = [
   'statusBar.offlineForeground',
 ] as const;
 
-export type StatusBarColors = ParseThemeColors<typeof statusBarColorsProps>;
+export type StatusBarColors = ParseThemeKeys<typeof statusBarColorsProps>;

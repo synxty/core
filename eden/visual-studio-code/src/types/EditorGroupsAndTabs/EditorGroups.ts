@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const editorGroupsProps = [
   'editorGroup.border',
@@ -17,4 +17,4 @@ const editorGroupsProps = [
   'sideBySideEditor.verticalBorder',
 ] as const;
 
-export type EditorGroups = ParseThemeColors<typeof editorGroupsProps>;
+export type EditorGroups = ParseThemeKeys<typeof editorGroupsProps>;

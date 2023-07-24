@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const debugColorsProps = [
   'debugToolBar.background',
@@ -20,4 +20,4 @@ const debugColorsProps = [
   'debugTokenExpression.error',
 ] as const;
 
-export type DebugColors = ParseThemeColors<typeof debugColorsProps>;
+export type DebugColors = ParseThemeKeys<typeof debugColorsProps>;
