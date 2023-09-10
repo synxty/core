@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const textColorsProps = [
   'textBlockQuote.background',
@@ -10,4 +10,4 @@ const textColorsProps = [
   'textSeparator.foreground',
 ] as const;
 
-export type TextColors = ParseThemeColors<typeof textColorsProps>;
+export type TextColors = ParseThemeKeys<typeof textColorsProps>;

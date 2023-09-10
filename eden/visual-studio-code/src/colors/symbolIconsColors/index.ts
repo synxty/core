@@ -1,9 +1,9 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from 'constants/index.ts';
+import { TESTING } from 'constants/index.ts';
 import { SymbolIconsColors } from 'types/index.ts';
 
-const { black, white } = colors;
-const { primary, orange, violet, magenta, blue, teal } = aliases;
+const { white } = colors;
+const { orange, magenta, blue } = aliases;
 
 export const symbolIconsColors: SymbolIconsColors = {
   'symbolIcon.arrayForeground': white.shade[10],

@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const buttonControlProps = [
   'button.background',
@@ -16,4 +16,4 @@ const buttonControlProps = [
   'checkbox.selectBorder',
 ] as const;
 
-export type ButtonControl = ParseThemeColors<typeof buttonControlProps>;
+export type ButtonControl = ParseThemeKeys<typeof buttonControlProps>;

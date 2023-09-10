@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const notebookColorsProps = [
   'notebook.editorBackground',
@@ -27,4 +27,4 @@ const notebookColorsProps = [
   'notebookEditorOverviewRuler.runningCellForeground',
 ] as const;
 
-export type NotebookColors = ParseThemeColors<typeof notebookColorsProps>;
+export type NotebookColors = ParseThemeKeys<typeof notebookColorsProps>;

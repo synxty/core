@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const inlineChatColorsProps = [
   'inlineChat.background',
@@ -13,4 +13,4 @@ const inlineChatColorsProps = [
   'inlineChatrDiff.removed',
 ] as const;
 
-export type InlineChatColors = ParseThemeColors<typeof inlineChatColorsProps>;
+export type InlineChatColors = ParseThemeKeys<typeof inlineChatColorsProps>;

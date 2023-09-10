@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const titleBarProps = [
   'titleBar.activeBackground',
@@ -8,4 +8,4 @@ const titleBarProps = [
   'titleBar.border',
 ] as const;
 
-export type TitleBar = ParseThemeColors<typeof titleBarProps>;
+export type TitleBar = ParseThemeKeys<typeof titleBarProps>;

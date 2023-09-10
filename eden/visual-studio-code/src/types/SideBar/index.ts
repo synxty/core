@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const sideBarProps = [
   'sideBar.background',
@@ -11,4 +11,4 @@ const sideBarProps = [
   'sideBarSectionHeader.border',
 ] as const;
 
-export type SideBar = ParseThemeColors<typeof sideBarProps>;
+export type SideBar = ParseThemeKeys<typeof sideBarProps>;

@@ -1,5 +1,5 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const profilesProps = ['profileBadge.background', 'profileBadge.foreground'] as const;
 
-export type Profiles = ParseThemeColors<typeof profilesProps>;
+export type Profiles = ParseThemeKeys<typeof profilesProps>;

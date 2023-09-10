@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const keybindingLabelColorsProps = [
   'keybindingLabel.background',
@@ -7,4 +7,4 @@ const keybindingLabelColorsProps = [
   'keybindingLabel.bottomBorder',
 ] as const;
 
-export type KeybindingLabelColors = ParseThemeColors<typeof keybindingLabelColorsProps>;
+export type KeybindingLabelColors = ParseThemeKeys<typeof keybindingLabelColorsProps>;

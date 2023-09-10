@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const treesProps = [
   'tree.indentGuidesStroke',
@@ -7,4 +7,4 @@ const treesProps = [
   'tree.tableOddRowsBackground',
 ] as const;
 
-export type Trees = ParseThemeColors<typeof treesProps>;
+export type Trees = ParseThemeKeys<typeof treesProps>;

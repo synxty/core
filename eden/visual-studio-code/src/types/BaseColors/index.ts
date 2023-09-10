@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const baseColorsProps = [
   'focusBorder',
@@ -13,4 +13,4 @@ const baseColorsProps = [
   'sash.hoverBorder',
 ] as const;
 
-export type BaseColors = ParseThemeColors<typeof baseColorsProps>;
+export type BaseColors = ParseThemeKeys<typeof baseColorsProps>;

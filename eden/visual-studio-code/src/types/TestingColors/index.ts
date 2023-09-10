@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const testingColorsProps = [
   'testing.iconFailed',
@@ -16,4 +16,4 @@ const testingColorsProps = [
   'testing.message.info.lineBackground',
 ] as const;
 
-export type TestingColors = ParseThemeColors<typeof testingColorsProps>;
+export type TestingColors = ParseThemeKeys<typeof testingColorsProps>;

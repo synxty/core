@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const debugIconsColorsProps = [
   'debugIcon.breakpointForeground',
@@ -23,4 +23,4 @@ const debugIconsColorsProps = [
   'debugConsoleInputIcon.foreground',
 ] as const;
 
-export type DebugIconsColors = ParseThemeColors<typeof debugIconsColorsProps>;
+export type DebugIconsColors = ParseThemeKeys<typeof debugIconsColorsProps>;

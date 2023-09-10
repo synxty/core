@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const gitColorsProps = [
   'gitDecoration.addedResourceForeground',
@@ -13,4 +13,4 @@ const gitColorsProps = [
   'gitDecoration.submoduleResourceForeground',
 ] as const;
 
-export type GitColors = ParseThemeColors<typeof gitColorsProps>;
+export type GitColors = ParseThemeKeys<typeof gitColorsProps>;

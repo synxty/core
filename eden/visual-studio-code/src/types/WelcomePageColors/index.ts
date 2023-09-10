@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const welcomePageColorsProps = [
   'welcomePage.background',
@@ -11,4 +11,4 @@ const welcomePageColorsProps = [
   'walkthrough.stepTitle.foreground',
 ] as const;
 
-export type WelcomePageColors = ParseThemeColors<typeof welcomePageColorsProps>;
+export type WelcomePageColors = ParseThemeKeys<typeof welcomePageColorsProps>;

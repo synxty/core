@@ -1,0 +1,18 @@
+export type FontStyle =
+  | 'bold'
+  | 'italic'
+  | 'underline'
+  | 'strikethrough'
+  | 'bold italic'
+  | 'bold underline'
+  | 'italic underline'
+  | 'bold strikethrough'
+  | 'italic strikethrough'
+  | 'underline strikethrough'
+  | 'bold italic underline'
+  | 'bold strikethrough underline'
+  | 'italic strikethrough underline'
+  | 'bold italic strikethrough'
+  | 'bold italic underline strikethrough'
+  | 'bold strikethrough underline italic'
+  | 'italic strikethrough underline bold';

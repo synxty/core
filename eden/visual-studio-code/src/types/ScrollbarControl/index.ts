@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const scrollbarControlProps = [
   'scrollbar.shadow',
@@ -7,4 +7,4 @@ const scrollbarControlProps = [
   'scrollbarSlider.hoverBackground',
 ] as const;
 
-export type ScrollbarControl = ParseThemeColors<typeof scrollbarControlProps>;
+export type ScrollbarControl = ParseThemeKeys<typeof scrollbarControlProps>;

@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const tabsProps = [
   'tab.activeBackground',
@@ -27,4 +27,4 @@ const tabsProps = [
   'tab.unfocusedInactiveModifiedBorder',
 ] as const;
 
-export type Tabs = ParseThemeColors<typeof tabsProps>;
+export type Tabs = ParseThemeKeys<typeof tabsProps>;

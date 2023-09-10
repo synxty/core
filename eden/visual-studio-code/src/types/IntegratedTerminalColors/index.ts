@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const integratedTerminalColorsProps = [
   'terminal.background',
@@ -39,4 +39,4 @@ const integratedTerminalColorsProps = [
   'terminalOverviewRuler.findMatchForeground',
 ] as const;
 
-export type IntegratedTerminalColors = ParseThemeColors<typeof integratedTerminalColorsProps>;
+export type IntegratedTerminalColors = ParseThemeKeys<typeof integratedTerminalColorsProps>;

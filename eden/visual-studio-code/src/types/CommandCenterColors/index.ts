@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const commandCenterColorsProps = [
   'commandCenter.foreground',
@@ -11,4 +11,4 @@ const commandCenterColorsProps = [
   'commandCenter.activeBorder',
 ] as const;
 
-export type CommandCenterColors = ParseThemeColors<typeof commandCenterColorsProps>;
+export type CommandCenterColors = ParseThemeKeys<typeof commandCenterColorsProps>;

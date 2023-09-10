@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const symbolIconsColorsProps = [
   'symbolIcon.arrayForeground',
@@ -36,4 +36,4 @@ const symbolIconsColorsProps = [
   'symbolIcon.variableForeground',
 ] as const;
 
-export type SymbolIconsColors = ParseThemeColors<typeof symbolIconsColorsProps>;
+export type SymbolIconsColors = ParseThemeKeys<typeof symbolIconsColorsProps>;

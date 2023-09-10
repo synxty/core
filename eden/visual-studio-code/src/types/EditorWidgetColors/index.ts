@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const editorWidgetColorsProps = [
   'editorWidget.foreground',
@@ -35,4 +35,4 @@ const editorWidgetColorsProps = [
   'editorMarkerNavigationInfo.headerBackground',
 ] as const;
 
-export type EditorWidgetColors = ParseThemeColors<typeof editorWidgetColorsProps>;
+export type EditorWidgetColors = ParseThemeKeys<typeof editorWidgetColorsProps>;

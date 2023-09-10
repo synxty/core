@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const activityBarProps = [
   'activityBar.background',
@@ -13,4 +13,4 @@ const activityBarProps = [
   'activityBar.activeFocusBorder',
 ] as const;
 
-export type ActivityBar = ParseThemeColors<typeof activityBarProps>;
+export type ActivityBar = ParseThemeKeys<typeof activityBarProps>;

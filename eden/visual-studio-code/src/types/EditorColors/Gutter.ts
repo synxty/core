@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const gutterProps = [
   'editorGutter.background',
@@ -11,4 +11,4 @@ const gutterProps = [
   'editorGutter.foldingControlForeground',
 ] as const;
 
-export type Gutter = ParseThemeColors<typeof gutterProps>;
+export type Gutter = ParseThemeKeys<typeof gutterProps>;

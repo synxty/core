@@ -1,4 +1,4 @@
-import { ParseThemeColors } from 'types/index.ts';
+import { ParseThemeKeys } from 'types/index.ts';
 
 const peekViewColorsProps = [
   'peekView.border',
@@ -18,4 +18,4 @@ const peekViewColorsProps = [
   'peekViewEditorStickyScroll.background',
 ] as const;
 
-export type PeekViewColors = ParseThemeColors<typeof peekViewColorsProps>;
+export type PeekViewColors = ParseThemeKeys<typeof peekViewColorsProps>;

@@ -43,10 +43,9 @@ import { SymbolIconsColors } from './SymbolIconsColors/index.ts';
 import { TestingColors } from './TestingColors/index.ts';
 import { TextColors } from './TextColors/index.ts';
 import { TitleBar } from './TitleBar/index.ts';
+import { TokenColors } from './TokenColors/index.ts';
 import { WelcomePageColors } from './WelcomePageColors/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
-
-export type ParseThemeColors<TC extends readonly string[]> = Partial<{ [K in TC[number]]: string }>;
 
 export type * from './ActionColors/index.ts';
 export type * from './ActivityBar/index.ts';
@@ -95,6 +94,8 @@ export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
 export type * from './WelcomePageColors/index.ts';
 export type * from './WindowBorder/index.ts';
+
+export type ParseThemeKeys<TK extends readonly string[]> = Partial<{ [K in TK[number]]: string }>;
 
 export type ThemeColors =
   | ActivityBar
@@ -145,11 +146,10 @@ export type ThemeColors =
   | PortsColors
   | CommentsViewColors;
 
-export type TokenColors = [];
-
 export type Theme = {
   $schema: string;
   name: string;
   colors: ThemeColors;
   tokenColors: TokenColors;
+  semanticHighlighting?: boolean;
 };
