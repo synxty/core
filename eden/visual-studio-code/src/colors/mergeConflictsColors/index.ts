@@ -10,7 +10,6 @@ export const mergeConflictsColors: MergeConflictsColors = {
   'merge.currentContentBackground': teal.shade[50],
   'merge.incomingHeaderBackground': violet.DEFAULT,
   'merge.incomingContentBackground': violet.shade[50],
-  //'merge.border': TESTING,
   'merge.commonContentBackground': TESTING,
   'merge.commonHeaderBackground': TESTING,
   'editorOverviewRuler.currentContentForeground': teal.DEFAULT,

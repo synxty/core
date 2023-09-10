@@ -5,6 +5,5 @@ const { black } = colors;
 
 export const actionColors: ActionColors = {
   'toolbar.hoverBackground': black.tint[70],
-  //"toolbar.hoverOutline": TESTING
   'toolbar.activeBackground': black.tint[10],
 };

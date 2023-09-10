@@ -2,7 +2,7 @@ import { colors, aliases } from '@synxty/design-tokens';
 import { TESTING } from 'constants/index.ts';
 import { OverviewRuler } from 'types/index.ts';
 
-const { primary, secondary, danger, info, success, warning } = aliases;
+const { primary, danger, info, success, warning } = aliases;
 const { black } = colors;
 
 export const overviewRuler: OverviewRuler = {

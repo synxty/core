@@ -8,13 +8,10 @@ const { primary, danger, warning, amber } = aliases;
 export const statusBarColors: StatusBarColors = {
   'statusBar.background': black.tint[20],
   'statusBar.foreground': white.shade[70],
-  //"statusBar.border": black.tint[30],
   'statusBar.debuggingBackground': danger.DEFAULT,
   'statusBar.debuggingForeground': white.shade[10],
-  //"statusBar.debuggingBorder": TESTING,
   'statusBar.noFolderBackground': primary.DEFAULT,
   'statusBar.noFolderForeground': black.tint[30],
-  //"statusBar.noFolderBorder": TESTING,
   'statusBarItem.activeBackground': `${black.tint[70]}40`,
   'statusBarItem.hoverBackground': `${black.tint[110]}40`,
   'statusBarItem.prominentForeground': TESTING,
