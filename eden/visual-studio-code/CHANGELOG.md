@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.14.1
+
+### Patch Changes
+
+- 93668b3: Fixed Ghost Text colors
+
 ## 0.14.0
 
 ### Minor Changes
