@@ -5,7 +5,9 @@ export type TokenColors = {
   scope: Scopes | Scopes[];
   name?: string;
   settings: {
-    foreground?: string;
+    background?: string;
+    content?: string;
     fontStyle?: FontStyle;
+    foreground?: string;
   };
 }[];

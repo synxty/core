@@ -47,8 +47,6 @@ import { TokenColors } from './TokenColors/index.ts';
 import { WelcomePageColors } from './WelcomePageColors/index.ts';
 import { WindowBorder } from './WindowBorder/index.ts';
 
-export type ParseThemeKeys<TK extends readonly string[]> = Partial<{ [K in TK[number]]: string }>;
-
 export type * from './ActionColors/index.ts';
 export type * from './ActivityBar/index.ts';
 export type * from './Badge/index.ts';
@@ -96,6 +94,8 @@ export type * from './TextColors/index.ts';
 export type * from './TitleBar/index.ts';
 export type * from './WelcomePageColors/index.ts';
 export type * from './WindowBorder/index.ts';
+
+export type ParseThemeKeys<TK extends readonly string[]> = Partial<{ [K in TK[number]]: string }>;
 
 export type ThemeColors =
   | ActivityBar
@@ -151,4 +151,5 @@ export type Theme = {
   name: string;
   colors: ThemeColors;
   tokenColors: TokenColors;
+  semanticHighlighting?: boolean;
 };
