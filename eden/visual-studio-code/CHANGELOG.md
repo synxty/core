@@ -1,5 +1,11 @@
 # @synxty/eden-vscode
 
+## 0.14.0
+
+### Minor Changes
+
+- 4539969: Added Token colors
+
 ## 0.13.0
 
 ### Minor Changes
