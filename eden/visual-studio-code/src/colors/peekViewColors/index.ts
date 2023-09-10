@@ -10,7 +10,6 @@ export const peekViewColors: PeekViewColors = {
   'peekViewEditor.background': black.tint[20],
   'peekViewEditorGutter.background': black.tint[20],
   'peekViewEditor.matchHighlightBackground': primary.shade[30],
-  //'peekViewEditor.matchHighlightBorder': TESTING,
   'peekViewResult.background': black.tint[30],
   'peekViewResult.fileForeground': white.shade[10],
   'peekViewResult.lineForeground': white.shade[40],

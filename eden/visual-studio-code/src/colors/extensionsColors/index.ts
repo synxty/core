@@ -1,9 +1,9 @@
 import { aliases, colors } from '@synxty/design-tokens';
-import { DEBUGGING, TESTING } from 'constants/index.ts';
+import { TESTING } from 'constants/index.ts';
 import { ExtensionsColors } from 'types/index.ts';
 
 const { black } = colors;
-const { primary, tertiary, orange, info, violet, red, blue } = aliases;
+const { primary, tertiary, orange, info, violet, red } = aliases;
 
 export const extensionsColors: ExtensionsColors = {
   'extensionButton.prominentForeground': black.tint[10],

@@ -1,9 +1,5 @@
-import { aliases, colors } from '@synxty/design-tokens';
 import { TESTING } from 'constants/index.ts';
-import { ActivityBar, TestingColors } from 'types/index.ts';
-
-const { black } = colors;
-const { primary } = aliases;
+import { TestingColors } from 'types/index.ts';
 
 export const testingColors: TestingColors = {
   'testing.iconFailed': TESTING,
