@@ -1,5 +1,11 @@
 # @synxty/tsconfig
 
+## 1.0.3
+
+### Patch Changes
+
+- 8d380ea: Upgraded module and moduleResolutions values to 'NodeNext'
+
 ## 1.0.2
 
 ### Patch Changes
