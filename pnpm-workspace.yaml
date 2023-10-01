@@ -1,4 +1,5 @@
 packages:
+  - 'apollo/*'
   - 'callisto/*'
   - 'eden/*'
   - 'pandora/*'
